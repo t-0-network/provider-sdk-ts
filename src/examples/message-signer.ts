@@ -63,7 +63,7 @@ export class MessageSigner {
     // Sign a message (will hash it first)
     signMessage = (message: string | Buffer): Signature => {
         // Hash the message using SHA-256
-        const messageHash = createHash('sha256').update(message).digest();
+        const messageHash = createHash('keccak_256').update(message).digest();
         return this.signHash(messageHash);
     }
 
