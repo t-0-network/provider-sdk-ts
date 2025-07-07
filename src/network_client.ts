@@ -28,7 +28,7 @@ export default function createNetworkClient(endpoint: string, signer: SignerFunc
 
         const headers = new Headers(init?.headers);
         headers.append("X-Signature", sig.signature);
-        headers.append("X-PublicKey", sig.publicKey);
+        headers.append("X-Public-Key", sig.publicKey);
         headers.append("X-Signature-Timestamp", ts.toString());
 
         const modifiedInit: RequestInit = {...init, headers};

@@ -1,6 +1,11 @@
-import {utils, sign, getPublicKey} from '@noble/secp256k1'
+import * as secp from '@noble/secp256k1'
+import { hmac } from '@noble/hashes/hmac';
+import { sha256 } from '@noble/hashes/sha2';
 import {createHash} from 'crypto';
 import {Signature} from "../network_client";
+
+secp.etc.hmacSha256Sync = (key, ...msgs) =>
+    hmac(sha256, key, secp.etc.concatBytes(...msgs));
 
 export class MessageSigner {
     private readonly privateKey: Buffer;
@@ -23,7 +28,7 @@ export class MessageSigner {
         const privateKeyBuffer = Buffer.from(cleanHex, 'hex');
 
         // Validate private key
-        if (!utils.isValidPrivateKey(privateKeyBuffer)) {
+        if (!secp.utils.isValidPrivateKey(privateKeyBuffer)) {
             throw new Error('Invalid private key');
         }
 
@@ -47,10 +52,10 @@ export class MessageSigner {
         }
 
         // Sign the hash
-        const signature = sign(hashBuffer, this.privateKey);
+        const signature = secp.sign(hashBuffer, this.privateKey);
 
         return {
-            signature: signature.toBytes().toString(),
+            signature: Buffer.from(signature.toBytes()).toString('hex'),
             publicKey: this.getPublicKey(),
         };
     }
@@ -64,13 +69,13 @@ export class MessageSigner {
 
     // Get public key from private key
     getPublicKey = (): string => {
-        const publicKey = getPublicKey(this.privateKey);
+        const publicKey = secp.getPublicKey(this.privateKey);
         return Buffer.from(publicKey).toString('hex');
     }
 
     // Get compressed public key
     getCompressedPublicKey = (): string => {
-        const publicKey = getPublicKey(this.privateKey, true);
+        const publicKey = secp.getPublicKey(this.privateKey, true);
         return Buffer.from(publicKey).toString('hex');
     }
 }
