@@ -2,12 +2,12 @@
   Example on how to interact with network using SDK
 */
 
-import createNetworkClient, {DEFAULT_ENDPOINT} from "client/client";
+import {createNetworkClient, DEFAULT_ENDPOINT} from "../";
 import dotenv from 'dotenv';
 import {create} from "@bufbuild/protobuf";
-import {Decimal, DecimalSchema} from "common/gen/common/common_pb";
+import {Decimal, DecimalSchema} from "../";
 import {randomUUID} from "node:crypto";
-import {QuoteType} from "common/gen/network/network_pb";
+import {QuoteType} from "../";
 import {timestampFromDate, timestampNow} from "@bufbuild/protobuf/wkt";
 
 async function main() {

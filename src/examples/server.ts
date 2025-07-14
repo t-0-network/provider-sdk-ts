@@ -2,7 +2,7 @@
   Example on how to implement network notifications with SDK
 */
 
-import createService from "service/service";
+import {createService} from "../index";
 import {
   AppendLedgerEntriesResponse,
   CreatePayInDetailsResponse, PayoutResponse, UpdateLimitResponse,
@@ -17,8 +17,8 @@ import {
 } from "common/gen/network/provider_pb";
 import {HandlerContext} from "@connectrpc/connect";
 import * as http from "http";
-import { connectNodeAdapter } from "@connectrpc/connect-node";
-import {signatureValidation} from "service/node";
+import { nodeAdapter } from "../index";
+import {signatureValidation} from "../index";
 import dotenv from "dotenv";
 
 /*
@@ -27,7 +27,6 @@ import dotenv from "dotenv";
 const CreateProviderService = () => {
   return {
     async payOut(req: PayoutRequest, context: HandlerContext) {
-      console.log(`paying out ${req.paymentId}`);
       return {} as PayoutResponse
     },
 
@@ -56,7 +55,7 @@ async function main() {
 
   const server = http.createServer(
     signatureValidation(
-      connectNodeAdapter(
+      nodeAdapter(
         createService(networkPublicKeyHex, CreateProviderService())))
   ).listen(8080);
   console.log("server is listening at", server.address());

@@ -1,13 +1,13 @@
 import {createClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
 import {keccak_256} from "@noble/hashes/sha3";
-import {NetworkService} from "common/gen/network/network_pb";
+import {NetworkService} from "../common/gen/network/network_pb";
 import CreateSigner from "./signer";
-import NetworkHeaders from "common/headers";
+import NetworkHeaders from "../common/headers";
 
 export const DEFAULT_ENDPOINT = "https://api.t-0.network"
 
-export default function createNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
+export function createNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
     let customFetch: typeof global.fetch;
 
     endpoint = endpoint || DEFAULT_ENDPOINT;
@@ -65,3 +65,5 @@ export interface Signature {
  * with metadata
  */
 export type SignerFunction =(data: Buffer) => Promise<Signature>;
+
+export default createNetworkClient;

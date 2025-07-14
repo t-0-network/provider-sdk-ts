@@ -7,7 +7,7 @@ import {
   StreamRequest,
   UnaryRequest
 } from "@connectrpc/connect";
-import { ProviderService } from "common/gen/network/provider_pb";
+import { ProviderService } from "../common/gen/network/provider_pb";
 import type {ServiceImpl} from "@connectrpc/connect/dist/esm/implementation";
 import type { Interceptor } from "@connectrpc/connect";
 import NetworkHeaders from "../common/headers";
@@ -55,7 +55,7 @@ const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (
   return await next(req);
 };
 
-export const create = (networkPublicKey: string | Buffer, service: ServiceImpl<typeof ProviderService>) => {
+export const createService = (networkPublicKey: string | Buffer, service: ServiceImpl<typeof ProviderService>) => {
   if (typeof networkPublicKey == "string") {
     networkPublicKey = decodeHex(networkPublicKey)
   }
@@ -69,8 +69,6 @@ export const create = (networkPublicKey: string | Buffer, service: ServiceImpl<t
     }
   }
 }
-
-export default create;
 
 const kHash = createContextKey<Hash<Hash<any>>| undefined>(undefined);
 
