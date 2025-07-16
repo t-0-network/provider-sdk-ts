@@ -1,6 +1,6 @@
 {
   "name": "@t-0/provider-sdk",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Provider SDK for the T-0 Network",
   "repository": {
     "type": "git",
@@ -38,6 +38,8 @@
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "buf:generate": "buf generate && sed -i '' s/_pb.js/_pb/ src/gen/*/v1/public_*.ts"
+    "buf:generate": "buf generate",
+    "build" : "tsc",
+    "publish": "npm run buf:generate && npm run build && npm publish --access public"
   }
 }
