@@ -1,6 +1,6 @@
 {
   "name": "@t-0/provider-sdk",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Provider SDK for the T-0 Network",
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
   },
   "scripts": {
     "buf:generate": "buf generate",
-    "build" : "tsc",
+    "build": "tsc",
     "release": "npm run buf:generate && npm run build && npm publish --access public"
   }
 }
