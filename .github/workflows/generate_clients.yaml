@@ -5,6 +5,7 @@ on:
     types: [opened, synchronize]
     paths:
       - "proto/**"
+      - "src/gen/**"
 
 jobs:
   test:
