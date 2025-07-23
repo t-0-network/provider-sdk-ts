@@ -32,7 +32,7 @@ jobs:
 
       - name: Generate Clients
         run: |
-          npm i
+          npm install -g @bufbuild/buf
           npm run buf:generate
 
       - name: Commit generated files
