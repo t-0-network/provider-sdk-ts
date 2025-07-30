@@ -2,10 +2,58 @@ import {createClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
 import {keccak_256} from "@noble/hashes/sha3";
 import {NetworkService} from "../common/gen/network/network_pb";
+import {NetworkService as PaymentIntentNetworkService} from "../common/gen/payment_intent/provider/provider_pb";
 import CreateSigner from "./signer";
 import NetworkHeaders from "../common/headers";
 
 export const DEFAULT_ENDPOINT = "https://api.t-0.network"
+
+function extracted(endpoint: string | undefined, signer: string | Buffer | ((data: Buffer) => Promise<Signature>) | Buffer<ArrayBufferLike>) {
+    let customFetch: typeof global.fetch;
+
+    endpoint = endpoint || DEFAULT_ENDPOINT;
+
+    if (typeof signer === "string" || Buffer.isBuffer(signer)) {
+        signer = CreateSigner(signer);
+    }
+
+    customFetch = async (r, init) => {
+        if (!init?.body || !((init.body) instanceof Uint8Array)) {
+            throw "unsupported body type";
+        }
+
+        const ts = Date.now();
+        // 64‑bit little‑endian timestamp
+        const tsBuf = Buffer.alloc(8);
+        tsBuf.writeBigUInt64LE(BigInt(ts));
+
+        const hash = keccak_256.create()
+            .update(init.body)
+            .update(tsBuf);
+        const hashHex = Buffer.from(hash.digest())
+
+        const sig = await signer(hashHex);
+
+        const headers = new Headers(init?.headers);
+        headers.append(NetworkHeaders.Signature, "0x" + sig.signature.toString('hex'));
+        headers.append(NetworkHeaders.PublicKey, "0x" + sig.publicKey.toString('hex'));
+        headers.append(NetworkHeaders.SignatureTimestamp, ts.toString());
+
+        const modifiedInit: RequestInit = {...init, headers};
+        return fetch(r, modifiedInit)
+    };
+
+    const transport = createConnectTransport({
+        baseUrl: endpoint || DEFAULT_ENDPOINT,
+        fetch: customFetch,
+    });
+
+    return createClient(PaymentIntentNetworkService, transport);
+}
+
+export function createPaymentIntentNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
+    return extracted(endpoint, signer);
+}
 
 export function createNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
     let customFetch: typeof global.fetch;
@@ -17,7 +65,7 @@ export function createNetworkClient(signer: string | Buffer | SignerFunction, en
     }
 
     customFetch = async (r, init) => {
-        if (!init?.body ||  !((init.body) instanceof Uint8Array)) {
+        if (!init?.body || !((init.body) instanceof Uint8Array)) {
             throw "unsupported body type";
         }
 
@@ -27,8 +75,8 @@ export function createNetworkClient(signer: string | Buffer | SignerFunction, en
         tsBuf.writeBigUInt64LE(BigInt(ts));
 
         const hash = keccak_256.create()
-          .update(init.body)
-          .update(tsBuf);
+            .update(init.body)
+            .update(tsBuf);
         const hashHex = Buffer.from(hash.digest())
 
         const sig = await signer(hashHex);
@@ -50,6 +98,7 @@ export function createNetworkClient(signer: string | Buffer | SignerFunction, en
     return createClient(NetworkService, transport);
 }
 
+
 /**
  * Signature with metadata for particular request
  */
@@ -64,6 +113,6 @@ export interface Signature {
  * Signature function for signing requests to T-0 API. Accepts any data in string format and return signature
  * with metadata
  */
-export type SignerFunction =(data: Buffer) => Promise<Signature>;
+export type SignerFunction = (data: Buffer) => Promise<Signature>;
 
 export default createNetworkClient;

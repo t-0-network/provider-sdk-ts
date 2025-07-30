@@ -23,7 +23,7 @@ const createRoutes = (service: ServiceImpl<typeof ProviderService>) => (router: 
 }
 
 const createPaymentIntentRoutes = (service: ServiceImpl<typeof PaymentIntentProviderService>) => (router: ConnectRouter) => {
-    router.service(ProviderService, service);
+    router.service(PaymentIntentProviderService, service);
 }
 
 const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (networkPublicKey: Buffer) => (next) => async (req) => {
@@ -67,6 +67,21 @@ export const createService = (networkPublicKey: string | Buffer, service: Servic
 
   return {
     routes: createRoutes(service),
+    interceptors: [createSignatureVerification(networkPublicKey)],
+    grpcWeb: false,
+    contextValues: (req: NodeServerRequest) => {
+      return createContextValues().set(kHash, (req as any).hasher as Hash<Hash<any>>)
+    }
+  }
+}
+
+export const createPaymentIntentService = (networkPublicKey: string | Buffer, service: ServiceImpl<typeof PaymentIntentProviderService>) => {
+  if (typeof networkPublicKey == "string") {
+    networkPublicKey = decodeHex(networkPublicKey)
+  }
+
+  return {
+    routes: createPaymentIntentRoutes(service),
     interceptors: [createSignatureVerification(networkPublicKey)],
     grpcWeb: false,
     contextValues: (req: NodeServerRequest) => {
