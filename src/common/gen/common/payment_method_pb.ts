@@ -2,15 +2,17 @@
 // @generated from file common/payment_method.proto (package tzero.v1.common, syntax proto3)
 /* eslint-disable */
 
-import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
-import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
+import type { GenEnum, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
+import { enumDesc, fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
+import type { Blockchain, Stablecoin } from "./common_pb";
+import { file_common_common } from "./common_pb";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file common/payment_method.proto.
  */
 export const file_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("Chtjb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiJOCg1QYXltZW50TWV0aG9kEjIKBHNlcGEYCiABKAsyIi50emVyby52MS5jb21tb24uU2VwYVBheW1lbnRNZXRob2RIAEIJCgdkZXRhaWxzIkoKEVNlcGFQYXltZW50TWV0aG9kEgwKBGliYW4YCiABKAkSGQoRcGF5bWVudF9yZWZlcmVuY2UYFCABKAkSDAoEbmFtZRgeIAEoCUKHAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkISUGF5bWVudE1ldGhvZFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z");
+  fileDesc("Chtjb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLEAQoNUGF5bWVudE1ldGhvZBIyCgRzZXBhGAogASgLMiIudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50TWV0aG9kSAASNAoFc3dpZnQYHiABKAsyIy50emVyby52MS5jb21tb24uU3dpZnRQYXltZW50TWV0aG9kSAASPgoKc3RhYmxlY29pbhgoIAEoCzIoLnR6ZXJvLnYxLmNvbW1vbi5TdGFibGVjb2luUGF5bWVudE1ldGhvZEgAQgkKB2RldGFpbHMiVgoRU2VwYVBheW1lbnRNZXRob2QSDAoEaWJhbhgUIAEoCRIYChBiZW5lZmljaWFyeV9uYW1lGB4gASgJEhkKEXBheW1lbnRfcmVmZXJlbmNlGCggASgJIhQKElN3aWZ0UGF5bWVudE1ldGhvZCKMAQoXU3RhYmxlY29pblBheW1lbnRNZXRob2QSLwoKYmxvY2tjaGFpbhgKIAEoDjIbLnR6ZXJvLnYxLmNvbW1vbi5CbG9ja2NoYWluEi8KCnN0YWJsZWNvaW4YFCABKA4yGy50emVyby52MS5jb21tb24uU3RhYmxlY29pbhIPCgdhZGRyZXNzGB4gASgJKpMBChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeQocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_common_common]);
 
 /**
  * @generated from message tzero.v1.common.PaymentMethod
@@ -25,6 +27,18 @@ export type PaymentMethod = Message<"tzero.v1.common.PaymentMethod"> & {
      */
     value: SepaPaymentMethod;
     case: "sepa";
+  } | {
+    /**
+     * @generated from field: tzero.v1.common.SwiftPaymentMethod swift = 30;
+     */
+    value: SwiftPaymentMethod;
+    case: "swift";
+  } | {
+    /**
+     * @generated from field: tzero.v1.common.StablecoinPaymentMethod stablecoin = 40;
+     */
+    value: StablecoinPaymentMethod;
+    case: "stablecoin";
   } | { case: undefined; value?: undefined };
 };
 
@@ -40,19 +54,19 @@ export const PaymentMethodSchema: GenMessage<PaymentMethod> = /*@__PURE__*/
  */
 export type SepaPaymentMethod = Message<"tzero.v1.common.SepaPaymentMethod"> & {
   /**
-   * @generated from field: string iban = 10;
+   * @generated from field: string iban = 20;
    */
   iban: string;
 
   /**
-   * @generated from field: string payment_reference = 20;
+   * @generated from field: string beneficiary_name = 30;
    */
-  paymentReference: string;
+  beneficiaryName: string;
 
   /**
-   * @generated from field: string name = 30;
+   * @generated from field: string payment_reference = 40;
    */
-  name: string;
+  paymentReference: string;
 };
 
 /**
@@ -61,4 +75,77 @@ export type SepaPaymentMethod = Message<"tzero.v1.common.SepaPaymentMethod"> & {
  */
 export const SepaPaymentMethodSchema: GenMessage<SepaPaymentMethod> = /*@__PURE__*/
   messageDesc(file_common_payment_method, 1);
+
+/**
+ * @generated from message tzero.v1.common.SwiftPaymentMethod
+ */
+export type SwiftPaymentMethod = Message<"tzero.v1.common.SwiftPaymentMethod"> & {
+};
+
+/**
+ * Describes the message tzero.v1.common.SwiftPaymentMethod.
+ * Use `create(SwiftPaymentMethodSchema)` to create a new message.
+ */
+export const SwiftPaymentMethodSchema: GenMessage<SwiftPaymentMethod> = /*@__PURE__*/
+  messageDesc(file_common_payment_method, 2);
+
+/**
+ * @generated from message tzero.v1.common.StablecoinPaymentMethod
+ */
+export type StablecoinPaymentMethod = Message<"tzero.v1.common.StablecoinPaymentMethod"> & {
+  /**
+   * @generated from field: tzero.v1.common.Blockchain blockchain = 10;
+   */
+  blockchain: Blockchain;
+
+  /**
+   * @generated from field: tzero.v1.common.Stablecoin stablecoin = 20;
+   */
+  stablecoin: Stablecoin;
+
+  /**
+   * @generated from field: string address = 30;
+   */
+  address: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.StablecoinPaymentMethod.
+ * Use `create(StablecoinPaymentMethodSchema)` to create a new message.
+ */
+export const StablecoinPaymentMethodSchema: GenMessage<StablecoinPaymentMethod> = /*@__PURE__*/
+  messageDesc(file_common_payment_method, 3);
+
+/**
+ * @generated from enum tzero.v1.common.PaymentMethodType
+ */
+export enum PaymentMethodType {
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_SEPA = 10;
+   */
+  SEPA = 10,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_SWIFT = 20;
+   */
+  SWIFT = 20,
+
+  /**
+   * only pay in
+   *
+   * @generated from enum value: PAYMENT_METHOD_TYPE_CARD = 30;
+   */
+  CARD = 30,
+}
+
+/**
+ * Describes the enum tzero.v1.common.PaymentMethodType.
+ */
+export const PaymentMethodTypeSchema: GenEnum<PaymentMethodType> = /*@__PURE__*/
+  enumDesc(file_common_payment_method, 0);
 

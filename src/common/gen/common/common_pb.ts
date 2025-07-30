@@ -2,15 +2,15 @@
 // @generated from file common/common.proto (package tzero.v1.common, syntax proto3)
 /* eslint-disable */
 
-import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
-import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
+import type { GenEnum, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
+import { enumDesc, fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file common/common.proto.
  */
 export const file_common_common: GenFile = /*@__PURE__*/
-  fileDesc("ChNjb21tb24vY29tbW9uLnByb3RvEg90emVyby52MS5jb21tb24iLQoHRGVjaW1hbBIQCgh1bnNjYWxlZBgKIAEoAxIQCghleHBvbmVudBgUIAEoBUKAAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkILQ29tbW9uUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM");
+  fileDesc("ChNjb21tb24vY29tbW9uLnByb3RvEg90emVyby52MS5jb21tb24iLQoHRGVjaW1hbBIQCgh1bnNjYWxlZBgKIAEoAxIQCghleHBvbmVudBgUIAEoBSpRCgpCbG9ja2NoYWluEhoKFkJMT0NLQ0hBSU5fVU5TUEVDSUZJRUQQABISCg5CTE9DS0NIQUlOX0JTQxAKEhMKD0JMT0NLQ0hBSU5fVFJPThBkKj0KClN0YWJsZWNvaW4SGgoWU1RBQkxFQ09JTl9VTlNQRUNJRklFRBAAEhMKD1NUQUJMRUNPSU5fVVNEVBAKQoABChNjb20udHplcm8udjEuY29tbW9uQgtDb21tb25Qcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw");
 
 /**
  * Decimal 123.45 equals to unscaled=12345 and exponent=-2 (e.g. unscaled * 10^exponent, 123.45 = 12345 * 10^-2)
@@ -35,4 +35,51 @@ export type Decimal = Message<"tzero.v1.common.Decimal"> & {
  */
 export const DecimalSchema: GenMessage<Decimal> = /*@__PURE__*/
   messageDesc(file_common_common, 0);
+
+/**
+ * @generated from enum tzero.v1.common.Blockchain
+ */
+export enum Blockchain {
+  /**
+   * @generated from enum value: BLOCKCHAIN_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * @generated from enum value: BLOCKCHAIN_BSC = 10;
+   */
+  BSC = 10,
+
+  /**
+   * @generated from enum value: BLOCKCHAIN_TRON = 100;
+   */
+  TRON = 100,
+}
+
+/**
+ * Describes the enum tzero.v1.common.Blockchain.
+ */
+export const BlockchainSchema: GenEnum<Blockchain> = /*@__PURE__*/
+  enumDesc(file_common_common, 0);
+
+/**
+ * @generated from enum tzero.v1.common.Stablecoin
+ */
+export enum Stablecoin {
+  /**
+   * @generated from enum value: STABLECOIN_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * @generated from enum value: STABLECOIN_USDT = 10;
+   */
+  USDT = 10,
+}
+
+/**
+ * Describes the enum tzero.v1.common.Stablecoin.
+ */
+export const StablecoinSchema: GenEnum<Stablecoin> = /*@__PURE__*/
+  enumDesc(file_common_common, 1);
 
