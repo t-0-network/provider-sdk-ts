@@ -1,0 +1,1 @@
+export * from '../../common/gen/payment_intent/provider/provider_pb'

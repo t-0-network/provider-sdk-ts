@@ -2,7 +2,7 @@
  Example on how to implement network notifications with SDK
  */
 
-import {createPaymentIntentService} from "../../index";
+import {ProviderService} from "../../payment_intent/provider";
 import {
     ConfirmPayoutRequest, ConfirmPayoutResponse,
     CreatePaymentIntentRequest,
@@ -10,7 +10,7 @@ import {
 } from "common/gen/payment_intent/provider/provider_pb";
 import {HandlerContext} from "@connectrpc/connect";
 import * as http from "http";
-import { nodeAdapter } from "../../index";
+import {createService, nodeAdapter} from "../../index";
 import {signatureValidation} from "../../index";
 import dotenv from "dotenv";
 
@@ -38,7 +38,9 @@ async function main() {
     const server = http.createServer(
         signatureValidation(
             nodeAdapter(
-                createPaymentIntentService(networkPublicKeyHex, CreatePaymentIntentProviderService())))
+              createService(networkPublicKeyHex, r =>
+                r.service(ProviderService, CreatePaymentIntentProviderService())
+              )))
     ).listen(8080);
     console.log("server is listening at", server.address());
 }

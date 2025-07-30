@@ -7,24 +7,15 @@ import {
   StreamRequest,
   UnaryRequest
 } from "@connectrpc/connect";
-import { ProviderService } from "../common/gen/network/provider_pb";
-import { ProviderService as PaymentIntentProviderService } from "../common/gen/payment_intent/provider/provider_pb"
 import type {ServiceImpl} from "@connectrpc/connect/dist/esm/implementation";
 import type { Interceptor } from "@connectrpc/connect";
 import NetworkHeaders from "../common/headers";
 import {NodeServerRequest} from "@connectrpc/connect-node/dist/esm/node-universal-handler";
 import * as secp from '@noble/secp256k1'
 import {Hash} from "@noble/hashes/utils";
+import type {DescService} from "@bufbuild/protobuf";
 
 export const REQUEST_VALIDITY_MILLIS = 60_000;
-
-const createRoutes = (service: ServiceImpl<typeof ProviderService>) => (router: ConnectRouter) => {
-  router.service(ProviderService, service);
-}
-
-const createPaymentIntentRoutes = (service: ServiceImpl<typeof PaymentIntentProviderService>) => (router: ConnectRouter) => {
-    router.service(PaymentIntentProviderService, service);
-}
 
 const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (networkPublicKey: Buffer) => (next) => async (req) => {
   const ts = decodeNum(getHeader(req, NetworkHeaders.SignatureTimestamp));
@@ -60,28 +51,21 @@ const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (
   return await next(req);
 };
 
-export const createService = (networkPublicKey: string | Buffer, service: ServiceImpl<typeof ProviderService>) => {
-  if (typeof networkPublicKey == "string") {
-    networkPublicKey = decodeHex(networkPublicKey)
-  }
-
-  return {
-    routes: createRoutes(service),
-    interceptors: [createSignatureVerification(networkPublicKey)],
-    grpcWeb: false,
-    contextValues: (req: NodeServerRequest) => {
-      return createContextValues().set(kHash, (req as any).hasher as Hash<Hash<any>>)
-    }
-  }
+interface Router {
+  service: <T extends DescService>(service: T, implementation: Partial<ServiceImpl<T>>) => void;
 }
 
-export const createPaymentIntentService = (networkPublicKey: string | Buffer, service: ServiceImpl<typeof PaymentIntentProviderService>) => {
+export const createService = (
+  networkPublicKey: string | Buffer,
+  registerRoutes: (router: Router) => void) => {
   if (typeof networkPublicKey == "string") {
     networkPublicKey = decodeHex(networkPublicKey)
   }
 
   return {
-    routes: createPaymentIntentRoutes(service),
+    routes: (router: ConnectRouter)=> {
+      registerRoutes(router)
+    },
     interceptors: [createSignatureVerification(networkPublicKey)],
     grpcWeb: false,
     contextValues: (req: NodeServerRequest) => {
@@ -91,8 +75,6 @@ export const createPaymentIntentService = (networkPublicKey: string | Buffer, se
 }
 
 const kHash = createContextKey<Hash<Hash<any>>| undefined>(undefined);
-
-
 
 function getHeader(req: UnaryRequest | StreamRequest, header: NetworkHeaders) {
   const raw = req.header.get(header);
