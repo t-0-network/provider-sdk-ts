@@ -16,7 +16,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file network/provider.proto.
  */
 export const file_network_provider: GenFile = /*@__PURE__*/
-  fileDesc("ChZuZXR3b3JrL3Byb3ZpZGVyLnByb3RvEhNuZXR3b3JrLnYxLnByb3ZpZGVyItINChpBcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdBJRCgx0cmFuc2FjdGlvbnMYFCADKAsyOy5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uGuMHCgtUcmFuc2FjdGlvbhIWCg50cmFuc2FjdGlvbl9pZBgKIAEoBBJMCgdlbnRyaWVzGB4gAygLMjsubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5MZWRnZXJFbnRyeRJTCgZwYXlfaW4YbiABKAsyQS5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLlBheUluSAASawoScGF5b3V0X3Jlc2VydmF0aW9uGHggASgLMk0ubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5UcmFuc2FjdGlvbi5QYXlvdXRSZXNlcnZhdGlvbkgAElUKBnBheW91dBiCASABKAsyQi5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLlBheW91dEgAEm4KE3Byb3ZpZGVyX3NldHRsZW1lbnQYjAEgASgLMk4ubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5UcmFuc2FjdGlvbi5Qcm92aWRlclNldHRsZW1lbnRIABJkCg5mZWVfc2V0dGxlbWVudBiWASABKAsySS5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLkZlZVNldHRsZW1lbnRIABJ7ChpwYXlvdXRfcmVzZXJ2YXRpb25fcmVsZWFzZRigASABKAsyVC5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLlBheW91dFJlc2VydmF0aW9uUmVsZWFzZUgAGhsKBVBheUluEhIKCnBheW1lbnRfaWQYCiABKAkaJwoRUGF5b3V0UmVzZXJ2YXRpb24SEgoKcGF5bWVudF9pZBgKIAEoCRocCgZQYXlvdXQSEgoKcGF5bWVudF9pZBgKIAEoCRorChJQcm92aWRlclNldHRsZW1lbnQSFQoNc2V0dGxlbWVudF9pZBgKIAEoBBoqCg1GZWVTZXR0bGVtZW50EhkKEWZlZV9zZXR0bGVtZW50X2lkGAogASgEGi4KGFBheW91dFJlc2VydmF0aW9uUmVsZWFzZRISCgpwYXltZW50X2lkGAogASgJQhUKE3RyYW5zYWN0aW9uX2RldGFpbHMakAIKC0xlZGdlckVudHJ5EhgKEGFjY291bnRfb3duZXJfaWQYCiABKA0SUQoMYWNjb3VudF90eXBlGBQgASgOMjsubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5BY2NvdW50VHlwZRIQCghjdXJyZW5jeRgeIAEoCRInCgVkZWJpdBgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEigKBmNyZWRpdBgyIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEi8KDWV4Y2hhbmdlX3JhdGUYPCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbCLnAgoLQWNjb3VudFR5cGUSHAoYQUNDT1VOVF9UWVBFX1VOU1BFQ0lGSUVEEAASHQoZQUNDT1VOVF9UWVBFX1VTRVJfUEFZQUJMRRABEhUKEUFDQ09VTlRfVFlQRV9DQVNIEAISGAoUQUNDT1VOVF9UWVBFX1JFU0VSVkUQAxIeChpBQ0NPVU5UX1RZUEVfUkVTRVJWRV9VU0FHRRAEEiEKHUFDQ09VTlRfVFlQRV9QUk9WSURFUl9QQVlBQkxFEAUSJAogQUNDT1VOVF9UWVBFX1BST1ZJREVSX1JFQ0VJVkFCTEUQBhIcChhBQ0NPVU5UX1RZUEVfRkVFX1BBWUFCTEUQBxIfChtBQ0NPVU5UX1RZUEVfRkVFX1JFQ0VJVkFCTEUQCBIcChhBQ0NPVU5UX1RZUEVfRkVFX0VYUEVOU0UQCRIkCiBBQ0NPVU5UX1RZUEVfUFJPVklERVJfU0VUVExFTUVOVBAKIh0KG0FwcGVuZExlZGdlckVudHJpZXNSZXNwb25zZSLCAQoNUGF5b3V0UmVxdWVzdBISCgpwYXltZW50X2lkGAogASgDEhEKCXBheW91dF9pZBgUIAEoAxIQCghjdXJyZW5jeRgeIAEoCRIXCg9jbGllbnRfcXVvdGVfaWQYKCABKAkSKAoGYW1vdW50GDIgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSNQoNcGF5b3V0X21ldGhvZBg8IAEoCzIeLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kIhAKDlBheW91dFJlc3BvbnNlIuECChRVcGRhdGVQYXltZW50UmVxdWVzdBIZChFwYXltZW50X2NsaWVudF9pZBgKIAEoCRJECgdzdWNjZXNzGBQgASgLMjEubmV0d29yay52MS5wcm92aWRlci5VcGRhdGVQYXltZW50UmVxdWVzdC5TdWNjZXNzSAASRAoHZmFpbHVyZRgeIAEoCzIxLm5ldHdvcmsudjEucHJvdmlkZXIuVXBkYXRlUGF5bWVudFJlcXVlc3QuRmFpbHVyZUgAGmsKB1N1Y2Nlc3MSLwoNcGF5b3V0X2Ftb3VudBgKIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEi8KC3BhaWRfb3V0X2F0GDIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBorCgdGYWlsdXJlIiAKBlJlYXNvbhIWChJSRUFTT05fVU5TUEVDSUZJRUQQAEIICgZyZXN1bHQiFwoVVXBkYXRlUGF5bWVudFJlc3BvbnNlIsoBChJVcGRhdGVMaW1pdFJlcXVlc3QSDwoHdmVyc2lvbhgKIAEoAxITCgtwcm92aWRlcl9pZBgPIAEoBRIuCgxwYXlvdXRfbGltaXQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIuCgxjcmVkaXRfbGltaXQYHiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIuCgxjcmVkaXRfdXNhZ2UYKCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbCIVChNVcGRhdGVMaW1pdFJlc3BvbnNlIp0CChlDcmVhdGVQYXlJbkRldGFpbHNSZXF1ZXN0EhkKEXBheW1lbnRfaW50ZW50X2lkGAogASgJEkUKBnNlbmRlchgoIAEoCzI1Lm5ldHdvcmsudjEucHJvdmlkZXIuQ3JlYXRlUGF5SW5EZXRhaWxzUmVxdWVzdC5TZW5kZXIanQEKBlNlbmRlchJdCg5wcml2YXRlX3BlcnNvbhgKIAEoCzJDLm5ldHdvcmsudjEucHJvdmlkZXIuQ3JlYXRlUGF5SW5EZXRhaWxzUmVxdWVzdC5TZW5kZXIuUHJpdmF0ZVBlcnNvbkgAGioKDVByaXZhdGVQZXJzb24SGQoRcHJpdmF0ZV9wZXJzb25faWQYCiABKAlCCAoGc2VuZGVyIlMKGkNyZWF0ZVBheUluRGV0YWlsc1Jlc3BvbnNlEjUKDXBheV9pbl9tZXRob2QYCiADKAsyHi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZDK4BAoPUHJvdmlkZXJTZXJ2aWNlElYKBlBheU91dBIiLm5ldHdvcmsudjEucHJvdmlkZXIuUGF5b3V0UmVxdWVzdBojLm5ldHdvcmsudjEucHJvdmlkZXIuUGF5b3V0UmVzcG9uc2UiA5ACAhJrCg1VcGRhdGVQYXltZW50EikubmV0d29yay52MS5wcm92aWRlci5VcGRhdGVQYXltZW50UmVxdWVzdBoqLm5ldHdvcmsudjEucHJvdmlkZXIuVXBkYXRlUGF5bWVudFJlc3BvbnNlIgOQAgISegoSQ3JlYXRlUGF5SW5EZXRhaWxzEi4ubmV0d29yay52MS5wcm92aWRlci5DcmVhdGVQYXlJbkRldGFpbHNSZXF1ZXN0Gi8ubmV0d29yay52MS5wcm92aWRlci5DcmVhdGVQYXlJbkRldGFpbHNSZXNwb25zZSIDkAICEmUKC1VwZGF0ZUxpbWl0EicubmV0d29yay52MS5wcm92aWRlci5VcGRhdGVMaW1pdFJlcXVlc3QaKC5uZXR3b3JrLnYxLnByb3ZpZGVyLlVwZGF0ZUxpbWl0UmVzcG9uc2UiA5ACAhJ9ChNBcHBlbmRMZWRnZXJFbnRyaWVzEi8ubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdBowLm5ldHdvcmsudjEucHJvdmlkZXIuQXBwZW5kTGVkZ2VyRW50cmllc1Jlc3BvbnNlIgOQAgJClgEKF2NvbS5uZXR3b3JrLnYxLnByb3ZpZGVyQg1Qcm92aWRlclByb3RvUAGiAgNOVlCqAhNOZXR3b3JrLlYxLlByb3ZpZGVyygITTmV0d29ya1xWMVxQcm92aWRlcuICH05ldHdvcmtcVjFcUHJvdmlkZXJcR1BCTWV0YWRhdGHqAhVOZXR3b3JrOjpWMTo6UHJvdmlkZXJiBnByb3RvMw", [file_common_payment_method, file_common_common, file_google_protobuf_timestamp]);
+  fileDesc("ChZuZXR3b3JrL3Byb3ZpZGVyLnByb3RvEhNuZXR3b3JrLnYxLnByb3ZpZGVyItINChpBcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdBJRCgx0cmFuc2FjdGlvbnMYFCADKAsyOy5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uGuMHCgtUcmFuc2FjdGlvbhIWCg50cmFuc2FjdGlvbl9pZBgKIAEoBBJMCgdlbnRyaWVzGB4gAygLMjsubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5MZWRnZXJFbnRyeRJTCgZwYXlfaW4YbiABKAsyQS5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLlBheUluSAASawoScGF5b3V0X3Jlc2VydmF0aW9uGHggASgLMk0ubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5UcmFuc2FjdGlvbi5QYXlvdXRSZXNlcnZhdGlvbkgAElUKBnBheW91dBiCASABKAsyQi5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLlBheW91dEgAEm4KE3Byb3ZpZGVyX3NldHRsZW1lbnQYjAEgASgLMk4ubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5UcmFuc2FjdGlvbi5Qcm92aWRlclNldHRsZW1lbnRIABJkCg5mZWVfc2V0dGxlbWVudBiWASABKAsySS5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLkZlZVNldHRsZW1lbnRIABJ7ChpwYXlvdXRfcmVzZXJ2YXRpb25fcmVsZWFzZRigASABKAsyVC5uZXR3b3JrLnYxLnByb3ZpZGVyLkFwcGVuZExlZGdlckVudHJpZXNSZXF1ZXN0LlRyYW5zYWN0aW9uLlBheW91dFJlc2VydmF0aW9uUmVsZWFzZUgAGhsKBVBheUluEhIKCnBheW1lbnRfaWQYCiABKAQaJwoRUGF5b3V0UmVzZXJ2YXRpb24SEgoKcGF5bWVudF9pZBgKIAEoBBocCgZQYXlvdXQSEgoKcGF5bWVudF9pZBgKIAEoBBorChJQcm92aWRlclNldHRsZW1lbnQSFQoNc2V0dGxlbWVudF9pZBgKIAEoBBoqCg1GZWVTZXR0bGVtZW50EhkKEWZlZV9zZXR0bGVtZW50X2lkGAogASgEGi4KGFBheW91dFJlc2VydmF0aW9uUmVsZWFzZRISCgpwYXltZW50X2lkGAogASgEQhUKE3RyYW5zYWN0aW9uX2RldGFpbHMakAIKC0xlZGdlckVudHJ5EhgKEGFjY291bnRfb3duZXJfaWQYCiABKA0SUQoMYWNjb3VudF90eXBlGBQgASgOMjsubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdC5BY2NvdW50VHlwZRIQCghjdXJyZW5jeRgeIAEoCRInCgVkZWJpdBgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEigKBmNyZWRpdBgyIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEi8KDWV4Y2hhbmdlX3JhdGUYPCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbCLnAgoLQWNjb3VudFR5cGUSHAoYQUNDT1VOVF9UWVBFX1VOU1BFQ0lGSUVEEAASHQoZQUNDT1VOVF9UWVBFX1VTRVJfUEFZQUJMRRABEhUKEUFDQ09VTlRfVFlQRV9DQVNIEAISGAoUQUNDT1VOVF9UWVBFX1JFU0VSVkUQAxIeChpBQ0NPVU5UX1RZUEVfUkVTRVJWRV9VU0FHRRAEEiEKHUFDQ09VTlRfVFlQRV9QUk9WSURFUl9QQVlBQkxFEAUSJAogQUNDT1VOVF9UWVBFX1BST1ZJREVSX1JFQ0VJVkFCTEUQBhIcChhBQ0NPVU5UX1RZUEVfRkVFX1BBWUFCTEUQBxIfChtBQ0NPVU5UX1RZUEVfRkVFX1JFQ0VJVkFCTEUQCBIcChhBQ0NPVU5UX1RZUEVfRkVFX0VYUEVOU0UQCRIkCiBBQ0NPVU5UX1RZUEVfUFJPVklERVJfU0VUVExFTUVOVBAKIh0KG0FwcGVuZExlZGdlckVudHJpZXNSZXNwb25zZSKbAgoNUGF5b3V0UmVxdWVzdBISCgpwYXltZW50X2lkGAogASgDEhEKCXBheW91dF9pZBgUIAEoAxIQCghjdXJyZW5jeRgeIAEoCRIXCg9jbGllbnRfcXVvdGVfaWQYKCABKAkSKAoGYW1vdW50GDIgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSOgoNcGF5b3V0X21ldGhvZBg8IAEoCzIeLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kSACIAQESFgoJcmVmZXJlbmNlGEYgASgJSAGIAQESGgoScGF5X2luX3Byb3ZpZGVyX2lkGFAgASgNQhAKDl9wYXlvdXRfbWV0aG9kQgwKCl9yZWZlcmVuY2UiEAoOUGF5b3V0UmVzcG9uc2Ui9QIKFFVwZGF0ZVBheW1lbnRSZXF1ZXN0EhIKCnBheW1lbnRfaWQYBSABKAQSGQoRcGF5bWVudF9jbGllbnRfaWQYCiABKAkSRAoHc3VjY2VzcxgUIAEoCzIxLm5ldHdvcmsudjEucHJvdmlkZXIuVXBkYXRlUGF5bWVudFJlcXVlc3QuU3VjY2Vzc0gAEkQKB2ZhaWx1cmUYHiABKAsyMS5uZXR3b3JrLnYxLnByb3ZpZGVyLlVwZGF0ZVBheW1lbnRSZXF1ZXN0LkZhaWx1cmVIABprCgdTdWNjZXNzEi8KDXBheW91dF9hbW91bnQYCiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIvCgtwYWlkX291dF9hdBgyIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAaKwoHRmFpbHVyZSIgCgZSZWFzb24SFgoSUkVBU09OX1VOU1BFQ0lGSUVEEABCCAoGcmVzdWx0IhcKFVVwZGF0ZVBheW1lbnRSZXNwb25zZSKTAgoSVXBkYXRlTGltaXRSZXF1ZXN0Ej0KBmxpbWl0cxgKIAMoCzItLm5ldHdvcmsudjEucHJvdmlkZXIuVXBkYXRlTGltaXRSZXF1ZXN0LkxpbWl0Gr0BCgVMaW1pdBIPCgd2ZXJzaW9uGAogASgDEhMKC2NyZWRpdG9yX2lkGA8gASgFEi4KDHBheW91dF9saW1pdBgUIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEi4KDGNyZWRpdF9saW1pdBgeIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEi4KDGNyZWRpdF91c2FnZRgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsIhUKE1VwZGF0ZUxpbWl0UmVzcG9uc2UyvAMKD1Byb3ZpZGVyU2VydmljZRJWCgZQYXlPdXQSIi5uZXR3b3JrLnYxLnByb3ZpZGVyLlBheW91dFJlcXVlc3QaIy5uZXR3b3JrLnYxLnByb3ZpZGVyLlBheW91dFJlc3BvbnNlIgOQAgISawoNVXBkYXRlUGF5bWVudBIpLm5ldHdvcmsudjEucHJvdmlkZXIuVXBkYXRlUGF5bWVudFJlcXVlc3QaKi5uZXR3b3JrLnYxLnByb3ZpZGVyLlVwZGF0ZVBheW1lbnRSZXNwb25zZSIDkAICEmUKC1VwZGF0ZUxpbWl0EicubmV0d29yay52MS5wcm92aWRlci5VcGRhdGVMaW1pdFJlcXVlc3QaKC5uZXR3b3JrLnYxLnByb3ZpZGVyLlVwZGF0ZUxpbWl0UmVzcG9uc2UiA5ACAhJ9ChNBcHBlbmRMZWRnZXJFbnRyaWVzEi8ubmV0d29yay52MS5wcm92aWRlci5BcHBlbmRMZWRnZXJFbnRyaWVzUmVxdWVzdBowLm5ldHdvcmsudjEucHJvdmlkZXIuQXBwZW5kTGVkZ2VyRW50cmllc1Jlc3BvbnNlIgOQAgJClgEKF2NvbS5uZXR3b3JrLnYxLnByb3ZpZGVyQg1Qcm92aWRlclByb3RvUAGiAgNOVlCqAhNOZXR3b3JrLlYxLlByb3ZpZGVyygITTmV0d29ya1xWMVxQcm92aWRlcuICH05ldHdvcmtcVjFcUHJvdmlkZXJcR1BCTWV0YWRhdGHqAhVOZXR3b3JrOjpWMTo6UHJvdmlkZXJiBnByb3RvMw", [file_common_payment_method, file_common_common, file_google_protobuf_timestamp]);
 
 /**
  * @generated from message network.v1.provider.AppendLedgerEntriesRequest
@@ -119,9 +119,9 @@ export const AppendLedgerEntriesRequest_TransactionSchema: GenMessage<AppendLedg
  */
 export type AppendLedgerEntriesRequest_Transaction_PayIn = Message<"network.v1.provider.AppendLedgerEntriesRequest.Transaction.PayIn"> & {
   /**
-   * @generated from field: string payment_id = 10;
+   * @generated from field: uint64 payment_id = 10;
    */
-  paymentId: string;
+  paymentId: bigint;
 };
 
 /**
@@ -136,9 +136,9 @@ export const AppendLedgerEntriesRequest_Transaction_PayInSchema: GenMessage<Appe
  */
 export type AppendLedgerEntriesRequest_Transaction_PayoutReservation = Message<"network.v1.provider.AppendLedgerEntriesRequest.Transaction.PayoutReservation"> & {
   /**
-   * @generated from field: string payment_id = 10;
+   * @generated from field: uint64 payment_id = 10;
    */
-  paymentId: string;
+  paymentId: bigint;
 };
 
 /**
@@ -153,9 +153,9 @@ export const AppendLedgerEntriesRequest_Transaction_PayoutReservationSchema: Gen
  */
 export type AppendLedgerEntriesRequest_Transaction_Payout = Message<"network.v1.provider.AppendLedgerEntriesRequest.Transaction.Payout"> & {
   /**
-   * @generated from field: string payment_id = 10;
+   * @generated from field: uint64 payment_id = 10;
    */
-  paymentId: string;
+  paymentId: bigint;
 };
 
 /**
@@ -204,9 +204,9 @@ export const AppendLedgerEntriesRequest_Transaction_FeeSettlementSchema: GenMess
  */
 export type AppendLedgerEntriesRequest_Transaction_PayoutReservationRelease = Message<"network.v1.provider.AppendLedgerEntriesRequest.Transaction.PayoutReservationRelease"> & {
   /**
-   * @generated from field: string payment_id = 10;
+   * @generated from field: uint64 payment_id = 10;
    */
-  paymentId: string;
+  paymentId: bigint;
 };
 
 /**
@@ -422,18 +422,34 @@ export type PayoutRequest = Message<"network.v1.provider.PayoutRequest"> & {
    * amount in currency of the payout
    * This is the amount that should be paid out to the recipient.
    *
+   * *
+   * payout_method is the payment method for the payout, e.g. bank transfer, crypto transfer, etc.
+   * This is used to specify how the payout should be made.
+   *
    * @generated from field: tzero.v1.common.Decimal amount = 50;
    */
   amount?: Decimal;
 
   /**
-   * *
-   * payout_method is the payment method for the payout, e.g. bank transfer, crypto transfer, etc.
-   * This is used to specify how the payout should be made.
-   *
-   * @generated from field: tzero.v1.common.PaymentMethod payout_method = 60;
+   * @generated from field: optional tzero.v1.common.PaymentMethod payout_method = 60;
    */
   payoutMethod?: PaymentMethod;
+
+  /**
+   * *
+   * optional reference for the payment, up to 140 characters
+   *
+   * @generated from field: optional string reference = 70;
+   */
+  reference?: string;
+
+  /**
+   * *
+   * Pay-in provider id which initiated the pay out.
+   *
+   * @generated from field: uint32 pay_in_provider_id = 80;
+   */
+  payInProviderId: number;
 };
 
 /**
@@ -460,6 +476,14 @@ export const PayoutResponseSchema: GenMessage<PayoutResponse> = /*@__PURE__*/
  * @generated from message network.v1.provider.UpdatePaymentRequest
  */
 export type UpdatePaymentRequest = Message<"network.v1.provider.UpdatePaymentRequest"> & {
+  /**
+   * *
+   * payment_id is a payment id in the T-0 network.
+   *
+   * @generated from field: uint64 payment_id = 5;
+   */
+  paymentId: bigint;
+
   /**
    * *
    * payment_client_id is a payment id assigned by the client, this is the same id that was provided in the CreatePaymentRequest.
@@ -576,7 +600,27 @@ export const UpdatePaymentResponseSchema: GenMessage<UpdatePaymentResponse> = /*
 export type UpdateLimitRequest = Message<"network.v1.provider.UpdateLimitRequest"> & {
   /**
    * *
-   * Incrementally growing for the provider - same as in Ledger. Different providers have different versions.
+   * can contain one or more Limit messages, each representing a credit limit for a specific counterparty provider.
+   *
+   * @generated from field: repeated network.v1.provider.UpdateLimitRequest.Limit limits = 10;
+   */
+  limits: UpdateLimitRequest_Limit[];
+};
+
+/**
+ * Describes the message network.v1.provider.UpdateLimitRequest.
+ * Use `create(UpdateLimitRequestSchema)` to create a new message.
+ */
+export const UpdateLimitRequestSchema: GenMessage<UpdateLimitRequest> = /*@__PURE__*/
+  messageDesc(file_network_provider, 6);
+
+/**
+ * @generated from message network.v1.provider.UpdateLimitRequest.Limit
+ */
+export type UpdateLimitRequest_Limit = Message<"network.v1.provider.UpdateLimitRequest.Limit"> & {
+  /**
+   * *
+   * Incrementally growing for the provider - same as in Ledger.
    *
    * @generated from field: int64 version = 10;
    */
@@ -587,9 +631,9 @@ export type UpdateLimitRequest = Message<"network.v1.provider.UpdateLimitRequest
    * the Id of the counterparty (creditor) provider, e.g. the provider that is providing the credit limit.
    * It's usually the payOut provider, which provides the credit line to the payIn provider.
    *
-   * @generated from field: int32 provider_id = 15;
+   * @generated from field: int32 creditor_id = 15;
    */
-  providerId: number;
+  creditorId: number;
 
   /**
    * *
@@ -611,8 +655,8 @@ export type UpdateLimitRequest = Message<"network.v1.provider.UpdateLimitRequest
   /**
    * *
    * This is the credit usage that the provider has used so far. It is the sum of all payouts made by the provider
-   * minus the settlement net (settlement balance). It could be negative if the provider has received more settlements
-   * than payouts.
+   * minus the settlement net (settlement balance). It could be negative if the provider has received more
+   * in settlements than maid payouts (pre-settlement).
    *
    * @generated from field: tzero.v1.common.Decimal credit_usage = 40;
    */
@@ -620,11 +664,11 @@ export type UpdateLimitRequest = Message<"network.v1.provider.UpdateLimitRequest
 };
 
 /**
- * Describes the message network.v1.provider.UpdateLimitRequest.
- * Use `create(UpdateLimitRequestSchema)` to create a new message.
+ * Describes the message network.v1.provider.UpdateLimitRequest.Limit.
+ * Use `create(UpdateLimitRequest_LimitSchema)` to create a new message.
  */
-export const UpdateLimitRequestSchema: GenMessage<UpdateLimitRequest> = /*@__PURE__*/
-  messageDesc(file_network_provider, 6);
+export const UpdateLimitRequest_LimitSchema: GenMessage<UpdateLimitRequest_Limit> = /*@__PURE__*/
+  messageDesc(file_network_provider, 6, 0);
 
 /**
  * *
@@ -641,96 +685,6 @@ export type UpdateLimitResponse = Message<"network.v1.provider.UpdateLimitRespon
  */
 export const UpdateLimitResponseSchema: GenMessage<UpdateLimitResponse> = /*@__PURE__*/
   messageDesc(file_network_provider, 7);
-
-/**
- * @generated from message network.v1.provider.CreatePayInDetailsRequest
- */
-export type CreatePayInDetailsRequest = Message<"network.v1.provider.CreatePayInDetailsRequest"> & {
-  /**
-   * *
-   * payment_intent_id is a unique identifier for the payment intent, which is used to create a payment later.
-   *
-   * @generated from field: string payment_intent_id = 10;
-   */
-  paymentIntentId: string;
-
-  /**
-   * *
-   * Sender details for the pay-in process.
-   *
-   * @generated from field: network.v1.provider.CreatePayInDetailsRequest.Sender sender = 40;
-   */
-  sender?: CreatePayInDetailsRequest_Sender;
-};
-
-/**
- * Describes the message network.v1.provider.CreatePayInDetailsRequest.
- * Use `create(CreatePayInDetailsRequestSchema)` to create a new message.
- */
-export const CreatePayInDetailsRequestSchema: GenMessage<CreatePayInDetailsRequest> = /*@__PURE__*/
-  messageDesc(file_network_provider, 8);
-
-/**
- * @generated from message network.v1.provider.CreatePayInDetailsRequest.Sender
- */
-export type CreatePayInDetailsRequest_Sender = Message<"network.v1.provider.CreatePayInDetailsRequest.Sender"> & {
-  /**
-   * @generated from oneof network.v1.provider.CreatePayInDetailsRequest.Sender.sender
-   */
-  sender: {
-    /**
-     * @generated from field: network.v1.provider.CreatePayInDetailsRequest.Sender.PrivatePerson private_person = 10;
-     */
-    value: CreatePayInDetailsRequest_Sender_PrivatePerson;
-    case: "privatePerson";
-  } | { case: undefined; value?: undefined };
-};
-
-/**
- * Describes the message network.v1.provider.CreatePayInDetailsRequest.Sender.
- * Use `create(CreatePayInDetailsRequest_SenderSchema)` to create a new message.
- */
-export const CreatePayInDetailsRequest_SenderSchema: GenMessage<CreatePayInDetailsRequest_Sender> = /*@__PURE__*/
-  messageDesc(file_network_provider, 8, 0);
-
-/**
- * @generated from message network.v1.provider.CreatePayInDetailsRequest.Sender.PrivatePerson
- */
-export type CreatePayInDetailsRequest_Sender_PrivatePerson = Message<"network.v1.provider.CreatePayInDetailsRequest.Sender.PrivatePerson"> & {
-  /**
-   * can be used to get KYC data
-   *
-   * @generated from field: string private_person_id = 10;
-   */
-  privatePersonId: string;
-};
-
-/**
- * Describes the message network.v1.provider.CreatePayInDetailsRequest.Sender.PrivatePerson.
- * Use `create(CreatePayInDetailsRequest_Sender_PrivatePersonSchema)` to create a new message.
- */
-export const CreatePayInDetailsRequest_Sender_PrivatePersonSchema: GenMessage<CreatePayInDetailsRequest_Sender_PrivatePerson> = /*@__PURE__*/
-  messageDesc(file_network_provider, 8, 0, 0);
-
-/**
- * @generated from message network.v1.provider.CreatePayInDetailsResponse
- */
-export type CreatePayInDetailsResponse = Message<"network.v1.provider.CreatePayInDetailsResponse"> & {
-  /**
-   * *
-   * List of available pay-in methods for the sender. This is used to present the user with options for how they can pay in.
-   *
-   * @generated from field: repeated tzero.v1.common.PaymentMethod pay_in_method = 10;
-   */
-  payInMethod: PaymentMethod[];
-};
-
-/**
- * Describes the message network.v1.provider.CreatePayInDetailsResponse.
- * Use `create(CreatePayInDetailsResponseSchema)` to create a new message.
- */
-export const CreatePayInDetailsResponseSchema: GenMessage<CreatePayInDetailsResponse> = /*@__PURE__*/
-  messageDesc(file_network_provider, 9);
 
 /**
  * *
@@ -764,18 +718,6 @@ export const ProviderService: GenService<{
     methodKind: "unary";
     input: typeof UpdatePaymentRequestSchema;
     output: typeof UpdatePaymentResponseSchema;
-  },
-  /**
-   * *
-   * Network asks the provider for possible pay-in options for a sender, in preparation for a pay-in process.
-   * This is optional, but if implemented, it should return a list of available pay-in methods.
-   *
-   * @generated from rpc network.v1.provider.ProviderService.CreatePayInDetails
-   */
-  createPayInDetails: {
-    methodKind: "unary";
-    input: typeof CreatePayInDetailsRequestSchema;
-    output: typeof CreatePayInDetailsResponseSchema;
   },
   /**
    * *

@@ -2,12 +2,10 @@
   Example on how to interact with network using SDK
 */
 
-import {createNetworkClient, DEFAULT_ENDPOINT} from "../";
+import {createNetworkClient, Decimal, DecimalSchema, DEFAULT_ENDPOINT, PaymentMethodType, QuoteType} from "../";
 import dotenv from 'dotenv';
 import {create} from "@bufbuild/protobuf";
-import {Decimal, DecimalSchema} from "../";
 import {randomUUID} from "node:crypto";
-import {QuoteType} from "../";
 import {timestampFromDate, timestampNow} from "@bufbuild/protobuf/wkt";
 
 async function main() {
@@ -35,6 +33,7 @@ async function main() {
             currency: 'USD', // Example currency
             expiration: timestampFromDate(new Date(Date.now() + 60 * 1000)), // Example expiration time (1 minute from now)
             quoteType: QuoteType.REALTIME, // Example quote type
+            paymentMethod: PaymentMethodType.CARD,
             timestamp: timestampNow(), // Current timestamp
         }]
     })

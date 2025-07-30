@@ -3,6 +3,6 @@ managed:
   enabled: true
 plugins:
   - local: protoc-gen-es
-    out: src/gen
+    out: src/common/gen
     include_imports: true
     opt: target=ts
