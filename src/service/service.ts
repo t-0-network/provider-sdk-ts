@@ -8,6 +8,7 @@ import {
   UnaryRequest
 } from "@connectrpc/connect";
 import { ProviderService } from "../common/gen/network/provider_pb";
+import { ProviderService as PaymentIntentProviderService } from "../common/gen/payment_intent/provider/provider_pb"
 import type {ServiceImpl} from "@connectrpc/connect/dist/esm/implementation";
 import type { Interceptor } from "@connectrpc/connect";
 import NetworkHeaders from "../common/headers";
@@ -19,6 +20,10 @@ export const REQUEST_VALIDITY_MILLIS = 60_000;
 
 const createRoutes = (service: ServiceImpl<typeof ProviderService>) => (router: ConnectRouter) => {
   router.service(ProviderService, service);
+}
+
+const createPaymentIntentRoutes = (service: ServiceImpl<typeof PaymentIntentProviderService>) => (router: ConnectRouter) => {
+    router.service(ProviderService, service);
 }
 
 const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (networkPublicKey: Buffer) => (next) => async (req) => {

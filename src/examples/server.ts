@@ -5,13 +5,12 @@
 import {createService} from "../index";
 import {
   AppendLedgerEntriesResponse,
-  CreatePayInDetailsResponse, PayoutResponse, UpdateLimitResponse,
+  PayoutResponse, UpdateLimitResponse,
   UpdatePaymentResponse
 } from "common/gen/network/provider_pb";
 import {
   PayoutRequest,
   UpdatePaymentRequest,
-  CreatePayInDetailsRequest,
   UpdateLimitRequest,
   AppendLedgerEntriesRequest,
 } from "common/gen/network/provider_pb";
@@ -32,10 +31,6 @@ const CreateProviderService = () => {
 
     async updatePayment(req: UpdatePaymentRequest, context: HandlerContext) {
       return {} as UpdatePaymentResponse
-    },
-
-    async createPayInDetails(req: CreatePayInDetailsRequest, context: HandlerContext) {
-      return {} as CreatePayInDetailsResponse
     },
 
     async updateLimit(req: UpdateLimitRequest, context: HandlerContext) {
