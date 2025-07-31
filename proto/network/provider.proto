@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package network.v1.provider;
+package tzero.v1.provider;
 
 import "common/payment_method.proto";
 import "common/common.proto";
