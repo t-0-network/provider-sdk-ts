@@ -1,4 +1,4 @@
-import {Client, createClient as createConnectClient} from "@connectrpc/connect";
+import {createClient as createConnectClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
 import {keccak_256} from "@noble/hashes/sha3";
 import CreateSigner from "./signer";

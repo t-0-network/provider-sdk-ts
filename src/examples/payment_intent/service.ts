@@ -1,13 +1,13 @@
 /**
  Example on how to implement network notifications with SDK
  */
-
-import {ProviderService} from "../../payment_intent/provider";
 import {
-    ConfirmPayoutRequest, ConfirmPayoutResponse,
+    ProviderService,
+    ConfirmPayoutRequest,
+    ConfirmPayoutResponse,
     CreatePaymentIntentRequest,
     CreatePaymentIntentResponse
-} from "common/gen/tzero/v1/payment_intent/provider/provider_pb";
+} from "../../payment_intent/provider";
 import {HandlerContext} from "@connectrpc/connect";
 import * as http from "http";
 import {createService, nodeAdapter} from "../../index";
