@@ -1,1 +1,1 @@
-export * from '../../common/gen/payment_intent/recipient/recipient_pb'
+export * from '../../common/gen/tzero/v1/payment_intent/recipient/recipient_pb'
