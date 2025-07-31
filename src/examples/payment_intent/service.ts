@@ -7,7 +7,7 @@ import {
     ConfirmPayoutRequest, ConfirmPayoutResponse,
     CreatePaymentIntentRequest,
     CreatePaymentIntentResponse
-} from "common/gen/payment_intent/provider/provider_pb";
+} from "common/gen/tzero/v1/payment_intent/provider/provider_pb";
 import {HandlerContext} from "@connectrpc/connect";
 import * as http from "http";
 import {createService, nodeAdapter} from "../../index";
