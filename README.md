@@ -16,9 +16,9 @@ Usage instruction can be found in [NodeJS SDK docs](https://t-0-network.github.i
     ```
 3. Try using network client 
     ```bash
-    npx tsx examples/update-quote.ts
+    npx tsx  src/examples/update-quote.ts
     ```
 4. Start dummy service implementation
     ```bash
-    npx tsx examples/server.ts
+    npx tsx  src/examples/server.ts
     ```

@@ -1,13 +1,13 @@
-import {createClient} from "@connectrpc/connect";
+import {Client, createClient as createConnectClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
 import {keccak_256} from "@noble/hashes/sha3";
-import {NetworkService} from "../common/gen/network/network_pb";
 import CreateSigner from "./signer";
 import NetworkHeaders from "../common/headers";
+import {DescService} from "@bufbuild/protobuf";
 
 export const DEFAULT_ENDPOINT = "https://api.t-0.network"
 
-export function createNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
+export function createClient<T extends DescService>(signer: string | Buffer | ((data: Buffer) => Promise<Signature>) | Buffer<ArrayBufferLike>, endpoint: string | undefined, svc: T) {
     let customFetch: typeof global.fetch;
 
     endpoint = endpoint || DEFAULT_ENDPOINT;
@@ -17,7 +17,7 @@ export function createNetworkClient(signer: string | Buffer | SignerFunction, en
     }
 
     customFetch = async (r, init) => {
-        if (!init?.body ||  !((init.body) instanceof Uint8Array)) {
+        if (!init?.body || !((init.body) instanceof Uint8Array)) {
             throw "unsupported body type";
         }
 
@@ -27,8 +27,8 @@ export function createNetworkClient(signer: string | Buffer | SignerFunction, en
         tsBuf.writeBigUInt64LE(BigInt(ts));
 
         const hash = keccak_256.create()
-          .update(init.body)
-          .update(tsBuf);
+            .update(init.body)
+            .update(tsBuf);
         const hashHex = Buffer.from(hash.digest())
 
         const sig = await signer(hashHex);
@@ -47,7 +47,7 @@ export function createNetworkClient(signer: string | Buffer | SignerFunction, en
         fetch: customFetch,
     });
 
-    return createClient(NetworkService, transport);
+    return createConnectClient(svc, transport);
 }
 
 /**
@@ -64,6 +64,6 @@ export interface Signature {
  * Signature function for signing requests to T-0 API. Accepts any data in string format and return signature
  * with metadata
  */
-export type SignerFunction =(data: Buffer) => Promise<Signature>;
+export type SignerFunction = (data: Buffer) => Promise<Signature>;
 
-export default createNetworkClient;
+export default createClient;
