@@ -3,13 +3,13 @@
  */
 
 import {
-    Blockchain,
-    createPaymentIntentNetworkClient,
+    Blockchain, createClient,
     Decimal,
     DecimalSchema,
     DEFAULT_ENDPOINT,
     PaymentMethodType
 } from "../../";
+import {NetworkService} from "../../payment_intent/provider";
 import dotenv from 'dotenv';
 import {create} from "@bufbuild/protobuf";
 
@@ -28,7 +28,7 @@ async function main() {
     // PayIn provider will interact with the network using the NetworkServiceClient.
     // It will use ConfirmPayment/RejectPaymentIntent rpcs to notify the network about the payment intent status.
     // ConfirmSettlement rpc should be used to notify the network about the settlement transfer (in case of pre-settlement).
-    const networkClient = createPaymentIntentNetworkClient(privateKeyHex, endpoint);
+    const networkClient = createClient(privateKeyHex, endpoint, NetworkService);
 
     // PayIn provider will also implement the ProviderServiceHandler interface
     // which has only 2 methods:

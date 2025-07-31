@@ -2,7 +2,15 @@
   Example on how to interact with network using SDK
 */
 
-import {createNetworkClient, Decimal, DecimalSchema, DEFAULT_ENDPOINT, PaymentMethodType, QuoteType} from "../";
+import {
+    createClient,
+    Decimal,
+    DecimalSchema,
+    DEFAULT_ENDPOINT,
+    NetworkService,
+    PaymentMethodType,
+    QuoteType
+} from "../";
 import dotenv from 'dotenv';
 import {create} from "@bufbuild/protobuf";
 import {randomUUID} from "node:crypto";
@@ -13,7 +21,7 @@ async function main() {
     const privateKeyHex = process.env.PROVIDER_PRIVATE_KEY!;
     const endpoint = process.env.TZERO_ENDPOINT || DEFAULT_ENDPOINT;
 
-    const networkClient = createNetworkClient(privateKeyHex, endpoint);
+    const networkClient = createClient(privateKeyHex, endpoint, NetworkService);
 
     const toProtoDecimal = (unscaled: number, exponent: number): Decimal => {
         return create(DecimalSchema, {

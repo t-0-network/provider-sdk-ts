@@ -1,23 +1,13 @@
-import {Client, createClient} from "@connectrpc/connect";
+import {Client, createClient as createConnectClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
 import {keccak_256} from "@noble/hashes/sha3";
-import {NetworkService} from "../common/gen/network/network_pb";
-import {NetworkService as PaymentIntentNetworkService} from "../common/gen/payment_intent/provider/provider_pb";
 import CreateSigner from "./signer";
 import NetworkHeaders from "../common/headers";
 import {DescService} from "@bufbuild/protobuf";
 
 export const DEFAULT_ENDPOINT = "https://api.t-0.network"
 
-export function createPaymentIntentNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
-    return create(endpoint, signer, PaymentIntentNetworkService);
-}
-
-export function createNetworkClient(signer: string | Buffer | SignerFunction, endpoint?: string) {
-    return create(endpoint, signer, NetworkService);
-}
-
-function create<T extends DescService>(endpoint: string | undefined, signer: string | Buffer | ((data: Buffer) => Promise<Signature>) | Buffer<ArrayBufferLike>, svc: T) {
+export function createClient<T extends DescService>(signer: string | Buffer | ((data: Buffer) => Promise<Signature>) | Buffer<ArrayBufferLike>, endpoint: string | undefined, svc: T) {
     let customFetch: typeof global.fetch;
 
     endpoint = endpoint || DEFAULT_ENDPOINT;
@@ -57,7 +47,7 @@ function create<T extends DescService>(endpoint: string | undefined, signer: str
         fetch: customFetch,
     });
 
-    return createClient(svc, transport);
+    return createConnectClient(svc, transport);
 }
 
 /**
@@ -76,4 +66,4 @@ export interface Signature {
  */
 export type SignerFunction = (data: Buffer) => Promise<Signature>;
 
-export default createNetworkClient;
+export default createClient;
