@@ -8,8 +8,8 @@ import {
     DecimalSchema,
     DEFAULT_ENDPOINT,
     PaymentMethodType
-} from "../../";
-import {NetworkService} from "../../payment_intent/provider";
+} from "../../index.js";
+import {NetworkService} from "../../payment_intent/provider/index.js";
 import dotenv from 'dotenv';
 import {create} from "@bufbuild/protobuf";
 

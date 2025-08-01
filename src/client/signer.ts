@@ -1,5 +1,5 @@
 import * as secp from '@noble/secp256k1'
-import {Signature} from "./client";
+import {Signature} from "./client.js";
 
 export const CreateSigner = (privateKey: string | Buffer)=> {
     privateKey = parsePrivateKey(privateKey)

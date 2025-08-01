@@ -1,8 +1,8 @@
 import {createClient as createConnectClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
 import {keccak_256} from "@noble/hashes/sha3";
-import CreateSigner from "./signer";
-import NetworkHeaders from "../common/headers";
+import CreateSigner from "./signer.js";
+import NetworkHeaders from "../common/headers.js";
 import {DescService} from "@bufbuild/protobuf";
 
 export const DEFAULT_ENDPOINT = "https://api.t-0.network"

@@ -7,13 +7,12 @@ import {
   StreamRequest,
   UnaryRequest
 } from "@connectrpc/connect";
-import type {ServiceImpl} from "@connectrpc/connect/dist/esm/implementation";
 import type { Interceptor } from "@connectrpc/connect";
-import NetworkHeaders from "../common/headers";
-import {NodeServerRequest} from "@connectrpc/connect-node/dist/esm/node-universal-handler";
+import NetworkHeaders from "../common/headers.js";
 import * as secp from '@noble/secp256k1'
 import {Hash} from "@noble/hashes/utils";
-import type {DescService} from "@bufbuild/protobuf";
+import type {DescService, } from "@bufbuild/protobuf";
+import type {ServiceImpl} from "@connectrpc/connect";
 
 export const REQUEST_VALIDITY_MILLIS = 60_000;
 
@@ -68,7 +67,7 @@ export const createService = (
     },
     interceptors: [createSignatureVerification(networkPublicKey)],
     grpcWeb: false,
-    contextValues: (req: NodeServerRequest) => {
+    contextValues: (req: any) => {
       return createContextValues().set(kHash, (req as any).hasher as Hash<Hash<any>>)
     }
   }

@@ -2,7 +2,7 @@
   Example on how to implement network notifications with SDK
 */
 
-import {createService, ProviderService} from "../index";
+import {createService, ProviderService} from "../index.js";
 import {
   PayoutRequest,
   PayoutResponse,
@@ -12,18 +12,18 @@ import {
   AppendLedgerEntriesRequest,
   AppendLedgerEntriesResponse,
   UpdatePaymentResponse
-} from "../";
+} from "../index.js";
 import {
   ConfirmPayoutRequest,
   ConfirmPayoutResponse,
   CreatePaymentIntentRequest,
   CreatePaymentIntentResponse,
   ProviderService as PaymentIntentProviderService
-} from "../payment_intent/provider";
+} from "../payment_intent/provider/index.js";
 import {HandlerContext} from "@connectrpc/connect";
 import * as http from "http";
-import { nodeAdapter } from "../index";
-import {signatureValidation} from "../index";
+import { nodeAdapter } from "../index.js";
+import {signatureValidation} from "../index.js";
 import dotenv from "dotenv";
 
 /*

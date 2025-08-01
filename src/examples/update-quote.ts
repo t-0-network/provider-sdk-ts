@@ -10,7 +10,7 @@ import {
     NetworkService,
     PaymentMethodType,
     QuoteType
-} from "../";
+} from "../index.js";
 import dotenv from 'dotenv';
 import {create} from "@bufbuild/protobuf";
 import {randomUUID} from "node:crypto";

@@ -5,4 +5,6 @@ plugins:
   - local: protoc-gen-es
     out: src/common/gen
     include_imports: true
-    opt: target=ts
+    opt:
+    - target=ts
+    - import_extension=js

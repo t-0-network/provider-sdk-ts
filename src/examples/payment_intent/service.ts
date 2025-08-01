@@ -7,11 +7,11 @@ import {
     ConfirmPayoutResponse,
     CreatePaymentIntentRequest,
     CreatePaymentIntentResponse
-} from "../../payment_intent/provider";
+} from "../../payment_intent/provider/index.js";
 import {HandlerContext} from "@connectrpc/connect";
 import * as http from "http";
-import {createService, nodeAdapter} from "../../index";
-import {signatureValidation} from "../../index";
+import {createService, nodeAdapter} from "../../index.js";
+import {signatureValidation} from "../../index.js";
 import dotenv from "dotenv";
 
 /*
