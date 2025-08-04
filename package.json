@@ -1,6 +1,6 @@
 {
   "name": "@t-0/provider-sdk",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Provider SDK for the T-0 Network",
   "repository": {
     "type": "git",
@@ -13,13 +13,19 @@
     "lib/**/*",
     "!lib/examples/*"
   ],
-  "main": "lib/index.js",
-  "module": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/index.js",
-      "types": "./lib/index.d.ts"
+      "import": {
+        "types": "./lib/esm/index.d.ts",
+        "default": "./lib/esm/index.js"
+      },
+      "require": {
+        "types": "./lib/cjs/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
     }
   },
   "dependencies": {
@@ -39,7 +45,10 @@
   },
   "scripts": {
     "buf:generate": "buf generate",
-    "build": "tsc",
+    "build": "npm run build:esm && npm run build:cjs && npm run build:post",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:post": "echo '{\"type\":\"commonjs\"}' > lib/cjs/package.json",
     "release": "npm run buf:generate && npm run build && npm publish --access public"
   }
 }
