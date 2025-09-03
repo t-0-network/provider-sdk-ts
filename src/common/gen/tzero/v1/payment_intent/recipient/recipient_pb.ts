@@ -8,13 +8,17 @@ import type { Decimal } from "../../common/common_pb.js";
 import { file_tzero_v1_common_common } from "../../common/common_pb.js";
 import type { PaymentMethod, PaymentMethodType } from "../../common/payment_method_pb.js";
 import { file_tzero_v1_common_payment_method } from "../../common/payment_method_pb.js";
+import type { PaymentReceipt } from "../../common/payment_receipt_pb.js";
+import { file_tzero_v1_common_payment_receipt } from "../../common/payment_receipt_pb.js";
+import type { Timestamp } from "@bufbuild/protobuf/wkt";
+import { file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file tzero/v1/payment_intent/recipient/recipient.proto.
  */
 export const file_tzero_v1_payment_intent_recipient_recipient: GenFile = /*@__PURE__*/
-  fileDesc("CjF0emVyby92MS9wYXltZW50X2ludGVudC9yZWNpcGllbnQvcmVjaXBpZW50LnByb3RvEiF0emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQi0wEKGkNyZWF0ZVBheW1lbnRJbnRlbnRSZXF1ZXN0EhkKEXBheW1lbnRfcmVmZXJlbmNlGAogASgJEhcKD3BheV9pbl9jdXJyZW5jeRgUIAEoCRIvCg1wYXlfaW5fYW1vdW50GB4gASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSGAoQcGF5X291dF9jdXJyZW5jeRgoIAEoCRI2Cg5wYXlfb3V0X21ldGhvZBgyIAEoCzIeLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kIp0CChtDcmVhdGVQYXltZW50SW50ZW50UmVzcG9uc2USGQoRcGF5bWVudF9pbnRlbnRfaWQYCiABKAQSbAoWcGF5X2luX3BheW1lbnRfbWV0aG9kcxgUIAMoCzJMLnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5DcmVhdGVQYXltZW50SW50ZW50UmVzcG9uc2UuUGF5bWVudE1ldGhvZBp1Cg1QYXltZW50TWV0aG9kEhMKC3BheW1lbnRfdXJsGAogASgJEhMKC3Byb3ZpZGVyX2lkGBQgASgNEjoKDnBheW1lbnRfbWV0aG9kGB4gASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlIokBChVDb25maXJtUGF5bWVudFJlcXVlc3QSGQoRcGF5bWVudF9pbnRlbnRfaWQYCiABKAQSGQoRcGF5bWVudF9yZWZlcmVuY2UYFCABKAkSOgoOcGF5bWVudF9tZXRob2QYHiABKA4yIi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZFR5cGUiHgocQ29uZmlybVBheW1lbnRJbnRlbnRSZXNwb25zZSJiChpSZWplY3RQYXltZW50SW50ZW50UmVxdWVzdBIZChFwYXltZW50X2ludGVudF9pZBgKIAEoBBIZChFwYXltZW50X3JlZmVyZW5jZRgUIAEoCRIOCgZyZWFzb24YHiABKAkiHQobUmVqZWN0UGF5bWVudEludGVudFJlc3BvbnNlMqwBCg5OZXR3b3JrU2VydmljZRKZAQoTQ3JlYXRlUGF5bWVudEludGVudBI9LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5DcmVhdGVQYXltZW50SW50ZW50UmVxdWVzdBo+LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5DcmVhdGVQYXltZW50SW50ZW50UmVzcG9uc2UiA5ACAjLBAgoQUmVjaXBpZW50U2VydmljZRKQAQoOQ29uZmlybVBheW1lbnQSOC50emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQuQ29uZmlybVBheW1lbnRSZXF1ZXN0Gj8udHplcm8udjEucGF5bWVudF9pbnRlbnQucmVjaXBpZW50LkNvbmZpcm1QYXltZW50SW50ZW50UmVzcG9uc2UiA5ACAhKZAQoTUmVqZWN0UGF5bWVudEludGVudBI9LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5SZWplY3RQYXltZW50SW50ZW50UmVxdWVzdBo+LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5SZWplY3RQYXltZW50SW50ZW50UmVzcG9uc2UiA5ACAkLbAQolY29tLnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudEIOUmVjaXBpZW50UHJvdG9QAaICBFRWUFKqAiBUemVyby5WMS5QYXltZW50SW50ZW50LlJlY2lwaWVudMoCIFR6ZXJvXFYxXFBheW1lbnRJbnRlbnRcUmVjaXBpZW504gIsVHplcm9cVjFcUGF5bWVudEludGVudFxSZWNpcGllbnRcR1BCTWV0YWRhdGHqAiNUemVybzo6VjE6OlBheW1lbnRJbnRlbnQ6OlJlY2lwaWVudGIGcHJvdG8z", [file_tzero_v1_common_common, file_tzero_v1_common_payment_method]);
+  fileDesc("CjF0emVyby92MS9wYXltZW50X2ludGVudC9yZWNpcGllbnQvcmVjaXBpZW50LnByb3RvEiF0emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQi0wEKGkNyZWF0ZVBheW1lbnRJbnRlbnRSZXF1ZXN0EhkKEXBheW1lbnRfcmVmZXJlbmNlGAogASgJEhcKD3BheV9pbl9jdXJyZW5jeRgUIAEoCRIvCg1wYXlfaW5fYW1vdW50GB4gASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSGAoQcGF5X291dF9jdXJyZW5jeRgoIAEoCRI2Cg5wYXlfb3V0X21ldGhvZBgyIAEoCzIeLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kIp0CChtDcmVhdGVQYXltZW50SW50ZW50UmVzcG9uc2USGQoRcGF5bWVudF9pbnRlbnRfaWQYCiABKAQSbAoWcGF5X2luX3BheW1lbnRfbWV0aG9kcxgUIAMoCzJMLnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5DcmVhdGVQYXltZW50SW50ZW50UmVzcG9uc2UuUGF5bWVudE1ldGhvZBp1Cg1QYXltZW50TWV0aG9kEhMKC3BheW1lbnRfdXJsGAogASgJEhMKC3Byb3ZpZGVyX2lkGBQgASgNEjoKDnBheW1lbnRfbWV0aG9kGB4gASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlIvwBCg9HZXRRdW90ZVJlcXVlc3QSFwoPcGF5X2luX2N1cnJlbmN5GAogASgJEi8KDXBheV9pbl9hbW91bnQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIYChBwYXlfb3V0X2N1cnJlbmN5GB4gASgJEkEKFXBheV9pbl9wYXltZW50X21ldGhvZBgoIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZRJCChZwYXlfb3V0X3BheW1lbnRfbWV0aG9kGDIgASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlIqgCChBHZXRRdW90ZVJlc3BvbnNlEkoKBXF1b3RlGAogASgLMjkudHplcm8udjEucGF5bWVudF9pbnRlbnQucmVjaXBpZW50LkdldFF1b3RlUmVzcG9uc2UuUXVvdGVIABJRCglub3RfZm91bmQYFCABKAsyPC50emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQuR2V0UXVvdGVSZXNwb25zZS5Ob3RGb3VuZEgAGl8KBVF1b3RlEiYKBHJhdGUYCiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIuCgpleHBpcmF0aW9uGBQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBoKCghOb3RGb3VuZEIICgZyZXN1bHQihwEKE0NvbmZpcm1QYXlJblJlcXVlc3QSGQoRcGF5bWVudF9pbnRlbnRfaWQYCiABKAQSGQoRcGF5bWVudF9yZWZlcmVuY2UYFCABKAkSOgoOcGF5bWVudF9tZXRob2QYHiABKA4yIi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZFR5cGUiFgoUQ29uZmlybVBheUluUmVzcG9uc2Ui7QEKFUNvbmZpcm1QYXltZW50UmVxdWVzdBIZChFwYXltZW50X2ludGVudF9pZBgKIAEoBBIZChFwYXltZW50X3JlZmVyZW5jZRgUIAEoCRI6Cg5wYXltZW50X21ldGhvZBgeIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZRIwCg5wYXlfb3V0X2Ftb3VudBgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEjAKB3JlY2VpcHQYMiABKAsyHy50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQiGAoWQ29uZmlybVBheW1lbnRSZXNwb25zZSJiChpSZWplY3RQYXltZW50SW50ZW50UmVxdWVzdBIZChFwYXltZW50X2ludGVudF9pZBgKIAEoBBIZChFwYXltZW50X3JlZmVyZW5jZRgUIAEoCRIOCgZyZWFzb24YHiABKAkiHQobUmVqZWN0UGF5bWVudEludGVudFJlc3BvbnNlMqYCCg5OZXR3b3JrU2VydmljZRKZAQoTQ3JlYXRlUGF5bWVudEludGVudBI9LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5DcmVhdGVQYXltZW50SW50ZW50UmVxdWVzdBo+LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5DcmVhdGVQYXltZW50SW50ZW50UmVzcG9uc2UiA5ACAhJ4CghHZXRRdW90ZRIyLnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5HZXRRdW90ZVJlcXVlc3QaMy50emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQuR2V0UXVvdGVSZXNwb25zZSIDkAIBMsIDChBSZWNpcGllbnRTZXJ2aWNlEoQBCgxDb25maXJtUGF5SW4SNi50emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQuQ29uZmlybVBheUluUmVxdWVzdBo3LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5Db25maXJtUGF5SW5SZXNwb25zZSIDkAICEooBCg5Db25maXJtUGF5bWVudBI4LnR6ZXJvLnYxLnBheW1lbnRfaW50ZW50LnJlY2lwaWVudC5Db25maXJtUGF5bWVudFJlcXVlc3QaOS50emVyby52MS5wYXltZW50X2ludGVudC5yZWNpcGllbnQuQ29uZmlybVBheW1lbnRSZXNwb25zZSIDkAICEpkBChNSZWplY3RQYXltZW50SW50ZW50Ej0udHplcm8udjEucGF5bWVudF9pbnRlbnQucmVjaXBpZW50LlJlamVjdFBheW1lbnRJbnRlbnRSZXF1ZXN0Gj4udHplcm8udjEucGF5bWVudF9pbnRlbnQucmVjaXBpZW50LlJlamVjdFBheW1lbnRJbnRlbnRSZXNwb25zZSIDkAICQtsBCiVjb20udHplcm8udjEucGF5bWVudF9pbnRlbnQucmVjaXBpZW50Qg5SZWNpcGllbnRQcm90b1ABogIEVFZQUqoCIFR6ZXJvLlYxLlBheW1lbnRJbnRlbnQuUmVjaXBpZW50ygIgVHplcm9cVjFcUGF5bWVudEludGVudFxSZWNpcGllbnTiAixUemVyb1xWMVxQYXltZW50SW50ZW50XFJlY2lwaWVudFxHUEJNZXRhZGF0YeoCI1R6ZXJvOjpWMTo6UGF5bWVudEludGVudDo6UmVjaXBpZW50YgZwcm90bzM", [file_tzero_v1_common_common, file_tzero_v1_common_payment_method, file_tzero_v1_common_payment_receipt, file_google_protobuf_timestamp]);
 
 /**
  * @generated from message tzero.v1.payment_intent.recipient.CreatePaymentIntentRequest
@@ -25,8 +29,6 @@ export type CreatePaymentIntentRequest = Message<"tzero.v1.payment_intent.recipi
    * Idempotency Key
    * payment reference to identify payment by client.
    *
-   * idempotency key
-   *
    * @generated from field: string payment_reference = 10;
    */
   paymentReference: string;
@@ -34,8 +36,6 @@ export type CreatePaymentIntentRequest = Message<"tzero.v1.payment_intent.recipi
   /**
    * *
    * Pay-in currency
-   *
-   * pay-in currency
    *
    * @generated from field: string pay_in_currency = 20;
    */
@@ -52,8 +52,6 @@ export type CreatePaymentIntentRequest = Message<"tzero.v1.payment_intent.recipi
   /**
    * *
    * Payout currency
-   *
-   * pay-out currency
    *
    * @generated from field: string pay_out_currency = 40;
    */
@@ -125,25 +123,213 @@ export const CreatePaymentIntentResponse_PaymentMethodSchema: GenMessage<CreateP
   messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 1, 0);
 
 /**
- * @generated from message tzero.v1.payment_intent.recipient.ConfirmPaymentRequest
+ * @generated from message tzero.v1.payment_intent.recipient.GetQuoteRequest
  */
-export type ConfirmPaymentRequest = Message<"tzero.v1.payment_intent.recipient.ConfirmPaymentRequest"> & {
+export type GetQuoteRequest = Message<"tzero.v1.payment_intent.recipient.GetQuoteRequest"> & {
   /**
-   * payment_intent_id from the CreatePaymentIntentRequest
+   * *
+   * Pay-in currency
+   *
+   * @generated from field: string pay_in_currency = 10;
+   */
+  payInCurrency: string;
+
+  /**
+   * *
+   * Amount denominated in the pay-in currency
+   *
+   * @generated from field: tzero.v1.common.Decimal pay_in_amount = 20;
+   */
+  payInAmount?: Decimal;
+
+  /**
+   * *
+   * Payout currency
+   *
+   * @generated from field: string pay_out_currency = 30;
+   */
+  payOutCurrency: string;
+
+  /**
+   * *
+   * payment method to use for the pay-in, e.g. bank transfer, card, etc.
+   *
+   * @generated from field: tzero.v1.common.PaymentMethodType pay_in_payment_method = 40;
+   */
+  payInPaymentMethod: PaymentMethodType;
+
+  /**
+   * *
+   * payment method to use for the pay-out, e.g. bank transfer, card, etc.
+   *
+   * @generated from field: tzero.v1.common.PaymentMethodType pay_out_payment_method = 50;
+   */
+  payOutPaymentMethod: PaymentMethodType;
+};
+
+/**
+ * Describes the message tzero.v1.payment_intent.recipient.GetQuoteRequest.
+ * Use `create(GetQuoteRequestSchema)` to create a new message.
+ */
+export const GetQuoteRequestSchema: GenMessage<GetQuoteRequest> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 2);
+
+/**
+ * @generated from message tzero.v1.payment_intent.recipient.GetQuoteResponse
+ */
+export type GetQuoteResponse = Message<"tzero.v1.payment_intent.recipient.GetQuoteResponse"> & {
+  /**
+   * @generated from oneof tzero.v1.payment_intent.recipient.GetQuoteResponse.result
+   */
+  result: {
+    /**
+     * @generated from field: tzero.v1.payment_intent.recipient.GetQuoteResponse.Quote quote = 10;
+     */
+    value: GetQuoteResponse_Quote;
+    case: "quote";
+  } | {
+    /**
+     * @generated from field: tzero.v1.payment_intent.recipient.GetQuoteResponse.NotFound not_found = 20;
+     */
+    value: GetQuoteResponse_NotFound;
+    case: "notFound";
+  } | { case: undefined; value?: undefined };
+};
+
+/**
+ * Describes the message tzero.v1.payment_intent.recipient.GetQuoteResponse.
+ * Use `create(GetQuoteResponseSchema)` to create a new message.
+ */
+export const GetQuoteResponseSchema: GenMessage<GetQuoteResponse> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 3);
+
+/**
+ * @generated from message tzero.v1.payment_intent.recipient.GetQuoteResponse.Quote
+ */
+export type GetQuoteResponse_Quote = Message<"tzero.v1.payment_intent.recipient.GetQuoteResponse.Quote"> & {
+  /**
+   * *
+   * Rate of pay-in currency to pay-out
+   *
+   * @generated from field: tzero.v1.common.Decimal rate = 10;
+   */
+  rate?: Decimal;
+
+  /**
+   * *
+   * Time until when quote is valid. Used only for reference. Actual quote is determined at the moment of payment.
+   *
+   * @generated from field: google.protobuf.Timestamp expiration = 20;
+   */
+  expiration?: Timestamp;
+};
+
+/**
+ * Describes the message tzero.v1.payment_intent.recipient.GetQuoteResponse.Quote.
+ * Use `create(GetQuoteResponse_QuoteSchema)` to create a new message.
+ */
+export const GetQuoteResponse_QuoteSchema: GenMessage<GetQuoteResponse_Quote> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 3, 0);
+
+/**
+ * @generated from message tzero.v1.payment_intent.recipient.GetQuoteResponse.NotFound
+ */
+export type GetQuoteResponse_NotFound = Message<"tzero.v1.payment_intent.recipient.GetQuoteResponse.NotFound"> & {
+};
+
+/**
+ * Describes the message tzero.v1.payment_intent.recipient.GetQuoteResponse.NotFound.
+ * Use `create(GetQuoteResponse_NotFoundSchema)` to create a new message.
+ */
+export const GetQuoteResponse_NotFoundSchema: GenMessage<GetQuoteResponse_NotFound> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 3, 1);
+
+/**
+ * @generated from message tzero.v1.payment_intent.recipient.ConfirmPayInRequest
+ */
+export type ConfirmPayInRequest = Message<"tzero.v1.payment_intent.recipient.ConfirmPayInRequest"> & {
+  /**
+   * payment_intent_id from the CreatePaymentIntentResponse
    *
    * @generated from field: uint64 payment_intent_id = 10;
    */
   paymentIntentId: bigint;
 
   /**
+   * payment_reference from the CreatePaymentIntentRequest
+   *
    * @generated from field: string payment_reference = 20;
    */
   paymentReference: string;
 
   /**
+   * pay-in payment method
+   *
    * @generated from field: tzero.v1.common.PaymentMethodType payment_method = 30;
    */
   paymentMethod: PaymentMethodType;
+};
+
+/**
+ * Describes the message tzero.v1.payment_intent.recipient.ConfirmPayInRequest.
+ * Use `create(ConfirmPayInRequestSchema)` to create a new message.
+ */
+export const ConfirmPayInRequestSchema: GenMessage<ConfirmPayInRequest> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 4);
+
+/**
+ * @generated from message tzero.v1.payment_intent.recipient.ConfirmPayInResponse
+ */
+export type ConfirmPayInResponse = Message<"tzero.v1.payment_intent.recipient.ConfirmPayInResponse"> & {
+};
+
+/**
+ * Describes the message tzero.v1.payment_intent.recipient.ConfirmPayInResponse.
+ * Use `create(ConfirmPayInResponseSchema)` to create a new message.
+ */
+export const ConfirmPayInResponseSchema: GenMessage<ConfirmPayInResponse> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 5);
+
+/**
+ * @generated from message tzero.v1.payment_intent.recipient.ConfirmPaymentRequest
+ */
+export type ConfirmPaymentRequest = Message<"tzero.v1.payment_intent.recipient.ConfirmPaymentRequest"> & {
+  /**
+   * payment_intent_id from the CreatePaymentIntentResponse
+   *
+   * @generated from field: uint64 payment_intent_id = 10;
+   */
+  paymentIntentId: bigint;
+
+  /**
+   * payment_reference from the CreatePaymentIntentRequest
+   *
+   * @generated from field: string payment_reference = 20;
+   */
+  paymentReference: string;
+
+  /**
+   * pay-in payment method
+   *
+   * @generated from field: tzero.v1.common.PaymentMethodType payment_method = 30;
+   */
+  paymentMethod: PaymentMethodType;
+
+  /**
+   * *
+   * amount which will be paid out denominated in pay_out_currency of the payment intent
+   *
+   * @generated from field: tzero.v1.common.Decimal pay_out_amount = 40;
+   */
+  payOutAmount?: Decimal;
+
+  /**
+   * *
+   * Payment receipt might contain metadata about payment recognizable by pay-in provider.
+   *
+   * @generated from field: tzero.v1.common.PaymentReceipt receipt = 50;
+   */
+  receipt?: PaymentReceipt;
 };
 
 /**
@@ -151,27 +337,27 @@ export type ConfirmPaymentRequest = Message<"tzero.v1.payment_intent.recipient.C
  * Use `create(ConfirmPaymentRequestSchema)` to create a new message.
  */
 export const ConfirmPaymentRequestSchema: GenMessage<ConfirmPaymentRequest> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 2);
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 6);
 
 /**
- * @generated from message tzero.v1.payment_intent.recipient.ConfirmPaymentIntentResponse
+ * @generated from message tzero.v1.payment_intent.recipient.ConfirmPaymentResponse
  */
-export type ConfirmPaymentIntentResponse = Message<"tzero.v1.payment_intent.recipient.ConfirmPaymentIntentResponse"> & {
+export type ConfirmPaymentResponse = Message<"tzero.v1.payment_intent.recipient.ConfirmPaymentResponse"> & {
 };
 
 /**
- * Describes the message tzero.v1.payment_intent.recipient.ConfirmPaymentIntentResponse.
- * Use `create(ConfirmPaymentIntentResponseSchema)` to create a new message.
+ * Describes the message tzero.v1.payment_intent.recipient.ConfirmPaymentResponse.
+ * Use `create(ConfirmPaymentResponseSchema)` to create a new message.
  */
-export const ConfirmPaymentIntentResponseSchema: GenMessage<ConfirmPaymentIntentResponse> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 3);
+export const ConfirmPaymentResponseSchema: GenMessage<ConfirmPaymentResponse> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 7);
 
 /**
  * @generated from message tzero.v1.payment_intent.recipient.RejectPaymentIntentRequest
  */
 export type RejectPaymentIntentRequest = Message<"tzero.v1.payment_intent.recipient.RejectPaymentIntentRequest"> & {
   /**
-   * payment_intent_id from the CreatePaymentIntentRequest
+   * payment_intent_id from the CreatePaymentIntentResponse
    *
    * @generated from field: uint64 payment_intent_id = 10;
    */
@@ -195,7 +381,7 @@ export type RejectPaymentIntentRequest = Message<"tzero.v1.payment_intent.recipi
  * Use `create(RejectPaymentIntentRequestSchema)` to create a new message.
  */
 export const RejectPaymentIntentRequestSchema: GenMessage<RejectPaymentIntentRequest> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 4);
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 8);
 
 /**
  * @generated from message tzero.v1.payment_intent.recipient.RejectPaymentIntentResponse
@@ -208,7 +394,7 @@ export type RejectPaymentIntentResponse = Message<"tzero.v1.payment_intent.recip
  * Use `create(RejectPaymentIntentResponseSchema)` to create a new message.
  */
 export const RejectPaymentIntentResponseSchema: GenMessage<RejectPaymentIntentResponse> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 5);
+  messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 9);
 
 /**
  * *
@@ -225,6 +411,14 @@ export const NetworkService: GenService<{
     input: typeof CreatePaymentIntentRequestSchema;
     output: typeof CreatePaymentIntentResponseSchema;
   },
+  /**
+   * @generated from rpc tzero.v1.payment_intent.recipient.NetworkService.GetQuote
+   */
+  getQuote: {
+    methodKind: "unary";
+    input: typeof GetQuoteRequestSchema;
+    output: typeof GetQuoteResponseSchema;
+  },
 }> = /*@__PURE__*/
   serviceDesc(file_tzero_v1_payment_intent_recipient_recipient, 0);
 
@@ -237,6 +431,17 @@ export const NetworkService: GenService<{
 export const RecipientService: GenService<{
   /**
    * *
+   * notifies recipient that pay-in providers received payment from payer
+   *
+   * @generated from rpc tzero.v1.payment_intent.recipient.RecipientService.ConfirmPayIn
+   */
+  confirmPayIn: {
+    methodKind: "unary";
+    input: typeof ConfirmPayInRequestSchema;
+    output: typeof ConfirmPayInResponseSchema;
+  },
+  /**
+   * *
    * notifies recipient about successful payment
    *
    * @generated from rpc tzero.v1.payment_intent.recipient.RecipientService.ConfirmPayment
@@ -244,7 +449,7 @@ export const RecipientService: GenService<{
   confirmPayment: {
     methodKind: "unary";
     input: typeof ConfirmPaymentRequestSchema;
-    output: typeof ConfirmPaymentIntentResponseSchema;
+    output: typeof ConfirmPaymentResponseSchema;
   },
   /**
    * *

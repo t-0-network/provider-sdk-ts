@@ -12,7 +12,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_method.proto.
  */
 export const file_tzero_v1_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLEAQoNUGF5bWVudE1ldGhvZBIyCgRzZXBhGAogASgLMiIudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50TWV0aG9kSAASNAoFc3dpZnQYHiABKAsyIy50emVyby52MS5jb21tb24uU3dpZnRQYXltZW50TWV0aG9kSAASPgoKc3RhYmxlY29pbhgoIAEoCzIoLnR6ZXJvLnYxLmNvbW1vbi5TdGFibGVjb2luUGF5bWVudE1ldGhvZEgAQgkKB2RldGFpbHMiVgoRU2VwYVBheW1lbnRNZXRob2QSDAoEaWJhbhgUIAEoCRIYChBiZW5lZmljaWFyeV9uYW1lGB4gASgJEhkKEXBheW1lbnRfcmVmZXJlbmNlGCggASgJIhQKElN3aWZ0UGF5bWVudE1ldGhvZCKMAQoXU3RhYmxlY29pblBheW1lbnRNZXRob2QSLwoKYmxvY2tjaGFpbhgKIAEoDjIbLnR6ZXJvLnYxLmNvbW1vbi5CbG9ja2NoYWluEi8KCnN0YWJsZWNvaW4YFCABKA4yGy50emVyby52MS5jb21tb24uU3RhYmxlY29pbhIPCgdhZGRyZXNzGB4gASgJKrcBChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeEiIKHlBBWU1FTlRfTUVUSE9EX1RZUEVfU1RBQkxFQ09JThAoQocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_tzero_v1_common_common]);
+  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLHAQoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAQgkKB2RldGFpbHMiVwoSU2VwYVBheW1lbnREZXRhaWxzEgwKBGliYW4YFCABKAkSGAoQYmVuZWZpY2lhcnlfbmFtZRgeIAEoCRIZChFwYXltZW50X3JlZmVyZW5jZRgoIAEoCSIVChNTd2lmdFBheW1lbnREZXRhaWxzIo0BChhTdGFibGVjb2luUGF5bWVudERldGFpbHMSLwoKYmxvY2tjaGFpbhgKIAEoDjIbLnR6ZXJvLnYxLmNvbW1vbi5CbG9ja2NoYWluEi8KCnN0YWJsZWNvaW4YFCABKA4yGy50emVyby52MS5jb21tb24uU3RhYmxlY29pbhIPCgdhZGRyZXNzGB4gASgJKrcBChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeEiIKHlBBWU1FTlRfTUVUSE9EX1RZUEVfU1RBQkxFQ09JThAoQocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_tzero_v1_common_common]);
 
 /**
  * @generated from message tzero.v1.common.PaymentMethod
@@ -23,21 +23,21 @@ export type PaymentMethod = Message<"tzero.v1.common.PaymentMethod"> & {
    */
   details: {
     /**
-     * @generated from field: tzero.v1.common.SepaPaymentMethod sepa = 10;
+     * @generated from field: tzero.v1.common.SepaPaymentDetails sepa = 10;
      */
-    value: SepaPaymentMethod;
+    value: SepaPaymentDetails;
     case: "sepa";
   } | {
     /**
-     * @generated from field: tzero.v1.common.SwiftPaymentMethod swift = 30;
+     * @generated from field: tzero.v1.common.SwiftPaymentDetails swift = 30;
      */
-    value: SwiftPaymentMethod;
+    value: SwiftPaymentDetails;
     case: "swift";
   } | {
     /**
-     * @generated from field: tzero.v1.common.StablecoinPaymentMethod stablecoin = 40;
+     * @generated from field: tzero.v1.common.StablecoinPaymentDetails stablecoin = 40;
      */
-    value: StablecoinPaymentMethod;
+    value: StablecoinPaymentDetails;
     case: "stablecoin";
   } | { case: undefined; value?: undefined };
 };
@@ -50,9 +50,9 @@ export const PaymentMethodSchema: GenMessage<PaymentMethod> = /*@__PURE__*/
   messageDesc(file_tzero_v1_common_payment_method, 0);
 
 /**
- * @generated from message tzero.v1.common.SepaPaymentMethod
+ * @generated from message tzero.v1.common.SepaPaymentDetails
  */
-export type SepaPaymentMethod = Message<"tzero.v1.common.SepaPaymentMethod"> & {
+export type SepaPaymentDetails = Message<"tzero.v1.common.SepaPaymentDetails"> & {
   /**
    * @generated from field: string iban = 20;
    */
@@ -70,29 +70,29 @@ export type SepaPaymentMethod = Message<"tzero.v1.common.SepaPaymentMethod"> & {
 };
 
 /**
- * Describes the message tzero.v1.common.SepaPaymentMethod.
- * Use `create(SepaPaymentMethodSchema)` to create a new message.
+ * Describes the message tzero.v1.common.SepaPaymentDetails.
+ * Use `create(SepaPaymentDetailsSchema)` to create a new message.
  */
-export const SepaPaymentMethodSchema: GenMessage<SepaPaymentMethod> = /*@__PURE__*/
+export const SepaPaymentDetailsSchema: GenMessage<SepaPaymentDetails> = /*@__PURE__*/
   messageDesc(file_tzero_v1_common_payment_method, 1);
 
 /**
- * @generated from message tzero.v1.common.SwiftPaymentMethod
+ * @generated from message tzero.v1.common.SwiftPaymentDetails
  */
-export type SwiftPaymentMethod = Message<"tzero.v1.common.SwiftPaymentMethod"> & {
+export type SwiftPaymentDetails = Message<"tzero.v1.common.SwiftPaymentDetails"> & {
 };
 
 /**
- * Describes the message tzero.v1.common.SwiftPaymentMethod.
- * Use `create(SwiftPaymentMethodSchema)` to create a new message.
+ * Describes the message tzero.v1.common.SwiftPaymentDetails.
+ * Use `create(SwiftPaymentDetailsSchema)` to create a new message.
  */
-export const SwiftPaymentMethodSchema: GenMessage<SwiftPaymentMethod> = /*@__PURE__*/
+export const SwiftPaymentDetailsSchema: GenMessage<SwiftPaymentDetails> = /*@__PURE__*/
   messageDesc(file_tzero_v1_common_payment_method, 2);
 
 /**
- * @generated from message tzero.v1.common.StablecoinPaymentMethod
+ * @generated from message tzero.v1.common.StablecoinPaymentDetails
  */
-export type StablecoinPaymentMethod = Message<"tzero.v1.common.StablecoinPaymentMethod"> & {
+export type StablecoinPaymentDetails = Message<"tzero.v1.common.StablecoinPaymentDetails"> & {
   /**
    * @generated from field: tzero.v1.common.Blockchain blockchain = 10;
    */
@@ -110,10 +110,10 @@ export type StablecoinPaymentMethod = Message<"tzero.v1.common.StablecoinPayment
 };
 
 /**
- * Describes the message tzero.v1.common.StablecoinPaymentMethod.
- * Use `create(StablecoinPaymentMethodSchema)` to create a new message.
+ * Describes the message tzero.v1.common.StablecoinPaymentDetails.
+ * Use `create(StablecoinPaymentDetailsSchema)` to create a new message.
  */
-export const StablecoinPaymentMethodSchema: GenMessage<StablecoinPaymentMethod> = /*@__PURE__*/
+export const StablecoinPaymentDetailsSchema: GenMessage<StablecoinPaymentDetails> = /*@__PURE__*/
   messageDesc(file_tzero_v1_common_payment_method, 3);
 
 /**
