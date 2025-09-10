@@ -4,13 +4,14 @@
 
 import type { GenEnum, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
 import { enumDesc, fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
+import { file_buf_validate_validate } from "../../../buf/validate/validate_pb.js";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file tzero/v1/common/common.proto.
  */
 export const file_tzero_v1_common_common: GenFile = /*@__PURE__*/
-  fileDesc("Chx0emVyby92MS9jb21tb24vY29tbW9uLnByb3RvEg90emVyby52MS5jb21tb24iLQoHRGVjaW1hbBIQCgh1bnNjYWxlZBgKIAEoAxIQCghleHBvbmVudBgUIAEoBSpRCgpCbG9ja2NoYWluEhoKFkJMT0NLQ0hBSU5fVU5TUEVDSUZJRUQQABISCg5CTE9DS0NIQUlOX0JTQxAKEhMKD0JMT0NLQ0hBSU5fVFJPThBkKj0KClN0YWJsZWNvaW4SGgoWU1RBQkxFQ09JTl9VTlNQRUNJRklFRBAAEhMKD1NUQUJMRUNPSU5fVVNEVBAKQoABChNjb20udHplcm8udjEuY29tbW9uQgtDb21tb25Qcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw");
+  fileDesc("Chx0emVyby92MS9jb21tb24vY29tbW9uLnByb3RvEg90emVyby52MS5jb21tb24iQQoHRGVjaW1hbBIQCgh1bnNjYWxlZBgKIAEoAxIkCghleHBvbmVudBgUIAEoBUISukgPGg0YCCj4//////////8BKlEKCkJsb2NrY2hhaW4SGgoWQkxPQ0tDSEFJTl9VTlNQRUNJRklFRBAAEhIKDkJMT0NLQ0hBSU5fQlNDEAoSEwoPQkxPQ0tDSEFJTl9UUk9OEGQqPQoKU3RhYmxlY29pbhIaChZTVEFCTEVDT0lOX1VOU1BFQ0lGSUVEEAASEwoPU1RBQkxFQ09JTl9VU0RUEApCgAEKE2NvbS50emVyby52MS5jb21tb25CC0NvbW1vblByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_buf_validate_validate]);
 
 /**
  * Decimal 123.45 equals to unscaled=12345 and exponent=-2 (e.g. unscaled * 10^exponent, 123.45 = 12345 * 10^-2)
@@ -24,6 +25,8 @@ export type Decimal = Message<"tzero.v1.common.Decimal"> & {
   unscaled: bigint;
 
   /**
+   * Exponent should be reasonable for financial calculations (typically -8 to 8)
+   *
    * @generated from field: int32 exponent = 20;
    */
   exponent: number;

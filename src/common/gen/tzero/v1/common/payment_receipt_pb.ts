@@ -4,13 +4,14 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
+import { file_buf_validate_validate } from "../../../buf/validate/validate_pb.js";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file tzero/v1/common/payment_receipt.proto.
  */
 export const file_tzero_v1_common_payment_receipt: GenFile = /*@__PURE__*/
-  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24iswEKDlBheW1lbnRSZWNlaXB0EiwKBHNlcGEYCiABKAsyHC50emVyby52MS5jb21tb24uU2VwYVJlY2VpcHRIABIuCgVzd2lmdBgeIAEoCzIdLnR6ZXJvLnYxLmNvbW1vbi5Td2lmdFJlY2VpcHRIABI4CgpzdGFibGVjb2luGCggASgLMiIudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5SZWNlaXB0SABCCQoHZGV0YWlscyINCgtTZXBhUmVjZWlwdCIOCgxTd2lmdFJlY2VpcHQiLQoRU3RhYmxlY29pblJlY2VpcHQSGAoQdHJhbnNhY3Rpb25faGFzaBgKIAEoCUKIAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkITUGF5bWVudFJlY2VpcHRQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw");
+  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24iugEKDlBheW1lbnRSZWNlaXB0EiwKBHNlcGEYCiABKAsyHC50emVyby52MS5jb21tb24uU2VwYVJlY2VpcHRIABIuCgVzd2lmdBgeIAEoCzIdLnR6ZXJvLnYxLmNvbW1vbi5Td2lmdFJlY2VpcHRIABI4CgpzdGFibGVjb2luGCggASgLMiIudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5SZWNlaXB0SABCEAoHZGV0YWlscxIFukgCCAEiDQoLU2VwYVJlY2VpcHQiDgoMU3dpZnRSZWNlaXB0IlAKEVN0YWJsZWNvaW5SZWNlaXB0EjsKEHRyYW5zYWN0aW9uX2hhc2gYCiABKAlCIbpIHnIcEEAYQjIWXigweCk/W2EtZkEtRjAtOV17NjR9JEKIAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkITUGF5bWVudFJlY2VpcHRQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt
@@ -78,6 +79,8 @@ export const SwiftReceiptSchema: GenMessage<SwiftReceipt> = /*@__PURE__*/
  */
 export type StablecoinReceipt = Message<"tzero.v1.common.StablecoinReceipt"> & {
   /**
+   * Transaction hash should be a valid hex string (64 chars for most blockchains)
+   *
    * on-chain hex encoded transaction hash
    *
    * @generated from field: string transaction_hash = 10;

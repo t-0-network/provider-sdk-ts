@@ -6,13 +6,14 @@ import type { GenEnum, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv2"
 import { enumDesc, fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv2";
 import type { Blockchain, Stablecoin } from "./common_pb.js";
 import { file_tzero_v1_common_common } from "./common_pb.js";
+import { file_buf_validate_validate } from "../../../buf/validate/validate_pb.js";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file tzero/v1/common/payment_method.proto.
  */
 export const file_tzero_v1_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLHAQoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAQgkKB2RldGFpbHMiVwoSU2VwYVBheW1lbnREZXRhaWxzEgwKBGliYW4YFCABKAkSGAoQYmVuZWZpY2lhcnlfbmFtZRgeIAEoCRIZChFwYXltZW50X3JlZmVyZW5jZRgoIAEoCSIVChNTd2lmdFBheW1lbnREZXRhaWxzIo0BChhTdGFibGVjb2luUGF5bWVudERldGFpbHMSLwoKYmxvY2tjaGFpbhgKIAEoDjIbLnR6ZXJvLnYxLmNvbW1vbi5CbG9ja2NoYWluEi8KCnN0YWJsZWNvaW4YFCABKA4yGy50emVyby52MS5jb21tb24uU3RhYmxlY29pbhIPCgdhZGRyZXNzGB4gASgJKrcBChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeEiIKHlBBWU1FTlRfTUVUSE9EX1RZUEVfU1RBQkxFQ09JThAoQocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_tzero_v1_common_common]);
+  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLOAQoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAQhAKB2RldGFpbHMSBbpIAggBIpQBChJTZXBhUGF5bWVudERldGFpbHMSNAoEaWJhbhgUIAEoCUImukgjciEQDxgiMhteW0EtWl17Mn1bMC05XXsyfVtBLVowLTldKyQSIwoQYmVuZWZpY2lhcnlfbmFtZRgeIAEoCUIJukgGcgQQARhGEiMKEXBheW1lbnRfcmVmZXJlbmNlGCggASgJQgi6SAVyAxiMASIVChNTd2lmdFBheW1lbnREZXRhaWxzIsEBChhTdGFibGVjb2luUGF5bWVudERldGFpbHMSOQoKYmxvY2tjaGFpbhgKIAEoDjIbLnR6ZXJvLnYxLmNvbW1vbi5CbG9ja2NoYWluQgi6SAWCAQIgABI5CgpzdGFibGVjb2luGBQgASgOMhsudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5CCLpIBYIBAiAAEi8KB2FkZHJlc3MYHiABKAlCHrpIG3IZEBQYQDITXigweCk/W2EtZkEtRjAtOV0rJCq3AQoRUGF5bWVudE1ldGhvZFR5cGUSIwofUEFZTUVOVF9NRVRIT0RfVFlQRV9VTlNQRUNJRklFRBAAEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfU0VQQRAKEh0KGVBBWU1FTlRfTUVUSE9EX1RZUEVfU1dJRlQQFBIcChhQQVlNRU5UX01FVEhPRF9UWVBFX0NBUkQQHhIiCh5QQVlNRU5UX01FVEhPRF9UWVBFX1NUQUJMRUNPSU4QKEKHAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkISUGF5bWVudE1ldGhvZFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_tzero_v1_common_common, file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentMethod
@@ -54,16 +55,22 @@ export const PaymentMethodSchema: GenMessage<PaymentMethod> = /*@__PURE__*/
  */
 export type SepaPaymentDetails = Message<"tzero.v1.common.SepaPaymentDetails"> & {
   /**
+   * IBAN should be 15-34 characters, alphanumeric
+   *
    * @generated from field: string iban = 20;
    */
   iban: string;
 
   /**
+   * Beneficiary name should be 1-70 characters (SEPA standard)
+   *
    * @generated from field: string beneficiary_name = 30;
    */
   beneficiaryName: string;
 
   /**
+   * Payment reference up to 140 characters (SEPA standard)
+   *
    * @generated from field: string payment_reference = 40;
    */
   paymentReference: string;
@@ -94,16 +101,22 @@ export const SwiftPaymentDetailsSchema: GenMessage<SwiftPaymentDetails> = /*@__P
  */
 export type StablecoinPaymentDetails = Message<"tzero.v1.common.StablecoinPaymentDetails"> & {
   /**
+   * Blockchain must be specified and not UNSPECIFIED
+   *
    * @generated from field: tzero.v1.common.Blockchain blockchain = 10;
    */
   blockchain: Blockchain;
 
   /**
+   * Stablecoin must be specified and not UNSPECIFIED
+   *
    * @generated from field: tzero.v1.common.Stablecoin stablecoin = 20;
    */
   stablecoin: Stablecoin;
 
   /**
+   * Blockchain address should be a valid hex address (20-64 chars for most blockchains)
+   *
    * @generated from field: string address = 30;
    */
   address: string;
