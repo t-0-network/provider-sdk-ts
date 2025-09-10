@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_method.proto.
  */
 export const file_tzero_v1_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLOAQoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAQhAKB2RldGFpbHMSBbpIAggBIpQBChJTZXBhUGF5bWVudERldGFpbHMSNAoEaWJhbhgUIAEoCUImukgjciEQDxgiMhteW0EtWl17Mn1bMC05XXsyfVtBLVowLTldKyQSIwoQYmVuZWZpY2lhcnlfbmFtZRgeIAEoCUIJukgGcgQQARhGEiMKEXBheW1lbnRfcmVmZXJlbmNlGCggASgJQgi6SAVyAxiMASIVChNTd2lmdFBheW1lbnREZXRhaWxzIsEBChhTdGFibGVjb2luUGF5bWVudERldGFpbHMSOQoKYmxvY2tjaGFpbhgKIAEoDjIbLnR6ZXJvLnYxLmNvbW1vbi5CbG9ja2NoYWluQgi6SAWCAQIgABI5CgpzdGFibGVjb2luGBQgASgOMhsudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5CCLpIBYIBAiAAEi8KB2FkZHJlc3MYHiABKAlCHrpIG3IZEBQYQDITXigweCk/W2EtZkEtRjAtOV0rJCq3AQoRUGF5bWVudE1ldGhvZFR5cGUSIwofUEFZTUVOVF9NRVRIT0RfVFlQRV9VTlNQRUNJRklFRBAAEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfU0VQQRAKEh0KGVBBWU1FTlRfTUVUSE9EX1RZUEVfU1dJRlQQFBIcChhQQVlNRU5UX01FVEhPRF9UWVBFX0NBUkQQHhIiCh5QQVlNRU5UX01FVEhPRF9UWVBFX1NUQUJMRUNPSU4QKEKHAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkISUGF5bWVudE1ldGhvZFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_tzero_v1_common_common, file_buf_validate_validate]);
+  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiK2AgoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAEjEKA2FjaBgyIAEoCzIiLnR6ZXJvLnYxLmNvbW1vbi5BY2hQYXltZW50RGV0YWlsc0gAEjMKBHdpcmUYPCABKAsyIy50emVyby52MS5jb21tb24uV2lyZVBheW1lbnREZXRhaWxzSABCEAoHZGV0YWlscxIFukgCCAEilAEKElNlcGFQYXltZW50RGV0YWlscxI0CgRpYmFuGBQgASgJQia6SCNyIRAPGCIyG15bQS1aXXsyfVswLTldezJ9W0EtWjAtOV0rJBIjChBiZW5lZmljaWFyeV9uYW1lGB4gASgJQgm6SAZyBBABGEYSIwoRcGF5bWVudF9yZWZlcmVuY2UYKCABKAlCCLpIBXIDGIwBIhUKE1N3aWZ0UGF5bWVudERldGFpbHMiwQEKGFN0YWJsZWNvaW5QYXltZW50RGV0YWlscxI5CgpibG9ja2NoYWluGAogASgOMhsudHplcm8udjEuY29tbW9uLkJsb2NrY2hhaW5CCLpIBYIBAiAAEjkKCnN0YWJsZWNvaW4YFCABKA4yGy50emVyby52MS5jb21tb24uU3RhYmxlY29pbkIIukgFggECIAASLwoHYWRkcmVzcxgeIAEoCUIeukgbchkQFBhAMhNeKDB4KT9bYS1mQS1GMC05XSskItsCChFBY2hQYXltZW50RGV0YWlscxItCg5yb3V0aW5nX251bWJlchgKIAEoCUIVukgSchAQCRgJMgpeWzAtOV17OX0kEisKDmFjY291bnRfbnVtYmVyGBQgASgJQhO6SBByDhABGBEyCF5bMC05XSskEiYKE2FjY291bnRfaG9sZGVyX25hbWUYHiABKAlCCbpIBnIEEAEYRhJRCgxhY2NvdW50X3R5cGUYKCABKA4yMS50emVyby52MS5jb21tb24uQWNoUGF5bWVudERldGFpbHMuQWNoQWNjb3VudFR5cGVCCLpIBYIBAiAAIm8KDkFjaEFjY291bnRUeXBlEiAKHEFDSF9BQ0NPVU5UX1RZUEVfVU5TUEVDSUZJRUQQABIdChlBQ0hfQUNDT1VOVF9UWVBFX0NIRUNLSU5HEAoSHAoYQUNIX0FDQ09VTlRfVFlQRV9TQVZJTkdTEBQiqwIKEldpcmVQYXltZW50RGV0YWlscxIcCgliYW5rX25hbWUYCiABKAlCCbpIBnIEEAEYRhIgCgxiYW5rX2FkZHJlc3MYFCABKAlCCrpIB3IFEAEYjAESQgoKc3dpZnRfY29kZRgeIAEoCUIuukgrcikQCBgLMiNeW0EtWl17Nn1bQS1aMC05XXsyfShbQS1aMC05XXszfSk/JBIhCg5hY2NvdW50X251bWJlchgoIAEoCUIJukgGcgQQARgiEiMKEGJlbmVmaWNpYXJ5X25hbWUYMiABKAlCCbpIBnIEEAEYRhInChNiZW5lZmljaWFyeV9hZGRyZXNzGDwgASgJQgq6SAdyBRABGIwBEiAKDndpcmVfcmVmZXJlbmNlGEYgASgJQgi6SAVyAxiMASryAQoRUGF5bWVudE1ldGhvZFR5cGUSIwofUEFZTUVOVF9NRVRIT0RfVFlQRV9VTlNQRUNJRklFRBAAEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfU0VQQRAKEh0KGVBBWU1FTlRfTUVUSE9EX1RZUEVfU1dJRlQQFBIcChhQQVlNRU5UX01FVEhPRF9UWVBFX0NBUkQQHhIiCh5QQVlNRU5UX01FVEhPRF9UWVBFX1NUQUJMRUNPSU4QKBIbChdQQVlNRU5UX01FVEhPRF9UWVBFX0FDSBAyEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfV0lSRRA8QocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_tzero_v1_common_common, file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentMethod
@@ -40,6 +40,18 @@ export type PaymentMethod = Message<"tzero.v1.common.PaymentMethod"> & {
      */
     value: StablecoinPaymentDetails;
     case: "stablecoin";
+  } | {
+    /**
+     * @generated from field: tzero.v1.common.AchPaymentDetails ach = 50;
+     */
+    value: AchPaymentDetails;
+    case: "ach";
+  } | {
+    /**
+     * @generated from field: tzero.v1.common.WirePaymentDetails wire = 60;
+     */
+    value: WirePaymentDetails;
+    case: "wire";
   } | { case: undefined; value?: undefined };
 };
 
@@ -130,6 +142,133 @@ export const StablecoinPaymentDetailsSchema: GenMessage<StablecoinPaymentDetails
   messageDesc(file_tzero_v1_common_payment_method, 3);
 
 /**
+ * @generated from message tzero.v1.common.AchPaymentDetails
+ */
+export type AchPaymentDetails = Message<"tzero.v1.common.AchPaymentDetails"> & {
+  /**
+   * US bank routing number (9 digits)
+   *
+   * @generated from field: string routing_number = 10;
+   */
+  routingNumber: string;
+
+  /**
+   * US bank account number (up to 17 digits)
+   *
+   * @generated from field: string account_number = 20;
+   */
+  accountNumber: string;
+
+  /**
+   * Account holder name (1-70 characters)
+   *
+   * @generated from field: string account_holder_name = 30;
+   */
+  accountHolderName: string;
+
+  /**
+   * Account type (checking or savings)
+   *
+   * @generated from field: tzero.v1.common.AchPaymentDetails.AchAccountType account_type = 40;
+   */
+  accountType: AchPaymentDetails_AchAccountType;
+};
+
+/**
+ * Describes the message tzero.v1.common.AchPaymentDetails.
+ * Use `create(AchPaymentDetailsSchema)` to create a new message.
+ */
+export const AchPaymentDetailsSchema: GenMessage<AchPaymentDetails> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 4);
+
+/**
+ * @generated from enum tzero.v1.common.AchPaymentDetails.AchAccountType
+ */
+export enum AchPaymentDetails_AchAccountType {
+  /**
+   * @generated from enum value: ACH_ACCOUNT_TYPE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * @generated from enum value: ACH_ACCOUNT_TYPE_CHECKING = 10;
+   */
+  CHECKING = 10,
+
+  /**
+   * @generated from enum value: ACH_ACCOUNT_TYPE_SAVINGS = 20;
+   */
+  SAVINGS = 20,
+}
+
+/**
+ * Describes the enum tzero.v1.common.AchPaymentDetails.AchAccountType.
+ */
+export const AchPaymentDetails_AchAccountTypeSchema: GenEnum<AchPaymentDetails_AchAccountType> = /*@__PURE__*/
+  enumDesc(file_tzero_v1_common_payment_method, 4, 0);
+
+/**
+ * @generated from message tzero.v1.common.WirePaymentDetails
+ */
+export type WirePaymentDetails = Message<"tzero.v1.common.WirePaymentDetails"> & {
+  /**
+   * Bank name (1-70 characters)
+   *
+   * @generated from field: string bank_name = 10;
+   */
+  bankName: string;
+
+  /**
+   * Bank address (1-140 characters)
+   *
+   * @generated from field: string bank_address = 20;
+   */
+  bankAddress: string;
+
+  /**
+   * SWIFT/BIC code (8 or 11 characters)
+   *
+   * @generated from field: string swift_code = 30;
+   */
+  swiftCode: string;
+
+  /**
+   * Account number (up to 34 characters for international compatibility)
+   *
+   * @generated from field: string account_number = 40;
+   */
+  accountNumber: string;
+
+  /**
+   * Beneficiary name (1-70 characters)
+   *
+   * @generated from field: string beneficiary_name = 50;
+   */
+  beneficiaryName: string;
+
+  /**
+   * Beneficiary address (1-140 characters)
+   *
+   * @generated from field: string beneficiary_address = 60;
+   */
+  beneficiaryAddress: string;
+
+  /**
+   * Wire reference/purpose (up to 140 characters)
+   *
+   * @generated from field: string wire_reference = 70;
+   */
+  wireReference: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.WirePaymentDetails.
+ * Use `create(WirePaymentDetailsSchema)` to create a new message.
+ */
+export const WirePaymentDetailsSchema: GenMessage<WirePaymentDetails> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 5);
+
+/**
  * @generated from enum tzero.v1.common.PaymentMethodType
  */
 export enum PaymentMethodType {
@@ -161,6 +300,16 @@ export enum PaymentMethodType {
    * @generated from enum value: PAYMENT_METHOD_TYPE_STABLECOIN = 40;
    */
   STABLECOIN = 40,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_ACH = 50;
+   */
+  ACH = 50,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_WIRE = 60;
+   */
+  WIRE = 60,
 }
 
 /**
