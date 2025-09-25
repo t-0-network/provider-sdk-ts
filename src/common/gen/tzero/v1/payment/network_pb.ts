@@ -19,7 +19,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/payment/network.proto.
  */
 export const file_tzero_v1_payment_network: GenFile = /*@__PURE__*/
-  fileDesc("Ch50emVyby92MS9wYXltZW50L25ldHdvcmsucHJvdG8SEHR6ZXJvLnYxLnBheW1lbnQijgUKElVwZGF0ZVF1b3RlUmVxdWVzdBI7CgdwYXlfb3V0GAogAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUSOgoGcGF5X2luGBQgAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUa/gMKBVF1b3RlEiYKCGN1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI5CgpxdW90ZV90eXBlGBQgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCCLpIBYIBAiAAEkQKDnBheW1lbnRfbWV0aG9kGBkgASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlQgi6SAWCAQIgABJICgViYW5kcxgeIAMoCzIvLnR6ZXJvLnYxLnBheW1lbnQuVXBkYXRlUXVvdGVSZXF1ZXN0LlF1b3RlLkJhbmRCCLpIBZIBAggBEjgKCmV4cGlyYXRpb24YPCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgi6SAWyAQJAARI1Cgl0aW1lc3RhbXAYRiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQga6SAPIAQEakAEKBEJhbmQSIgoPY2xpZW50X3F1b3RlX2lkGAogASgJQgm6SAZyBBABGEASNAoKbWF4X2Ftb3VudBgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsQga6SAPIAQESLgoEcmF0ZRgyIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsQga6SAPIAQEiFQoTVXBkYXRlUXVvdGVSZXNwb25zZSL4AQoVR2V0UGF5b3V0UXVvdGVSZXF1ZXN0Ei0KD3BheW91dF9jdXJyZW5jeRgKIAEoCUIUukgRcg8yCl5bQS1aXXszfSSYAQMSMAoGYW1vdW50GBQgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARI5CgpxdW90ZV90eXBlGB4gASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCCLpIBYIBAiAAEkMKDXBheW91dF9tZXRob2QYKCABKA4yIi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZFR5cGVCCLpIBYIBAiAAIrcBChZHZXRQYXlvdXRRdW90ZVJlc3BvbnNlEi4KBHJhdGUYCiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEIGukgDyAEBEjgKCmV4cGlyYXRpb24YFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgi6SAWyAQJAARIzCghxdW90ZV9pZBgeIAEoCzIZLnR6ZXJvLnYxLnBheW1lbnQuUXVvdGVJZEIGukgDyAEBIuEGChRDcmVhdGVQYXltZW50UmVxdWVzdBIkChFwYXltZW50X2NsaWVudF9pZBgKIAEoCUIJukgGcgQQARhAEi0KD3BheW91dF9jdXJyZW5jeRgUIAEoCUIUukgRcg8yCl5bQS1aXXszfSSYAQMSPgoOcGF5b3V0X2RldGFpbHMYGSABKAsyHi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZEIGukgDyAEBEjAKBmFtb3VudBgeIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsQga6SAPIAQESMQoOcGF5aW5fY3VycmVuY3kYKCABKAlCFLpIEXIPMgpeW0EtWl17M30kmAEDSACIAQESPQoGc2VuZGVyGDIgASgLMi0udHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5TZW5kZXISQwoJcmVjaXBpZW50GDwgASgLMjAudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5SZWNpcGllbnQSIgoJcmVmZXJlbmNlGEYgASgJQgoYAbpIBXIDGIwBSAGIAQESMAoIcXVvdGVfaWQYZCABKAsyGS50emVyby52MS5wYXltZW50LlF1b3RlSWRIAogBARpiCgZTZW5kZXISTgoOcHJpdmF0ZV9wZXJzb24YCiABKAsyNC50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXF1ZXN0LlByaXZhdGVQZXJzb25IAEIICgZzZW5kZXIaaAoJUmVjaXBpZW50Ek4KDnByaXZhdGVfcGVyc29uGAogASgLMjQudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5Qcml2YXRlUGVyc29uSABCCwoJcmVjaXBpZW50GnkKDVByaXZhdGVQZXJzb24SKwoYcHJpdmF0ZV9wZXJzb25fY2xpZW50X2lkGAogASgJQgm6SAZyBBABGEASHQoKZmlyc3RfbmFtZRgUIAEoCUIJukgGcgQQARgyEhwKCWxhc3RfbmFtZRgeIAEoCUIJukgGcgQQARgyQhEKD19wYXlpbl9jdXJyZW5jeUIMCgpfcmVmZXJlbmNlQgsKCV9xdW90ZV9pZCJCCgdRdW90ZUlkEhkKCHF1b3RlX2lkGB4gASgDQge6SAQiAiAAEhwKC3Byb3ZpZGVyX2lkGCggASgFQge6SAQaAiAAIqkCChVDcmVhdGVQYXltZW50UmVzcG9uc2USIgoRcGF5bWVudF9jbGllbnRfaWQYCiABKAlCB7pIBHICEAESQgoHc3VjY2VzcxgUIAEoCzIvLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlc3BvbnNlLlN1Y2Nlc3NIABJCCgdmYWlsdXJlGB4gASgLMi8udHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVzcG9uc2UuRmFpbHVyZUgAGiYKB1N1Y2Nlc3MSGwoKcGF5bWVudF9pZBgKIAEoA0IHukgEIgIgABorCgdGYWlsdXJlIiAKBlJlYXNvbhIWChJSRUFTT05fVU5TUEVDSUZJRUQQAEIPCgZyZXN1bHQSBbpIAggBIoEBChRDb25maXJtUGF5b3V0UmVxdWVzdBIbCgpwYXltZW50X2lkGAogASgDQge6SAQiAiAAEhoKCXBheW91dF9pZBgUIAEoA0IHukgEIgIgABIwCgdyZWNlaXB0GB4gASgLMh8udHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0IhcKFUNvbmZpcm1QYXlvdXRSZXNwb25zZSpACglRdW90ZVR5cGUSGgoWUVVPVEVfVFlQRV9VTlNQRUNJRklFRBAAEhcKE1FVT1RFX1RZUEVfUkVBTFRJTUUQATKpAwoOTmV0d29ya1NlcnZpY2USXwoLVXBkYXRlUXVvdGUSJC50emVyby52MS5wYXltZW50LlVwZGF0ZVF1b3RlUmVxdWVzdBolLnR6ZXJvLnYxLnBheW1lbnQuVXBkYXRlUXVvdGVSZXNwb25zZSIDkAICEmgKDkdldFBheW91dFF1b3RlEicudHplcm8udjEucGF5bWVudC5HZXRQYXlvdXRRdW90ZVJlcXVlc3QaKC50emVyby52MS5wYXltZW50LkdldFBheW91dFF1b3RlUmVzcG9uc2UiA5ACARJlCg1DcmVhdGVQYXltZW50EiYudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdBonLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlc3BvbnNlIgOQAgISZQoNQ29uZmlybVBheW91dBImLnR6ZXJvLnYxLnBheW1lbnQuQ29uZmlybVBheW91dFJlcXVlc3QaJy50emVyby52MS5wYXltZW50LkNvbmZpcm1QYXlvdXRSZXNwb25zZSIDkAICQoYBChRjb20udHplcm8udjEucGF5bWVudEIMTmV0d29ya1Byb3RvUAGiAgNUVlCqAhBUemVyby5WMS5QYXltZW50ygIQVHplcm9cVjFcUGF5bWVudOICHFR6ZXJvXFYxXFBheW1lbnRcR1BCTWV0YWRhdGHqAhJUemVybzo6VjE6OlBheW1lbnRiBnByb3RvMw", [file_tzero_v1_common_common, file_tzero_v1_common_payment_method, file_tzero_v1_common_payment_receipt, file_google_protobuf_timestamp, file_buf_validate_validate]);
+  fileDesc("Ch50emVyby92MS9wYXltZW50L25ldHdvcmsucHJvdG8SEHR6ZXJvLnYxLnBheW1lbnQiigUKElVwZGF0ZVF1b3RlUmVxdWVzdBI7CgdwYXlfb3V0GAogAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUSOgoGcGF5X2luGBQgAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUa+gMKBVF1b3RlEiYKCGN1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI3CgpxdW90ZV90eXBlGBQgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCBrpIA8gBARJCCg5wYXltZW50X21ldGhvZBgZIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZUIGukgDyAEBEkgKBWJhbmRzGB4gAygLMi8udHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUuQmFuZEIIukgFkgECCAESOAoKZXhwaXJhdGlvbhg8IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCLpIBbIBAkABEjUKCXRpbWVzdGFtcBhGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBrpIA8gBARqQAQoEQmFuZBIiCg9jbGllbnRfcXVvdGVfaWQYCiABKAlCCbpIBnIEEAEYQBI0CgptYXhfYW1vdW50GCggASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARIuCgRyYXRlGDIgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBASIVChNVcGRhdGVRdW90ZVJlc3BvbnNlIukCCg9HZXRRdW90ZVJlcXVlc3QSLQoPcGF5X2luX2N1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI3Cg1wYXlfaW5fYW1vdW50GBQgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARJBCg1wYXlfaW5fbWV0aG9kGB4gASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlQga6SAPIAQESLgoQcGF5X291dF9jdXJyZW5jeRgoIAEoCUIUukgRcg8yCl5bQS1aXXszfSSYAQMSQgoOcGF5X291dF9tZXRob2QYMiABKA4yIi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZFR5cGVCBrpIA8gBARI3CgpxdW90ZV90eXBlGDwgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCBrpIA8gBASKxAQoQR2V0UXVvdGVSZXNwb25zZRIuCgRyYXRlGAogASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARI4CgpleHBpcmF0aW9uGBQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIukgFsgECQAESMwoIcXVvdGVfaWQYHiABKAsyGS50emVyby52MS5wYXltZW50LlF1b3RlSWRCBrpIA8gBASLcBAoUQ3JlYXRlUGF5bWVudFJlcXVlc3QSJAoRcGF5bWVudF9jbGllbnRfaWQYCiABKAlCCbpIBnIEEAEYQBI3CgZhbW91bnQYHiABKAsyHy50emVyby52MS5wYXltZW50LlBheW1lbnRBbW91bnRCBrpIA8gBARJECgZwYXlfaW4YKCABKAsyLC50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXF1ZXN0LlBheUluQga6SAPIAQESRgoHcGF5X291dBgtIAEoCzItLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlcXVlc3QuUGF5T3V0Qga6SAPIAQESIgoJcmVmZXJlbmNlGEYgASgJQgoYAbpIBXIDGIwBSACIAQEacwoFUGF5SW4SJgoIY3VycmVuY3kYCiABKAlCFLpIEXIPMgpeW0EtWl17M30kmAEDEkIKDnBheW1lbnRfbWV0aG9kGBQgASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlQga6SAPIAQEarwEKBlBheU91dBImCghjdXJyZW5jeRgKIAEoCUIUukgRcg8yCl5bQS1aXXszfSSYAQMSPgoOcGF5bWVudF9tZXRob2QYFCABKAsyHi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZEIGukgDyAEBEjAKCHF1b3RlX2lkGGQgASgLMhkudHplcm8udjEucGF5bWVudC5RdW90ZUlkSACIAQFCCwoJX3F1b3RlX2lkQgwKCl9yZWZlcmVuY2UiQgoHUXVvdGVJZBIZCghxdW90ZV9pZBgeIAEoA0IHukgEIgIgABIcCgtwcm92aWRlcl9pZBgoIAEoBUIHukgEGgIgACKgAwoVQ3JlYXRlUGF5bWVudFJlc3BvbnNlEiIKEXBheW1lbnRfY2xpZW50X2lkGAogASgJQge6SARyAhABEkIKB3N1Y2Nlc3MYFCABKAsyLy50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXNwb25zZS5TdWNjZXNzSAASQgoHZmFpbHVyZRgeIAEoCzIvLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlc3BvbnNlLkZhaWx1cmVIABqcAQoHU3VjY2VzcxIbCgpwYXltZW50X2lkGAogASgEQge6SAQyAiAAEjcKDXBheV9pbl9hbW91bnQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEIGukgDyAEBEjsKEXNldHRsZW1lbnRfYW1vdW50GB4gASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARorCgdGYWlsdXJlIiAKBlJlYXNvbhIWChJSRUFTT05fVU5TUEVDSUZJRUQQAEIPCgZyZXN1bHQSBbpIAggBIoEBChRDb25maXJtUGF5b3V0UmVxdWVzdBIbCgpwYXltZW50X2lkGAogASgEQge6SAQyAiAAEhoKCXBheW91dF9pZBgUIAEoBEIHukgEMgIgABIwCgdyZWNlaXB0GB4gASgLMh8udHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0IhcKFUNvbmZpcm1QYXlvdXRSZXNwb25zZSKHAQoNUGF5bWVudEFtb3VudBIxCg1wYXlfaW5fYW1vdW50GAogASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxIABIyCg5wYXlfb3V0X2Ftb3VudBgUIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsSABCDwoGYW1vdW50EgW6SAIIASpACglRdW90ZVR5cGUSGgoWUVVPVEVfVFlQRV9VTlNQRUNJRklFRBAAEhcKE1FVT1RFX1RZUEVfUkVBTFRJTUUQATKXAwoOTmV0d29ya1NlcnZpY2USXwoLVXBkYXRlUXVvdGUSJC50emVyby52MS5wYXltZW50LlVwZGF0ZVF1b3RlUmVxdWVzdBolLnR6ZXJvLnYxLnBheW1lbnQuVXBkYXRlUXVvdGVSZXNwb25zZSIDkAICElYKCEdldFF1b3RlEiEudHplcm8udjEucGF5bWVudC5HZXRRdW90ZVJlcXVlc3QaIi50emVyby52MS5wYXltZW50LkdldFF1b3RlUmVzcG9uc2UiA5ACARJlCg1DcmVhdGVQYXltZW50EiYudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdBonLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlc3BvbnNlIgOQAgISZQoNQ29uZmlybVBheW91dBImLnR6ZXJvLnYxLnBheW1lbnQuQ29uZmlybVBheW91dFJlcXVlc3QaJy50emVyby52MS5wYXltZW50LkNvbmZpcm1QYXlvdXRSZXNwb25zZSIDkAICQoYBChRjb20udHplcm8udjEucGF5bWVudEIMTmV0d29ya1Byb3RvUAGiAgNUVlCqAhBUemVyby5WMS5QYXltZW50ygIQVHplcm9cVjFcUGF5bWVudOICHFR6ZXJvXFYxXFBheW1lbnRcR1BCTWV0YWRhdGHqAhJUemVybzo6VjE6OlBheW1lbnRiBnByb3RvMw", [file_tzero_v1_common_common, file_tzero_v1_common_payment_method, file_tzero_v1_common_payment_receipt, file_google_protobuf_timestamp, file_buf_validate_validate]);
 
 /**
  *
@@ -59,8 +59,6 @@ export const UpdateQuoteRequestSchema: GenMessage<UpdateQuoteRequest> = /*@__PUR
  */
 export type UpdateQuoteRequest_Quote = Message<"tzero.v1.payment.UpdateQuoteRequest.Quote"> & {
   /**
-   * ISO 4217 currency code (3 uppercase letters)
-   *
    * BRL, EUR, GBP, etc. (ISO 4217 currency code)
    *
    * @generated from field: string currency = 10;
@@ -68,10 +66,6 @@ export type UpdateQuoteRequest_Quote = Message<"tzero.v1.payment.UpdateQuoteRequ
   currency: string;
 
   /**
-   * Quote type must be specified
-   *
-   * type of the quote, e.g. real-time or guaranteed
-   *
    * @generated from field: tzero.v1.payment.QuoteType quote_type = 20;
    */
   quoteType: QuoteType;
@@ -84,8 +78,6 @@ export type UpdateQuoteRequest_Quote = Message<"tzero.v1.payment.UpdateQuoteRequ
   paymentMethod: PaymentMethodType;
 
   /**
-   * At least one band is required
-   *
    * list of bands for this quote
    *
    * @generated from field: repeated tzero.v1.payment.UpdateQuoteRequest.Quote.Band bands = 30;
@@ -93,8 +85,6 @@ export type UpdateQuoteRequest_Quote = Message<"tzero.v1.payment.UpdateQuoteRequ
   bands: UpdateQuoteRequest_Quote_Band[];
 
   /**
-   * Expiration must be in the future
-   *
    * expiration time of the quote
    *
    * @generated from field: google.protobuf.Timestamp expiration = 60;
@@ -102,8 +92,6 @@ export type UpdateQuoteRequest_Quote = Message<"tzero.v1.payment.UpdateQuoteRequ
   expiration?: Timestamp;
 
   /**
-   * Timestamp is required
-   *
    * timestamp quote was created
    *
    * @generated from field: google.protobuf.Timestamp timestamp = 70;
@@ -123,8 +111,6 @@ export const UpdateQuoteRequest_QuoteSchema: GenMessage<UpdateQuoteRequest_Quote
  */
 export type UpdateQuoteRequest_Quote_Band = Message<"tzero.v1.payment.UpdateQuoteRequest.Quote.Band"> & {
   /**
-   * Client quote ID must be non-empty and reasonable length
-   *
    * unique client generated id for this band
    *
    * @generated from field: string client_quote_id = 10;
@@ -132,8 +118,6 @@ export type UpdateQuoteRequest_Quote_Band = Message<"tzero.v1.payment.UpdateQuot
   clientQuoteId: string;
 
   /**
-   * Max amount is required
-   *
    * max amount of USD this quote is applicable for. Please look into documentation for valid amounts.
    *
    * @generated from field: tzero.v1.common.Decimal max_amount = 40;
@@ -141,8 +125,6 @@ export type UpdateQuoteRequest_Quote_Band = Message<"tzero.v1.payment.UpdateQuot
   maxAmount?: Decimal;
 
   /**
-   * Rate is required and must be positive
-   *
    * USD/currency rate
    *
    * @generated from field: tzero.v1.common.Decimal rate = 50;
@@ -171,60 +153,64 @@ export const UpdateQuoteResponseSchema: GenMessage<UpdateQuoteResponse> = /*@__P
   messageDesc(file_tzero_v1_payment_network, 1);
 
 /**
- * @generated from message tzero.v1.payment.GetPayoutQuoteRequest
+ * @generated from message tzero.v1.payment.GetQuoteRequest
  */
-export type GetPayoutQuoteRequest = Message<"tzero.v1.payment.GetPayoutQuoteRequest"> & {
+export type GetQuoteRequest = Message<"tzero.v1.payment.GetQuoteRequest"> & {
   /**
-   * ISO 4217 currency code (3 uppercase letters)
-   *
    * ISO 4217 currency code, e.g. EUR, GBP, etc. in which the payout should be made
    *
-   * @generated from field: string payout_currency = 10;
+   * @generated from field: string pay_in_currency = 10;
    */
-  payoutCurrency: string;
+  payInCurrency: string;
 
   /**
-   * Amount is required
+   * amount in pay-in currency
    *
-   * amount in quote currency, only USD is supported
-   *
-   * @generated from field: tzero.v1.common.Decimal amount = 20;
+   * @generated from field: tzero.v1.common.Decimal pay_in_amount = 20;
    */
-  amount?: Decimal;
+  payInAmount?: Decimal;
 
   /**
-   * Quote type must be specified
-   *
-   * type of the quote, e.g. real-time or guaranteed
-   *
-   * @generated from field: tzero.v1.payment.QuoteType quote_type = 30;
-   */
-  quoteType: QuoteType;
-
-  /**
-   * Payout method must be specified
-   *
    * payment method to use for the payout, e.g. bank transfer, card, etc.
    *
-   * @generated from field: tzero.v1.common.PaymentMethodType payout_method = 40;
+   * @generated from field: tzero.v1.common.PaymentMethodType pay_in_method = 30;
    */
-  payoutMethod: PaymentMethodType;
+  payInMethod: PaymentMethodType;
+
+  /**
+   * ISO 4217 currency code, e.g. EUR, GBP, etc. in which the payout should be made
+   *
+   * @generated from field: string pay_out_currency = 40;
+   */
+  payOutCurrency: string;
+
+  /**
+   * payment method to use for the payout, e.g. bank transfer, card, etc.
+   *
+   * @generated from field: tzero.v1.common.PaymentMethodType pay_out_method = 50;
+   */
+  payOutMethod: PaymentMethodType;
+
+  /**
+   * type of the quote, e.g. real-time or guaranteed
+   *
+   * @generated from field: tzero.v1.payment.QuoteType quote_type = 60;
+   */
+  quoteType: QuoteType;
 };
 
 /**
- * Describes the message tzero.v1.payment.GetPayoutQuoteRequest.
- * Use `create(GetPayoutQuoteRequestSchema)` to create a new message.
+ * Describes the message tzero.v1.payment.GetQuoteRequest.
+ * Use `create(GetQuoteRequestSchema)` to create a new message.
  */
-export const GetPayoutQuoteRequestSchema: GenMessage<GetPayoutQuoteRequest> = /*@__PURE__*/
+export const GetQuoteRequestSchema: GenMessage<GetQuoteRequest> = /*@__PURE__*/
   messageDesc(file_tzero_v1_payment_network, 2);
 
 /**
- * @generated from message tzero.v1.payment.GetPayoutQuoteResponse
+ * @generated from message tzero.v1.payment.GetQuoteResponse
  */
-export type GetPayoutQuoteResponse = Message<"tzero.v1.payment.GetPayoutQuoteResponse"> & {
+export type GetQuoteResponse = Message<"tzero.v1.payment.GetQuoteResponse"> & {
   /**
-   * Rate is required
-   *
    * rate in USD/currency, e.g. 1.2345 for 1 USD = 1.2345 EUR
    *
    * @generated from field: tzero.v1.common.Decimal rate = 10;
@@ -232,8 +218,6 @@ export type GetPayoutQuoteResponse = Message<"tzero.v1.payment.GetPayoutQuoteRes
   rate?: Decimal;
 
   /**
-   * Expiration must be in the future
-   *
    * expiration time of the quote
    *
    * @generated from field: google.protobuf.Timestamp expiration = 20;
@@ -241,20 +225,16 @@ export type GetPayoutQuoteResponse = Message<"tzero.v1.payment.GetPayoutQuoteRes
   expiration?: Timestamp;
 
   /**
-   * Quote ID is required
-   *
-   *
-   *
    * @generated from field: tzero.v1.payment.QuoteId quote_id = 30;
    */
   quoteId?: QuoteId;
 };
 
 /**
- * Describes the message tzero.v1.payment.GetPayoutQuoteResponse.
- * Use `create(GetPayoutQuoteResponseSchema)` to create a new message.
+ * Describes the message tzero.v1.payment.GetQuoteResponse.
+ * Use `create(GetQuoteResponseSchema)` to create a new message.
  */
-export const GetPayoutQuoteResponseSchema: GenMessage<GetPayoutQuoteResponse> = /*@__PURE__*/
+export const GetQuoteResponseSchema: GenMessage<GetQuoteResponse> = /*@__PURE__*/
   messageDesc(file_tzero_v1_payment_network, 3);
 
 /**
@@ -262,8 +242,6 @@ export const GetPayoutQuoteResponseSchema: GenMessage<GetPayoutQuoteResponse> = 
  */
 export type CreatePaymentRequest = Message<"tzero.v1.payment.CreatePaymentRequest"> & {
   /**
-   * Payment client ID must be non-empty and reasonable length
-   *
    * unique client generated id for this payment
    *
    * @generated from field: string payment_client_id = 10;
@@ -271,54 +249,19 @@ export type CreatePaymentRequest = Message<"tzero.v1.payment.CreatePaymentReques
   paymentClientId: string;
 
   /**
-   * ISO 4217 currency code (3 uppercase letters)
-   *
-   * ISO 4217 currency code, e.g. EUR, GBP, etc. in which the payout should be made
-   *
-   * @generated from field: string payout_currency = 20;
+   * @generated from field: tzero.v1.payment.PaymentAmount amount = 30;
    */
-  payoutCurrency: string;
+  amount?: PaymentAmount;
 
   /**
-   * Payout details are required
-   *
-   * payment method to use for the payout, e.g. bank transfer, card, etc.
-   *
-   * @generated from field: tzero.v1.common.PaymentMethod payout_details = 25;
+   * @generated from field: tzero.v1.payment.CreatePaymentRequest.PayIn pay_in = 40;
    */
-  payoutDetails?: PaymentMethod;
+  payIn?: CreatePaymentRequest_PayIn;
 
   /**
-   * Amount is required
-   *
-   * amount in the payin currency, by default USD (if the payIn currency is not specified)
-   *
-   * @generated from field: tzero.v1.common.Decimal amount = 30;
+   * @generated from field: tzero.v1.payment.CreatePaymentRequest.PayOut pay_out = 45;
    */
-  amount?: Decimal;
-
-  /**
-   * If specified, must be valid ISO 4217 currency code
-   *
-   * if not specified, USD is used
-   *
-   * @generated from field: optional string payin_currency = 40;
-   */
-  payinCurrency?: string;
-
-  /**
-   * optional or option in the oneof?
-   *
-   * @generated from field: tzero.v1.payment.CreatePaymentRequest.Sender sender = 50;
-   */
-  sender?: CreatePaymentRequest_Sender;
-
-  /**
-   * optional or option in the oneof?
-   *
-   * @generated from field: tzero.v1.payment.CreatePaymentRequest.Recipient recipient = 60;
-   */
-  recipient?: CreatePaymentRequest_Recipient;
+  payOut?: CreatePaymentRequest_PayOut;
 
   /**
    * optional reference for the payment, up to 140 characters
@@ -327,13 +270,6 @@ export type CreatePaymentRequest = Message<"tzero.v1.payment.CreatePaymentReques
    * @deprecated
    */
   reference?: string;
-
-  /**
-   * if specified, must be a valid quoteId that was previously returned by the GetPayoutQuote method
-   *
-   * @generated from field: optional tzero.v1.payment.QuoteId quote_id = 100;
-   */
-  quoteId?: QuoteId;
 };
 
 /**
@@ -344,97 +280,63 @@ export const CreatePaymentRequestSchema: GenMessage<CreatePaymentRequest> = /*@_
   messageDesc(file_tzero_v1_payment_network, 4);
 
 /**
- * Work in progress
+ * Provider must submit quotes to the network for the specified pay-in currency and payment method
  *
- * @generated from message tzero.v1.payment.CreatePaymentRequest.Sender
+ * @generated from message tzero.v1.payment.CreatePaymentRequest.PayIn
  */
-export type CreatePaymentRequest_Sender = Message<"tzero.v1.payment.CreatePaymentRequest.Sender"> & {
+export type CreatePaymentRequest_PayIn = Message<"tzero.v1.payment.CreatePaymentRequest.PayIn"> & {
   /**
-   * @generated from oneof tzero.v1.payment.CreatePaymentRequest.Sender.sender
+   * @generated from field: string currency = 10;
    */
-  sender: {
-    /**
-     * @generated from field: tzero.v1.payment.CreatePaymentRequest.PrivatePerson private_person = 10;
-     */
-    value: CreatePaymentRequest_PrivatePerson;
-    case: "privatePerson";
-  } | { case: undefined; value?: undefined };
+  currency: string;
+
+  /**
+   * @generated from field: tzero.v1.common.PaymentMethodType payment_method = 20;
+   */
+  paymentMethod: PaymentMethodType;
 };
 
 /**
- * Describes the message tzero.v1.payment.CreatePaymentRequest.Sender.
- * Use `create(CreatePaymentRequest_SenderSchema)` to create a new message.
+ * Describes the message tzero.v1.payment.CreatePaymentRequest.PayIn.
+ * Use `create(CreatePaymentRequest_PayInSchema)` to create a new message.
  */
-export const CreatePaymentRequest_SenderSchema: GenMessage<CreatePaymentRequest_Sender> = /*@__PURE__*/
+export const CreatePaymentRequest_PayInSchema: GenMessage<CreatePaymentRequest_PayIn> = /*@__PURE__*/
   messageDesc(file_tzero_v1_payment_network, 4, 0);
 
 /**
- * Work in progress
- *
- * @generated from message tzero.v1.payment.CreatePaymentRequest.Recipient
+ * @generated from message tzero.v1.payment.CreatePaymentRequest.PayOut
  */
-export type CreatePaymentRequest_Recipient = Message<"tzero.v1.payment.CreatePaymentRequest.Recipient"> & {
+export type CreatePaymentRequest_PayOut = Message<"tzero.v1.payment.CreatePaymentRequest.PayOut"> & {
   /**
-   * @generated from oneof tzero.v1.payment.CreatePaymentRequest.Recipient.recipient
+   * @generated from field: string currency = 10;
    */
-  recipient: {
-    /**
-     * @generated from field: tzero.v1.payment.CreatePaymentRequest.PrivatePerson private_person = 10;
-     */
-    value: CreatePaymentRequest_PrivatePerson;
-    case: "privatePerson";
-  } | { case: undefined; value?: undefined };
+  currency: string;
+
+  /**
+   * @generated from field: tzero.v1.common.PaymentMethod payment_method = 20;
+   */
+  paymentMethod?: PaymentMethod;
+
+  /**
+   * if specified, must be a valid quoteId that was previously returned by the GetPayoutQuote method otherwise last available quote will be used
+   *
+   * @generated from field: optional tzero.v1.payment.QuoteId quote_id = 100;
+   */
+  quoteId?: QuoteId;
 };
 
 /**
- * Describes the message tzero.v1.payment.CreatePaymentRequest.Recipient.
- * Use `create(CreatePaymentRequest_RecipientSchema)` to create a new message.
+ * Describes the message tzero.v1.payment.CreatePaymentRequest.PayOut.
+ * Use `create(CreatePaymentRequest_PayOutSchema)` to create a new message.
  */
-export const CreatePaymentRequest_RecipientSchema: GenMessage<CreatePaymentRequest_Recipient> = /*@__PURE__*/
+export const CreatePaymentRequest_PayOutSchema: GenMessage<CreatePaymentRequest_PayOut> = /*@__PURE__*/
   messageDesc(file_tzero_v1_payment_network, 4, 1);
-
-/**
- * Work in progress
- *
- * @generated from message tzero.v1.payment.CreatePaymentRequest.PrivatePerson
- */
-export type CreatePaymentRequest_PrivatePerson = Message<"tzero.v1.payment.CreatePaymentRequest.PrivatePerson"> & {
-  /**
-   * Private person client ID must be non-empty
-   *
-   * @generated from field: string private_person_client_id = 10;
-   */
-  privatePersonClientId: string;
-
-  /**
-   * First name must be non-empty and reasonable length
-   *
-   * @generated from field: string first_name = 20;
-   */
-  firstName: string;
-
-  /**
-   * Last name must be non-empty and reasonable length
-   *
-   * @generated from field: string last_name = 30;
-   */
-  lastName: string;
-};
-
-/**
- * Describes the message tzero.v1.payment.CreatePaymentRequest.PrivatePerson.
- * Use `create(CreatePaymentRequest_PrivatePersonSchema)` to create a new message.
- */
-export const CreatePaymentRequest_PrivatePersonSchema: GenMessage<CreatePaymentRequest_PrivatePerson> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_payment_network, 4, 2);
 
 /**
  * @generated from message tzero.v1.payment.QuoteId
  */
 export type QuoteId = Message<"tzero.v1.payment.QuoteId"> & {
   /**
-   * Quote ID must be positive
-   *
    * unique identifier of the quote within the specified provider
    *
    * @generated from field: int64 quote_id = 30;
@@ -442,8 +344,6 @@ export type QuoteId = Message<"tzero.v1.payment.QuoteId"> & {
   quoteId: bigint;
 
   /**
-   * Provider ID must be positive
-   *
    * provider id of the quote
    *
    * @generated from field: int32 provider_id = 40;
@@ -463,8 +363,6 @@ export const QuoteIdSchema: GenMessage<QuoteId> = /*@__PURE__*/
  */
 export type CreatePaymentResponse = Message<"tzero.v1.payment.CreatePaymentResponse"> & {
   /**
-   * Payment client ID must be non-empty
-   *
    * client generated id supplied in the request
    *
    * @generated from field: string payment_client_id = 10;
@@ -509,13 +407,21 @@ export const CreatePaymentResponseSchema: GenMessage<CreatePaymentResponse> = /*
  */
 export type CreatePaymentResponse_Success = Message<"tzero.v1.payment.CreatePaymentResponse.Success"> & {
   /**
-   * Payment ID must be positive
-   *
    * payment id assigned by the network
    *
-   * @generated from field: int64 payment_id = 10;
+   * @generated from field: uint64 payment_id = 10;
    */
   paymentId: bigint;
+
+  /**
+   * @generated from field: tzero.v1.common.Decimal pay_in_amount = 20;
+   */
+  payInAmount?: Decimal;
+
+  /**
+   * @generated from field: tzero.v1.common.Decimal settlement_amount = 30;
+   */
+  settlementAmount?: Decimal;
 };
 
 /**
@@ -559,20 +465,16 @@ export const CreatePaymentResponse_Failure_ReasonSchema: GenEnum<CreatePaymentRe
  */
 export type ConfirmPayoutRequest = Message<"tzero.v1.payment.ConfirmPayoutRequest"> & {
   /**
-   * Payment ID must be positive
-   *
    * payment id assigned by the network, this is the same payment id that was provided in the PayoutRequest
    *
-   * @generated from field: int64 payment_id = 10;
+   * @generated from field: uint64 payment_id = 10;
    */
   paymentId: bigint;
 
   /**
-   * Payout ID must be positive
-   *
    * payout id assigned by the payout provider, this is the same payout id that was provided in the PayoutRequest
    *
-   * @generated from field: int64 payout_id = 20;
+   * @generated from field: uint64 payout_id = 20;
    */
   payoutId: bigint;
 
@@ -604,6 +506,42 @@ export type ConfirmPayoutResponse = Message<"tzero.v1.payment.ConfirmPayoutRespo
  */
 export const ConfirmPayoutResponseSchema: GenMessage<ConfirmPayoutResponse> = /*@__PURE__*/
   messageDesc(file_tzero_v1_payment_network, 8);
+
+/**
+ * Payment amount could be specified eiter as pay-in amount and then converted to corresponding amount of pay-out amount
+ * or as pay-out amount, so that pay-in and settlement amounts are calculated accordingly
+ *
+ * @generated from message tzero.v1.payment.PaymentAmount
+ */
+export type PaymentAmount = Message<"tzero.v1.payment.PaymentAmount"> & {
+  /**
+   * @generated from oneof tzero.v1.payment.PaymentAmount.amount
+   */
+  amount: {
+    /**
+     * Amount in the pay-in currency
+     *
+     * @generated from field: tzero.v1.common.Decimal pay_in_amount = 10;
+     */
+    value: Decimal;
+    case: "payInAmount";
+  } | {
+    /**
+     * Amount in the pay-out currency
+     *
+     * @generated from field: tzero.v1.common.Decimal pay_out_amount = 20;
+     */
+    value: Decimal;
+    case: "payOutAmount";
+  } | { case: undefined; value?: undefined };
+};
+
+/**
+ * Describes the message tzero.v1.payment.PaymentAmount.
+ * Use `create(PaymentAmountSchema)` to create a new message.
+ */
+export const PaymentAmountSchema: GenMessage<PaymentAmount> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 9);
 
 /**
  * @generated from enum tzero.v1.payment.QuoteType
@@ -654,12 +592,12 @@ export const NetworkService: GenService<{
    * Request the best available quote for a payout in a specific currency, for a given amount.
    * If the payout quote exists, but the credit limit is exceeded, this quote will not be considered.
    *
-   * @generated from rpc tzero.v1.payment.NetworkService.GetPayoutQuote
+   * @generated from rpc tzero.v1.payment.NetworkService.GetQuote
    */
-  getPayoutQuote: {
+  getQuote: {
     methodKind: "unary";
-    input: typeof GetPayoutQuoteRequestSchema;
-    output: typeof GetPayoutQuoteResponseSchema;
+    input: typeof GetQuoteRequestSchema;
+    output: typeof GetQuoteResponseSchema;
   },
   /**
    * *

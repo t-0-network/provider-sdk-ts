@@ -79,8 +79,6 @@ export const SwiftReceiptSchema: GenMessage<SwiftReceipt> = /*@__PURE__*/
  */
 export type StablecoinReceipt = Message<"tzero.v1.common.StablecoinReceipt"> & {
   /**
-   * Transaction hash should be a valid hex string (64 chars for most blockchains)
-   *
    * on-chain hex encoded transaction hash
    *
    * @generated from field: string transaction_hash = 10;

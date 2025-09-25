@@ -25,8 +25,6 @@ export type Decimal = Message<"tzero.v1.common.Decimal"> & {
   unscaled: bigint;
 
   /**
-   * Exponent should be reasonable for financial calculations (typically -8 to 8)
-   *
    * @generated from field: int32 exponent = 20;
    */
   exponent: number;

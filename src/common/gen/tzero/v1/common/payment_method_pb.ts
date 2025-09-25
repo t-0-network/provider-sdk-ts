@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_method.proto.
  */
 export const file_tzero_v1_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiK2AgoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAEjEKA2FjaBgyIAEoCzIiLnR6ZXJvLnYxLmNvbW1vbi5BY2hQYXltZW50RGV0YWlsc0gAEjMKBHdpcmUYPCABKAsyIy50emVyby52MS5jb21tb24uV2lyZVBheW1lbnREZXRhaWxzSABCEAoHZGV0YWlscxIFukgCCAEilAEKElNlcGFQYXltZW50RGV0YWlscxI0CgRpYmFuGBQgASgJQia6SCNyIRAPGCIyG15bQS1aXXsyfVswLTldezJ9W0EtWjAtOV0rJBIjChBiZW5lZmljaWFyeV9uYW1lGB4gASgJQgm6SAZyBBABGEYSIwoRcGF5bWVudF9yZWZlcmVuY2UYKCABKAlCCLpIBXIDGIwBIhUKE1N3aWZ0UGF5bWVudERldGFpbHMiwQEKGFN0YWJsZWNvaW5QYXltZW50RGV0YWlscxI5CgpibG9ja2NoYWluGAogASgOMhsudHplcm8udjEuY29tbW9uLkJsb2NrY2hhaW5CCLpIBYIBAiAAEjkKCnN0YWJsZWNvaW4YFCABKA4yGy50emVyby52MS5jb21tb24uU3RhYmxlY29pbkIIukgFggECIAASLwoHYWRkcmVzcxgeIAEoCUIeukgbchkQFBhAMhNeKDB4KT9bYS1mQS1GMC05XSskItsCChFBY2hQYXltZW50RGV0YWlscxItCg5yb3V0aW5nX251bWJlchgKIAEoCUIVukgSchAQCRgJMgpeWzAtOV17OX0kEisKDmFjY291bnRfbnVtYmVyGBQgASgJQhO6SBByDhABGBEyCF5bMC05XSskEiYKE2FjY291bnRfaG9sZGVyX25hbWUYHiABKAlCCbpIBnIEEAEYRhJRCgxhY2NvdW50X3R5cGUYKCABKA4yMS50emVyby52MS5jb21tb24uQWNoUGF5bWVudERldGFpbHMuQWNoQWNjb3VudFR5cGVCCLpIBYIBAiAAIm8KDkFjaEFjY291bnRUeXBlEiAKHEFDSF9BQ0NPVU5UX1RZUEVfVU5TUEVDSUZJRUQQABIdChlBQ0hfQUNDT1VOVF9UWVBFX0NIRUNLSU5HEAoSHAoYQUNIX0FDQ09VTlRfVFlQRV9TQVZJTkdTEBQiqwIKEldpcmVQYXltZW50RGV0YWlscxIcCgliYW5rX25hbWUYCiABKAlCCbpIBnIEEAEYRhIgCgxiYW5rX2FkZHJlc3MYFCABKAlCCrpIB3IFEAEYjAESQgoKc3dpZnRfY29kZRgeIAEoCUIuukgrcikQCBgLMiNeW0EtWl17Nn1bQS1aMC05XXsyfShbQS1aMC05XXszfSk/JBIhCg5hY2NvdW50X251bWJlchgoIAEoCUIJukgGcgQQARgiEiMKEGJlbmVmaWNpYXJ5X25hbWUYMiABKAlCCbpIBnIEEAEYRhInChNiZW5lZmljaWFyeV9hZGRyZXNzGDwgASgJQgq6SAdyBRABGIwBEiAKDndpcmVfcmVmZXJlbmNlGEYgASgJQgi6SAVyAxiMASryAQoRUGF5bWVudE1ldGhvZFR5cGUSIwofUEFZTUVOVF9NRVRIT0RfVFlQRV9VTlNQRUNJRklFRBAAEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfU0VQQRAKEh0KGVBBWU1FTlRfTUVUSE9EX1RZUEVfU1dJRlQQFBIcChhQQVlNRU5UX01FVEhPRF9UWVBFX0NBUkQQHhIiCh5QQVlNRU5UX01FVEhPRF9UWVBFX1NUQUJMRUNPSU4QKBIbChdQQVlNRU5UX01FVEhPRF9UWVBFX0FDSBAyEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfV0lSRRA8QocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_tzero_v1_common_common, file_buf_validate_validate]);
+  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiK2AgoNUGF5bWVudE1ldGhvZBIzCgRzZXBhGAogASgLMiMudHplcm8udjEuY29tbW9uLlNlcGFQYXltZW50RGV0YWlsc0gAEjUKBXN3aWZ0GB4gASgLMiQudHplcm8udjEuY29tbW9uLlN3aWZ0UGF5bWVudERldGFpbHNIABI/CgpzdGFibGVjb2luGCggASgLMikudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5QYXltZW50RGV0YWlsc0gAEjEKA2FjaBgyIAEoCzIiLnR6ZXJvLnYxLmNvbW1vbi5BY2hQYXltZW50RGV0YWlsc0gAEjMKBHdpcmUYPCABKAsyIy50emVyby52MS5jb21tb24uV2lyZVBheW1lbnREZXRhaWxzSABCEAoHZGV0YWlscxIFukgCCAEilAEKElNlcGFQYXltZW50RGV0YWlscxI0CgRpYmFuGBQgASgJQia6SCNyIRAPGCIyG15bQS1aXXsyfVswLTldezJ9W0EtWjAtOV0rJBIjChBiZW5lZmljaWFyeV9uYW1lGB4gASgJQgm6SAZyBBABGEYSIwoRcGF5bWVudF9yZWZlcmVuY2UYKCABKAlCCLpIBXIDGIwBIhUKE1N3aWZ0UGF5bWVudERldGFpbHMivQEKGFN0YWJsZWNvaW5QYXltZW50RGV0YWlscxI3CgpibG9ja2NoYWluGAogASgOMhsudHplcm8udjEuY29tbW9uLkJsb2NrY2hhaW5CBrpIA8gBARI3CgpzdGFibGVjb2luGBQgASgOMhsudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5CBrpIA8gBARIvCgdhZGRyZXNzGB4gASgJQh66SBtyGRAUGEAyE14oMHgpP1thLWZBLUYwLTldKyQi2wIKEUFjaFBheW1lbnREZXRhaWxzEi0KDnJvdXRpbmdfbnVtYmVyGAogASgJQhW6SBJyEBAJGAkyCl5bMC05XXs5fSQSKwoOYWNjb3VudF9udW1iZXIYFCABKAlCE7pIEHIOEAEYETIIXlswLTldKyQSJgoTYWNjb3VudF9ob2xkZXJfbmFtZRgeIAEoCUIJukgGcgQQARhGElEKDGFjY291bnRfdHlwZRgoIAEoDjIxLnR6ZXJvLnYxLmNvbW1vbi5BY2hQYXltZW50RGV0YWlscy5BY2hBY2NvdW50VHlwZUIIukgFggECIAAibwoOQWNoQWNjb3VudFR5cGUSIAocQUNIX0FDQ09VTlRfVFlQRV9VTlNQRUNJRklFRBAAEh0KGUFDSF9BQ0NPVU5UX1RZUEVfQ0hFQ0tJTkcQChIcChhBQ0hfQUNDT1VOVF9UWVBFX1NBVklOR1MQFCKrAgoSV2lyZVBheW1lbnREZXRhaWxzEhwKCWJhbmtfbmFtZRgKIAEoCUIJukgGcgQQARhGEiAKDGJhbmtfYWRkcmVzcxgUIAEoCUIKukgHcgUQARiMARJCCgpzd2lmdF9jb2RlGB4gASgJQi66SCtyKRAIGAsyI15bQS1aXXs2fVtBLVowLTldezJ9KFtBLVowLTldezN9KT8kEiEKDmFjY291bnRfbnVtYmVyGCggASgJQgm6SAZyBBABGCISIwoQYmVuZWZpY2lhcnlfbmFtZRgyIAEoCUIJukgGcgQQARhGEicKE2JlbmVmaWNpYXJ5X2FkZHJlc3MYPCABKAlCCrpIB3IFEAEYjAESIAoOd2lyZV9yZWZlcmVuY2UYRiABKAlCCLpIBXIDGIwBKvIBChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeEiIKHlBBWU1FTlRfTUVUSE9EX1RZUEVfU1RBQkxFQ09JThAoEhsKF1BBWU1FTlRfTUVUSE9EX1RZUEVfQUNIEDISHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9XSVJFEDxChwEKE2NvbS50emVyby52MS5jb21tb25CElBheW1lbnRNZXRob2RQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_tzero_v1_common_common, file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentMethod
@@ -67,22 +67,16 @@ export const PaymentMethodSchema: GenMessage<PaymentMethod> = /*@__PURE__*/
  */
 export type SepaPaymentDetails = Message<"tzero.v1.common.SepaPaymentDetails"> & {
   /**
-   * IBAN should be 15-34 characters, alphanumeric
-   *
    * @generated from field: string iban = 20;
    */
   iban: string;
 
   /**
-   * Beneficiary name should be 1-70 characters (SEPA standard)
-   *
    * @generated from field: string beneficiary_name = 30;
    */
   beneficiaryName: string;
 
   /**
-   * Payment reference up to 140 characters (SEPA standard)
-   *
    * @generated from field: string payment_reference = 40;
    */
   paymentReference: string;
@@ -113,22 +107,16 @@ export const SwiftPaymentDetailsSchema: GenMessage<SwiftPaymentDetails> = /*@__P
  */
 export type StablecoinPaymentDetails = Message<"tzero.v1.common.StablecoinPaymentDetails"> & {
   /**
-   * Blockchain must be specified and not UNSPECIFIED
-   *
    * @generated from field: tzero.v1.common.Blockchain blockchain = 10;
    */
   blockchain: Blockchain;
 
   /**
-   * Stablecoin must be specified and not UNSPECIFIED
-   *
    * @generated from field: tzero.v1.common.Stablecoin stablecoin = 20;
    */
   stablecoin: Stablecoin;
 
   /**
-   * Blockchain address should be a valid hex address (20-64 chars for most blockchains)
-   *
    * @generated from field: string address = 30;
    */
   address: string;
@@ -146,29 +134,21 @@ export const StablecoinPaymentDetailsSchema: GenMessage<StablecoinPaymentDetails
  */
 export type AchPaymentDetails = Message<"tzero.v1.common.AchPaymentDetails"> & {
   /**
-   * US bank routing number (9 digits)
-   *
    * @generated from field: string routing_number = 10;
    */
   routingNumber: string;
 
   /**
-   * US bank account number (up to 17 digits)
-   *
    * @generated from field: string account_number = 20;
    */
   accountNumber: string;
 
   /**
-   * Account holder name (1-70 characters)
-   *
    * @generated from field: string account_holder_name = 30;
    */
   accountHolderName: string;
 
   /**
-   * Account type (checking or savings)
-   *
    * @generated from field: tzero.v1.common.AchPaymentDetails.AchAccountType account_type = 40;
    */
   accountType: AchPaymentDetails_AchAccountType;
@@ -212,50 +192,36 @@ export const AchPaymentDetails_AchAccountTypeSchema: GenEnum<AchPaymentDetails_A
  */
 export type WirePaymentDetails = Message<"tzero.v1.common.WirePaymentDetails"> & {
   /**
-   * Bank name (1-70 characters)
-   *
    * @generated from field: string bank_name = 10;
    */
   bankName: string;
 
   /**
-   * Bank address (1-140 characters)
-   *
    * @generated from field: string bank_address = 20;
    */
   bankAddress: string;
 
   /**
-   * SWIFT/BIC code (8 or 11 characters)
-   *
    * @generated from field: string swift_code = 30;
    */
   swiftCode: string;
 
   /**
-   * Account number (up to 34 characters for international compatibility)
-   *
    * @generated from field: string account_number = 40;
    */
   accountNumber: string;
 
   /**
-   * Beneficiary name (1-70 characters)
-   *
    * @generated from field: string beneficiary_name = 50;
    */
   beneficiaryName: string;
 
   /**
-   * Beneficiary address (1-140 characters)
-   *
    * @generated from field: string beneficiary_address = 60;
    */
   beneficiaryAddress: string;
 
   /**
-   * Wire reference/purpose (up to 140 characters)
-   *
    * @generated from field: string wire_reference = 70;
    */
   wireReference: string;
