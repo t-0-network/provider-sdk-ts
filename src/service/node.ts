@@ -1,5 +1,5 @@
 import type * as http from "node:http";
-import {keccak_256} from "@noble/hashes/sha3";
+import {keccak_256} from "@noble/hashes/sha3.js";
 //import {NodeHandlerFn} from "@connectrpc/connect-node/dist/esm/node-universal-handler.js";
 //import {NodeServerRequest, NodeServerResponse} from "@connectrpc/connect-node/dist/esm/node-universal-handler.js";
 

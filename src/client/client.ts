@@ -1,6 +1,6 @@
 import {createClient as createConnectClient} from "@connectrpc/connect";
 import {createConnectTransport} from "@connectrpc/connect-web";
-import {keccak_256} from "@noble/hashes/sha3";
+import {keccak_256} from "@noble/hashes/sha3.js";
 import CreateSigner from "./signer.js";
 import NetworkHeaders from "../common/headers.js";
 import {DescService} from "@bufbuild/protobuf";

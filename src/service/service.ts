@@ -10,7 +10,7 @@ import {
 import type { Interceptor } from "@connectrpc/connect";
 import NetworkHeaders from "../common/headers.js";
 import * as secp from '@noble/secp256k1'
-import {Hash} from "@noble/hashes/utils";
+import {Hash} from "@noble/hashes/utils.js";
 import type {DescService, } from "@bufbuild/protobuf";
 import type {ServiceImpl} from "@connectrpc/connect";
 

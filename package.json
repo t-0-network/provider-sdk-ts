@@ -1,6 +1,6 @@
 {
   "name": "@t-0/provider-sdk",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "Provider SDK for the T-0 Network",
   "repository": {
     "type": "git",
@@ -29,18 +29,18 @@
     }
   },
   "dependencies": {
-    "@bufbuild/protobuf": "^2.6.2",
-    "@connectrpc/connect": "^2.0.3",
-    "@connectrpc/connect-web": "^2.0.3",
-    "@connectrpc/connect-node": "^2.0.3",
-    "@noble/hashes": "^1.8.0",
+    "@bufbuild/protobuf": "^2.9.0",
+    "@connectrpc/connect": "^2.1.0",
+    "@connectrpc/connect-web": "^2.1.0",
+    "@connectrpc/connect-node": "^2.1.0",
+    "@noble/hashes": "^2.0.1",
     "@noble/secp256k1": "^2.3.0"
   },
   "devDependencies": {
-    "@bufbuild/protoc-gen-es": "^2.6.2",
-    "@types/node": "^24.1.0",
-    "dotenv": "^17.2.1",
-    "tsx": "^4.20.3",
+    "@bufbuild/protoc-gen-es": "^2.9.0",
+    "@types/node": "^24.6.0",
+    "dotenv": "^17.2.3",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.2"
   },
   "scripts": {
