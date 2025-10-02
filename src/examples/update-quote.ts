@@ -34,7 +34,7 @@ async function main() {
     const updateResponse = await networkClient.updateQuote({
         payIn: [{
             bands: [{
-                rate: toProtoDecimal(123, 2), // Example rate
+                rate: toProtoDecimal(123, -2), // Example rate 1.23
                 maxAmount: toProtoDecimal(1000, 0), // Example maximum amount
                 clientQuoteId: randomUUID(),
             }],
