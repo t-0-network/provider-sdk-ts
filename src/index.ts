@@ -1,8 +1,9 @@
 export * from "./client/client.js"
 export * from "./service/service.js"
 export * from "./service/node.js"
+
 export { connectNodeAdapter as nodeAdapter} from "@connectrpc/connect-node";
-export type {HandlerContext} from "@connectrpc/connect";
+export type {Client, HandlerContext} from "@connectrpc/connect";
 
 export * from './common/gen/tzero/v1/common/common_pb.js'
 export * from './common/gen/tzero/v1/common/payment_method_pb.js'
