@@ -11,7 +11,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_receipt.proto.
  */
 export const file_tzero_v1_common_payment_receipt: GenFile = /*@__PURE__*/
-  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24iugEKDlBheW1lbnRSZWNlaXB0EiwKBHNlcGEYCiABKAsyHC50emVyby52MS5jb21tb24uU2VwYVJlY2VpcHRIABIuCgVzd2lmdBgeIAEoCzIdLnR6ZXJvLnYxLmNvbW1vbi5Td2lmdFJlY2VpcHRIABI4CgpzdGFibGVjb2luGCggASgLMiIudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5SZWNlaXB0SABCEAoHZGV0YWlscxIFukgCCAEiDQoLU2VwYVJlY2VpcHQiDgoMU3dpZnRSZWNlaXB0IlAKEVN0YWJsZWNvaW5SZWNlaXB0EjsKEHRyYW5zYWN0aW9uX2hhc2gYCiABKAlCIbpIHnIcEEAYQjIWXigweCk/W2EtZkEtRjAtOV17NjR9JEKIAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkITUGF5bWVudFJlY2VpcHRQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_buf_validate_validate]);
+  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24irgIKDlBheW1lbnRSZWNlaXB0EjQKBHNlcGEYCiABKAsyJC50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQuU2VwYUgAEjYKBXN3aWZ0GB4gASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlN3aWZ0SAASQAoKc3RhYmxlY29pbhgoIAEoCzIqLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50UmVjZWlwdC5TdGFibGVjb2luSAAaBgoEU2VwYRoHCgVTd2lmdBpJCgpTdGFibGVjb2luEjsKEHRyYW5zYWN0aW9uX2hhc2gYCiABKAlCIbpIHnIcEEAYQjIWXigweCk/W2EtZkEtRjAtOV17NjR9JEIQCgdkZXRhaWxzEgW6SAIIAUKIAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkITUGF5bWVudFJlY2VpcHRQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt
@@ -22,21 +22,21 @@ export type PaymentReceipt = Message<"tzero.v1.common.PaymentReceipt"> & {
    */
   details: {
     /**
-     * @generated from field: tzero.v1.common.SepaReceipt sepa = 10;
+     * @generated from field: tzero.v1.common.PaymentReceipt.Sepa sepa = 10;
      */
-    value: SepaReceipt;
+    value: PaymentReceipt_Sepa;
     case: "sepa";
   } | {
     /**
-     * @generated from field: tzero.v1.common.SwiftReceipt swift = 30;
+     * @generated from field: tzero.v1.common.PaymentReceipt.Swift swift = 30;
      */
-    value: SwiftReceipt;
+    value: PaymentReceipt_Swift;
     case: "swift";
   } | {
     /**
-     * @generated from field: tzero.v1.common.StablecoinReceipt stablecoin = 40;
+     * @generated from field: tzero.v1.common.PaymentReceipt.Stablecoin stablecoin = 40;
      */
-    value: StablecoinReceipt;
+    value: PaymentReceipt_Stablecoin;
     case: "stablecoin";
   } | { case: undefined; value?: undefined };
 };
@@ -49,35 +49,35 @@ export const PaymentReceiptSchema: GenMessage<PaymentReceipt> = /*@__PURE__*/
   messageDesc(file_tzero_v1_common_payment_receipt, 0);
 
 /**
- * @generated from message tzero.v1.common.SepaReceipt
+ * @generated from message tzero.v1.common.PaymentReceipt.Sepa
  */
-export type SepaReceipt = Message<"tzero.v1.common.SepaReceipt"> & {
+export type PaymentReceipt_Sepa = Message<"tzero.v1.common.PaymentReceipt.Sepa"> & {
 };
 
 /**
- * Describes the message tzero.v1.common.SepaReceipt.
- * Use `create(SepaReceiptSchema)` to create a new message.
+ * Describes the message tzero.v1.common.PaymentReceipt.Sepa.
+ * Use `create(PaymentReceipt_SepaSchema)` to create a new message.
  */
-export const SepaReceiptSchema: GenMessage<SepaReceipt> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 1);
+export const PaymentReceipt_SepaSchema: GenMessage<PaymentReceipt_Sepa> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 0);
 
 /**
- * @generated from message tzero.v1.common.SwiftReceipt
+ * @generated from message tzero.v1.common.PaymentReceipt.Swift
  */
-export type SwiftReceipt = Message<"tzero.v1.common.SwiftReceipt"> & {
+export type PaymentReceipt_Swift = Message<"tzero.v1.common.PaymentReceipt.Swift"> & {
 };
 
 /**
- * Describes the message tzero.v1.common.SwiftReceipt.
- * Use `create(SwiftReceiptSchema)` to create a new message.
+ * Describes the message tzero.v1.common.PaymentReceipt.Swift.
+ * Use `create(PaymentReceipt_SwiftSchema)` to create a new message.
  */
-export const SwiftReceiptSchema: GenMessage<SwiftReceipt> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 2);
+export const PaymentReceipt_SwiftSchema: GenMessage<PaymentReceipt_Swift> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 1);
 
 /**
- * @generated from message tzero.v1.common.StablecoinReceipt
+ * @generated from message tzero.v1.common.PaymentReceipt.Stablecoin
  */
-export type StablecoinReceipt = Message<"tzero.v1.common.StablecoinReceipt"> & {
+export type PaymentReceipt_Stablecoin = Message<"tzero.v1.common.PaymentReceipt.Stablecoin"> & {
   /**
    * on-chain hex encoded transaction hash
    *
@@ -87,9 +87,9 @@ export type StablecoinReceipt = Message<"tzero.v1.common.StablecoinReceipt"> & {
 };
 
 /**
- * Describes the message tzero.v1.common.StablecoinReceipt.
- * Use `create(StablecoinReceiptSchema)` to create a new message.
+ * Describes the message tzero.v1.common.PaymentReceipt.Stablecoin.
+ * Use `create(PaymentReceipt_StablecoinSchema)` to create a new message.
  */
-export const StablecoinReceiptSchema: GenMessage<StablecoinReceipt> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 3);
+export const PaymentReceipt_StablecoinSchema: GenMessage<PaymentReceipt_Stablecoin> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 2);
 
