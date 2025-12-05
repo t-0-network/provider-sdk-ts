@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_method.proto.
  */
 export const file_tzero_v1_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLxCQoOUGF5bWVudERldGFpbHMSNAoEc2VwYRgKIAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5TZXBhSAASNgoFc3dpZnQYHiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuU3dpZnRIABJACgpzdGFibGVjb2luGCggASgLMioudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlN0YWJsZWNvaW5IABIyCgNhY2gYMiABKAsyIy50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuQWNoSAASNAoEd2lyZRg8IAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5XaXJlSAAahgEKBFNlcGESNAoEaWJhbhgUIAEoCUImukgjciEQDxgiMhteW0EtWl17Mn1bMC05XXsyfVtBLVowLTldKyQSIwoQYmVuZWZpY2lhcnlfbmFtZRgeIAEoCUIJukgGcgQQARhGEiMKEXBheW1lbnRfcmVmZXJlbmNlGCggASgJQgi6SAVyAxiMARoHCgVTd2lmdBqvAQoKU3RhYmxlY29pbhI3CgpibG9ja2NoYWluGAogASgOMhsudHplcm8udjEuY29tbW9uLkJsb2NrY2hhaW5CBrpIA8gBARI3CgpzdGFibGVjb2luGBQgASgOMhsudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5CBrpIA8gBARIvCgdhZGRyZXNzGB4gASgJQh66SBtyGRAUGEAyE14oMHgpP1thLWZBLUYwLTldKyQazgIKA0FjaBItCg5yb3V0aW5nX251bWJlchgKIAEoCUIVukgSchAQCRgJMgpeWzAtOV17OX0kEisKDmFjY291bnRfbnVtYmVyGBQgASgJQhO6SBByDhABGBEyCF5bMC05XSskEiYKE2FjY291bnRfaG9sZGVyX25hbWUYHiABKAlCCbpIBnIEEAEYRhJSCgxhY2NvdW50X3R5cGUYKCABKA4yMi50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuQWNoLkFjaEFjY291bnRUeXBlQgi6SAWCAQIgACJvCg5BY2hBY2NvdW50VHlwZRIgChxBQ0hfQUNDT1VOVF9UWVBFX1VOU1BFQ0lGSUVEEAASHQoZQUNIX0FDQ09VTlRfVFlQRV9DSEVDS0lORxAKEhwKGEFDSF9BQ0NPVU5UX1RZUEVfU0FWSU5HUxAUGp0CCgRXaXJlEhwKCWJhbmtfbmFtZRgKIAEoCUIJukgGcgQQARhGEiAKDGJhbmtfYWRkcmVzcxgUIAEoCUIKukgHcgUQARiMARJCCgpzd2lmdF9jb2RlGB4gASgJQi66SCtyKRAIGAsyI15bQS1aXXs2fVtBLVowLTldezJ9KFtBLVowLTldezN9KT8kEiEKDmFjY291bnRfbnVtYmVyGCggASgJQgm6SAZyBBABGCISIwoQYmVuZWZpY2lhcnlfbmFtZRgyIAEoCUIJukgGcgQQARhGEicKE2JlbmVmaWNpYXJ5X2FkZHJlc3MYPCABKAlCCrpIB3IFEAEYjAESIAoOd2lyZV9yZWZlcmVuY2UYRiABKAlCCLpIBXIDGIwBQhAKB2RldGFpbHMSBbpIAggBKvIBChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeEiIKHlBBWU1FTlRfTUVUSE9EX1RZUEVfU1RBQkxFQ09JThAoEhsKF1BBWU1FTlRfTUVUSE9EX1RZUEVfQUNIEDISHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9XSVJFEDxChwEKE2NvbS50emVyby52MS5jb21tb25CElBheW1lbnRNZXRob2RQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_tzero_v1_common_common, file_buf_validate_validate]);
+  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiKXFQoOUGF5bWVudERldGFpbHMSNAoEc2VwYRgKIAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5TZXBhSAASNgoFc3dpZnQYHiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuU3dpZnRIABJACgpzdGFibGVjb2luGCggASgLMioudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlN0YWJsZWNvaW5IABIyCgNhY2gYMiABKAsyIy50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuQWNoSAASNAoEd2lyZRg8IAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5XaXJlSAASMgoDZnBzGEYgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLkZwc0gAEjYKBW1wZXNhGFAgASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLk1QZXNhSAASNgoFZ2Nhc2gYWiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuR0Nhc2hIABJSChRpbmRpYW5fYmFua190cmFuc2ZlchhkIAEoCzIyLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5JbmRpYW5CYW5rVHJhbnNmZXJIABqGAQoEU2VwYRI0CgRpYmFuGBQgASgJQia6SCNyIRAPGCIyG15bQS1aXXsyfVswLTldezJ9W0EtWjAtOV0rJBIjChBiZW5lZmljaWFyeV9uYW1lGB4gASgJQgm6SAZyBBABGEYSIwoRcGF5bWVudF9yZWZlcmVuY2UYKCABKAlCCLpIBXIDGIwBGrwBCgNGcHMSRQoJc29ydF9jb2RlGAogASgJQjK6SC9yLRAGGAgyJ14oWzAtOV17Mn0tWzAtOV17Mn0tWzAtOV17Mn18WzAtOV17Nn0pJBItCg5hY2NvdW50X251bWJlchgUIAEoCUIVukgSchAQCBgIMgpeWzAtOV17OH0kEiMKEGJlbmVmaWNpYXJ5X25hbWUYHiABKAlCCbpIBnIEEAEYEhIaCglyZWZlcmVuY2UYKCABKAlCB7pIBHICGBIacwoFTVBlc2ESNAoRYmVuZWZpY2lhcnlfcGhvbmUYCiABKAlCGbpIFnIUEAoYDzIOXlswLTldezEwLDE1fSQSNAoRYWNjb3VudF9yZWZlcmVuY2UYFCABKAlCGbpIFnIUEAEYDDIOXlthLXpBLVowLTldKyQahQEKBUdDYXNoEiMKEGJlbmVmaWNpYXJ5X25hbWUYCiABKAlCCbpIBnIEEAEYZBIyChFiZW5lZmljaWFyeV9waG9uZRgUIAEoCUIXukgUchIQChgUMgxeWytdP1swLTldKyQSIwoRcGF5bWVudF9yZWZlcmVuY2UYHiABKAlCCLpIBXIDGIwBGosEChJJbmRpYW5CYW5rVHJhbnNmZXISVgoMYWNjb3VudF9pZnNjGAogASgLMj4udHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLkluZGlhbkJhbmtUcmFuc2Zlci5BY2NvdW50SUZTQ0gAEkcKBGltcHMYFCABKAsyNy50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuSW5kaWFuQmFua1RyYW5zZmVyLklNUFNIABIjChBiZW5lZmljaWFyeV9uYW1lGB4gASgJQgm6SAZyBBABGEYSIwoQYmVuZWZpY2lhcnlfdHlwZRgoIAEoCUIJukgGcgQQCBgeEiMKEXBheW1lbnRfcmVmZXJlbmNlGDIgASgJQgi6SAVyAxiMARpwCgtBY2NvdW50SUZTQxIwCg5hY2NvdW50X251bWJlchgKIAEoCUIYukgVchMQCRgSMg1eWzAtOV17OSwxOH0kEi8KBGlmc2MYFCABKAlCIbpIHnIcEAsYCzIWXltBLVpdezR9MFtBLVowLTldezZ9JBpiCgRJTVBTEjUKEWJlbmVmaWNpYXJ5X3Bob25lGAogASgJQhq6SBdyFRAKGAoyD15bNi05XVswLTldezl9JBIjCgRtbWlkGBQgASgJQhW6SBJyEBAHGAcyCl5bMC05XXs3fSRCDwoGbWV0aG9kEgW6SAIIARrqAQoFU3dpZnQSSgoKc3dpZnRfY29kZRgKIAEoCUI2ukgzcjEQCBgLMiteW0EtWl17NH1bQS1aXXsyfVtBLVowLTldezJ9KFtBLVowLTldezN9KT8kEiEKDmFjY291bnRfbnVtYmVyGBQgASgJQgm6SAZyBBABGCISJAoQYmVuZWZpY2lhcnlfbmFtZRgeIAEoCUIKukgHcgUQARiMARInChNiZW5lZmljaWFyeV9hZGRyZXNzGCggASgJQgq6SAdyBRABGP8BEiMKEXBheW1lbnRfcmVmZXJlbmNlGDIgASgJQgi6SAVyAxiMARqvAQoKU3RhYmxlY29pbhI3CgpibG9ja2NoYWluGAogASgOMhsudHplcm8udjEuY29tbW9uLkJsb2NrY2hhaW5CBrpIA8gBARI3CgpzdGFibGVjb2luGBQgASgOMhsudHplcm8udjEuY29tbW9uLlN0YWJsZWNvaW5CBrpIA8gBARIvCgdhZGRyZXNzGB4gASgJQh66SBtyGRAUGEAyE14oMHgpP1thLWZBLUYwLTldKyQazgIKA0FjaBItCg5yb3V0aW5nX251bWJlchgKIAEoCUIVukgSchAQCRgJMgpeWzAtOV17OX0kEisKDmFjY291bnRfbnVtYmVyGBQgASgJQhO6SBByDhABGBEyCF5bMC05XSskEiYKE2FjY291bnRfaG9sZGVyX25hbWUYHiABKAlCCbpIBnIEEAEYRhJSCgxhY2NvdW50X3R5cGUYKCABKA4yMi50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuQWNoLkFjaEFjY291bnRUeXBlQgi6SAWCAQIgACJvCg5BY2hBY2NvdW50VHlwZRIgChxBQ0hfQUNDT1VOVF9UWVBFX1VOU1BFQ0lGSUVEEAASHQoZQUNIX0FDQ09VTlRfVFlQRV9DSEVDS0lORxAKEhwKGEFDSF9BQ0NPVU5UX1RZUEVfU0FWSU5HUxAUGp0CCgRXaXJlEhwKCWJhbmtfbmFtZRgKIAEoCUIJukgGcgQQARhGEiAKDGJhbmtfYWRkcmVzcxgUIAEoCUIKukgHcgUQARiMARJCCgpzd2lmdF9jb2RlGB4gASgJQi66SCtyKRAIGAsyI15bQS1aXXs2fVtBLVowLTldezJ9KFtBLVowLTldezN9KT8kEiEKDmFjY291bnRfbnVtYmVyGCggASgJQgm6SAZyBBABGCISIwoQYmVuZWZpY2lhcnlfbmFtZRgyIAEoCUIJukgGcgQQARhGEicKE2JlbmVmaWNpYXJ5X2FkZHJlc3MYPCABKAlCCrpIB3IFEAEYjAESIAoOd2lyZV9yZWZlcmVuY2UYRiABKAlCCLpIBXIDGIwBQhAKB2RldGFpbHMSBbpIAggBKv0CChFQYXltZW50TWV0aG9kVHlwZRIjCh9QQVlNRU5UX01FVEhPRF9UWVBFX1VOU1BFQ0lGSUVEEAASHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9TRVBBEAoSHQoZUEFZTUVOVF9NRVRIT0RfVFlQRV9TV0lGVBAUEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfQ0FSRBAeEiIKHlBBWU1FTlRfTUVUSE9EX1RZUEVfU1RBQkxFQ09JThAoEhsKF1BBWU1FTlRfTUVUSE9EX1RZUEVfQUNIEDISHAoYUEFZTUVOVF9NRVRIT0RfVFlQRV9XSVJFEDwSGwoXUEFZTUVOVF9NRVRIT0RfVFlQRV9GUFMQRhIeChpQQVlNRU5UX01FVEhPRF9UWVBFX01fUEVTQRBQEh4KGlBBWU1FTlRfTUVUSE9EX1RZUEVfR19DQVNIEFoSLAooUEFZTUVOVF9NRVRIT0RfVFlQRV9JTkRJQU5fQkFOS19UUkFOU0ZFUhBkQocBChNjb20udHplcm8udjEuY29tbW9uQhJQYXltZW50TWV0aG9kUHJvdG9QAaICA1RWQ6oCD1R6ZXJvLlYxLkNvbW1vbsoCD1R6ZXJvXFYxXENvbW1vbuICG1R6ZXJvXFYxXENvbW1vblxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6Q29tbW9uYgZwcm90bzM", [file_tzero_v1_common_common, file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentDetails
@@ -24,34 +24,84 @@ export type PaymentDetails = Message<"tzero.v1.common.PaymentDetails"> & {
    */
   details: {
     /**
+     * SEPA (Single Euro Payments Area) - Euro bank transfers across European countries
+     *
      * @generated from field: tzero.v1.common.PaymentDetails.Sepa sepa = 10;
      */
     value: PaymentDetails_Sepa;
     case: "sepa";
   } | {
     /**
+     * SWIFT (Society for Worldwide Interbank Financial Telecommunication) - International wire transfers
+     * Global (200+ countries)
+     *
      * @generated from field: tzero.v1.common.PaymentDetails.Swift swift = 30;
      */
     value: PaymentDetails_Swift;
     case: "swift";
   } | {
     /**
+     * Stablecoin - Cryptocurrency transfers pegged to fiat currencies
+     * Global
+     *
      * @generated from field: tzero.v1.common.PaymentDetails.Stablecoin stablecoin = 40;
      */
     value: PaymentDetails_Stablecoin;
     case: "stablecoin";
   } | {
     /**
+     * ACH (Automated Clearing House) - Electronic bank-to-bank transfers
+     * United States
+     *
      * @generated from field: tzero.v1.common.PaymentDetails.Ach ach = 50;
      */
     value: PaymentDetails_Ach;
     case: "ach";
   } | {
     /**
+     * Wire - Domestic electronic funds transfer
+     * United States
+     *
      * @generated from field: tzero.v1.common.PaymentDetails.Wire wire = 60;
      */
     value: PaymentDetails_Wire;
     case: "wire";
+  } | {
+    /**
+     * FPS (Faster Payments Service)
+     * United Kingdom
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.Fps fps = 70;
+     */
+    value: PaymentDetails_Fps;
+    case: "fps";
+  } | {
+    /**
+     * M-Pesa - Mobile money transfer and payment service
+     * Kenya, Tanzania, Mozambique, DRC, Lesotho, Ghana, Egypt, South Africa
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.MPesa mpesa = 80;
+     */
+    value: PaymentDetails_MPesa;
+    case: "mpesa";
+  } | {
+    /**
+     * GCash - Mobile wallet and payment platform
+     * Philippines
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.GCash gcash = 90;
+     */
+    value: PaymentDetails_GCash;
+    case: "gcash";
+  } | {
+    /**
+     * Indian Bank Transfer - Domestic electronic funds transfer (IMPS/NEFT/RTGS)
+     * India
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.IndianBankTransfer indian_bank_transfer = 100;
+     */
+    value: PaymentDetails_IndianBankTransfer;
+    case: "indianBankTransfer";
   } | { case: undefined; value?: undefined };
 };
 
@@ -90,9 +140,238 @@ export const PaymentDetails_SepaSchema: GenMessage<PaymentDetails_Sepa> = /*@__P
   messageDesc(file_tzero_v1_common_payment_method, 0, 0);
 
 /**
+ * @generated from message tzero.v1.common.PaymentDetails.Fps
+ */
+export type PaymentDetails_Fps = Message<"tzero.v1.common.PaymentDetails.Fps"> & {
+  /**
+   * @generated from field: string sort_code = 10;
+   */
+  sortCode: string;
+
+  /**
+   * @generated from field: string account_number = 20;
+   */
+  accountNumber: string;
+
+  /**
+   * @generated from field: string beneficiary_name = 30;
+   */
+  beneficiaryName: string;
+
+  /**
+   * @generated from field: string reference = 40;
+   */
+  reference: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.Fps.
+ * Use `create(PaymentDetails_FpsSchema)` to create a new message.
+ */
+export const PaymentDetails_FpsSchema: GenMessage<PaymentDetails_Fps> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 1);
+
+/**
+ * @generated from message tzero.v1.common.PaymentDetails.MPesa
+ */
+export type PaymentDetails_MPesa = Message<"tzero.v1.common.PaymentDetails.MPesa"> & {
+  /**
+   * Phone number in international format without + sign
+   * Examples: 254708374149 (Kenya), 255712345678 (Tanzania), 256712345678 (Uganda)
+   * Required: Yes
+   *
+   * @generated from field: string beneficiary_phone = 10;
+   */
+  beneficiaryPhone: string;
+
+  /**
+   * Account reference (max 12 chars, alphanumeric)
+   * Required: Yes
+   *
+   * @generated from field: string account_reference = 20;
+   */
+  accountReference: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.MPesa.
+ * Use `create(PaymentDetails_MPesaSchema)` to create a new message.
+ */
+export const PaymentDetails_MPesaSchema: GenMessage<PaymentDetails_MPesa> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 2);
+
+/**
+ * @generated from message tzero.v1.common.PaymentDetails.GCash
+ */
+export type PaymentDetails_GCash = Message<"tzero.v1.common.PaymentDetails.GCash"> & {
+  /**
+   * @generated from field: string beneficiary_name = 10;
+   */
+  beneficiaryName: string;
+
+  /**
+   * Recipient phone
+   *
+   * @generated from field: string beneficiary_phone = 20;
+   */
+  beneficiaryPhone: string;
+
+  /**
+   * @generated from field: string payment_reference = 30;
+   */
+  paymentReference: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.GCash.
+ * Use `create(PaymentDetails_GCashSchema)` to create a new message.
+ */
+export const PaymentDetails_GCashSchema: GenMessage<PaymentDetails_GCash> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 3);
+
+/**
+ * @generated from message tzero.v1.common.PaymentDetails.IndianBankTransfer
+ */
+export type PaymentDetails_IndianBankTransfer = Message<"tzero.v1.common.PaymentDetails.IndianBankTransfer"> & {
+  /**
+   * @generated from oneof tzero.v1.common.PaymentDetails.IndianBankTransfer.method
+   */
+  method: {
+    /**
+     * 1) ACCOUNT + IFSC (NEFT/RTGS/IMPS P2A)
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.IndianBankTransfer.AccountIFSC account_ifsc = 10;
+     */
+    value: PaymentDetails_IndianBankTransfer_AccountIFSC;
+    case: "accountIfsc";
+  } | {
+    /**
+     * 2) IMPS P2P (MOBILE + MMID)
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.IndianBankTransfer.IMPS imps = 20;
+     */
+    value: PaymentDetails_IndianBankTransfer_IMPS;
+    case: "imps";
+  } | { case: undefined; value?: undefined };
+
+  /**
+   * Beneficiary name
+   *
+   * @generated from field: string beneficiary_name = 30;
+   */
+  beneficiaryName: string;
+
+  /**
+   * Beneficiary type
+   *
+   * @generated from field: string beneficiary_type = 40;
+   */
+  beneficiaryType: string;
+
+  /**
+   * @generated from field: string payment_reference = 50;
+   */
+  paymentReference: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.IndianBankTransfer.
+ * Use `create(PaymentDetails_IndianBankTransferSchema)` to create a new message.
+ */
+export const PaymentDetails_IndianBankTransferSchema: GenMessage<PaymentDetails_IndianBankTransfer> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 4);
+
+/**
+ * @generated from message tzero.v1.common.PaymentDetails.IndianBankTransfer.AccountIFSC
+ */
+export type PaymentDetails_IndianBankTransfer_AccountIFSC = Message<"tzero.v1.common.PaymentDetails.IndianBankTransfer.AccountIFSC"> & {
+  /**
+   * Beneficiary bank account number
+   *
+   * @generated from field: string account_number = 10;
+   */
+  accountNumber: string;
+
+  /**
+   * IFSC code (11 characters: 4 letters + '0' + 6 alphanumeric).
+   *
+   * @generated from field: string ifsc = 20;
+   */
+  ifsc: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.IndianBankTransfer.AccountIFSC.
+ * Use `create(PaymentDetails_IndianBankTransfer_AccountIFSCSchema)` to create a new message.
+ */
+export const PaymentDetails_IndianBankTransfer_AccountIFSCSchema: GenMessage<PaymentDetails_IndianBankTransfer_AccountIFSC> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 4, 0);
+
+/**
+ * Method 2: IMPS P2P (Mobile + MMID)
+ *
+ * @generated from message tzero.v1.common.PaymentDetails.IndianBankTransfer.IMPS
+ */
+export type PaymentDetails_IndianBankTransfer_IMPS = Message<"tzero.v1.common.PaymentDetails.IndianBankTransfer.IMPS"> & {
+  /**
+   * Indian mobile number (10 digits, starting from 6–9).
+   *
+   * @generated from field: string beneficiary_phone = 10;
+   */
+  beneficiaryPhone: string;
+
+  /**
+   * MMID: 7-digit Mobile Money Identifier.
+   *
+   * @generated from field: string mmid = 20;
+   */
+  mmid: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.IndianBankTransfer.IMPS.
+ * Use `create(PaymentDetails_IndianBankTransfer_IMPSSchema)` to create a new message.
+ */
+export const PaymentDetails_IndianBankTransfer_IMPSSchema: GenMessage<PaymentDetails_IndianBankTransfer_IMPS> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 4, 1);
+
+/**
  * @generated from message tzero.v1.common.PaymentDetails.Swift
  */
 export type PaymentDetails_Swift = Message<"tzero.v1.common.PaymentDetails.Swift"> & {
+  /**
+   * Beneficiary's bank SWIFT/BIC code (8 or 11 characters)
+   *
+   * @generated from field: string swift_code = 10;
+   */
+  swiftCode: string;
+
+  /**
+   * Beneficiary's account number (format varies by country)
+   * Could be IBAN, account number, or other format
+   *
+   * @generated from field: string account_number = 20;
+   */
+  accountNumber: string;
+
+  /**
+   * Beneficiary's full name
+   *
+   * @generated from field: string beneficiary_name = 30;
+   */
+  beneficiaryName: string;
+
+  /**
+   * Beneficiary's address
+   *
+   * @generated from field: string beneficiary_address = 40;
+   */
+  beneficiaryAddress: string;
+
+  /**
+   * @generated from field: string payment_reference = 50;
+   */
+  paymentReference: string;
 };
 
 /**
@@ -100,7 +379,7 @@ export type PaymentDetails_Swift = Message<"tzero.v1.common.PaymentDetails.Swift
  * Use `create(PaymentDetails_SwiftSchema)` to create a new message.
  */
 export const PaymentDetails_SwiftSchema: GenMessage<PaymentDetails_Swift> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_method, 0, 1);
+  messageDesc(file_tzero_v1_common_payment_method, 0, 5);
 
 /**
  * @generated from message tzero.v1.common.PaymentDetails.Stablecoin
@@ -127,7 +406,7 @@ export type PaymentDetails_Stablecoin = Message<"tzero.v1.common.PaymentDetails.
  * Use `create(PaymentDetails_StablecoinSchema)` to create a new message.
  */
 export const PaymentDetails_StablecoinSchema: GenMessage<PaymentDetails_Stablecoin> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_method, 0, 2);
+  messageDesc(file_tzero_v1_common_payment_method, 0, 6);
 
 /**
  * @generated from message tzero.v1.common.PaymentDetails.Ach
@@ -159,7 +438,7 @@ export type PaymentDetails_Ach = Message<"tzero.v1.common.PaymentDetails.Ach"> &
  * Use `create(PaymentDetails_AchSchema)` to create a new message.
  */
 export const PaymentDetails_AchSchema: GenMessage<PaymentDetails_Ach> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_method, 0, 3);
+  messageDesc(file_tzero_v1_common_payment_method, 0, 7);
 
 /**
  * @generated from enum tzero.v1.common.PaymentDetails.Ach.AchAccountType
@@ -185,7 +464,7 @@ export enum PaymentDetails_Ach_AchAccountType {
  * Describes the enum tzero.v1.common.PaymentDetails.Ach.AchAccountType.
  */
 export const PaymentDetails_Ach_AchAccountTypeSchema: GenEnum<PaymentDetails_Ach_AchAccountType> = /*@__PURE__*/
-  enumDesc(file_tzero_v1_common_payment_method, 0, 3, 0);
+  enumDesc(file_tzero_v1_common_payment_method, 0, 7, 0);
 
 /**
  * @generated from message tzero.v1.common.PaymentDetails.Wire
@@ -232,7 +511,7 @@ export type PaymentDetails_Wire = Message<"tzero.v1.common.PaymentDetails.Wire">
  * Use `create(PaymentDetails_WireSchema)` to create a new message.
  */
 export const PaymentDetails_WireSchema: GenMessage<PaymentDetails_Wire> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_method, 0, 4);
+  messageDesc(file_tzero_v1_common_payment_method, 0, 8);
 
 /**
  * @generated from enum tzero.v1.common.PaymentMethodType
@@ -276,6 +555,26 @@ export enum PaymentMethodType {
    * @generated from enum value: PAYMENT_METHOD_TYPE_WIRE = 60;
    */
   WIRE = 60,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_FPS = 70;
+   */
+  FPS = 70,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_M_PESA = 80;
+   */
+  M_PESA = 80,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_G_CASH = 90;
+   */
+  G_CASH = 90,
+
+  /**
+   * @generated from enum value: PAYMENT_METHOD_TYPE_INDIAN_BANK_TRANSFER = 100;
+   */
+  INDIAN_BANK_TRANSFER = 100,
 }
 
 /**
