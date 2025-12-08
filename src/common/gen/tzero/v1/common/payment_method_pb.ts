@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_method.proto.
  */
 export const file_tzero_v1_common_payment_method: GenFile = /*@__PURE__*/
-  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiKCGgoOUGF5bWVudERldGFpbHMSNAoEc2VwYRgKIAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5TZXBhSAASNgoFc3dpZnQYHiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuU3dpZnRIABJACgpzdGFibGVjb2luGCggASgLMioudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlN0YWJsZWNvaW5IABIyCgNhY2gYMiABKAsyIy50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuQWNoSAASNAoEd2lyZRg8IAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5XaXJlSAASMgoDZnBzGEYgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLkZwc0gAEjYKBW1wZXNhGFAgASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLk1QZXNhSAASNgoFZ2Nhc2gYWiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuR0Nhc2hIABJSChRpbmRpYW5fYmFua190cmFuc2ZlchhkIAEoCzIyLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5JbmRpYW5CYW5rVHJhbnNmZXJIABI6CgdwZXNvbmV0GG4gASgLMicudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlBlc29uZXRIABI8CghpbnN0YXBheRh4IAEoCzIoLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5JbnN0YXBheUgAGoYBCgRTZXBhEjQKBGliYW4YFCABKAlCJrpII3IhEA8YIjIbXltBLVpdezJ9WzAtOV17Mn1bQS1aMC05XSskEiMKEGJlbmVmaWNpYXJ5X25hbWUYHiABKAlCCbpIBnIEEAEYRhIjChFwYXltZW50X3JlZmVyZW5jZRgoIAEoCUIIukgFcgMYjAEavAEKA0ZwcxJFCglzb3J0X2NvZGUYCiABKAlCMrpIL3ItEAYY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W0EtWjAtOV17Mn0oW0EtWjAtOV17M30pPyQSIQoOYWNjb3VudF9udW1iZXIYKCABKAlCCbpIBnIEEAEYIhIjChBiZW5lZmljaWFyeV9uYW1lGDIgASgJQgm6SAZyBBABGEYSJwoTYmVuZWZpY2lhcnlfYWRkcmVzcxg8IAEoCUIKukgHcgUQARiMARIgCg53aXJlX3JlZmVyZW5jZRhGIAEoCUIIukgFcgMYjAEaoQIKB1Blc29uZXQSMgofcmVjaXBpZW50X2ZpbmFuY2lhbF9pbnN0aXR1dGlvbhgKIAEoCUIJukgGcgQQARhGEicKFHJlY2lwaWVudF9pZGVudGlmaWVyGBQgASgJQgm6SAZyBBABGEYSJwoWcmVjaXBpZW50X2FjY291bnRfbmFtZRgeIAEoCUIHukgEcgIYEhIqChNwdXJwb3NlX29mX3RyYW5zZmVyGCggASgJQgi6SAVyAxiMAUgAiAEBEjAKF3JlY2lwaWVudF9hZGRyZXNzX2VtYWlsGDIgASgJQgq6SAdyBRABGIAESAGIAQFCFgoUX3B1cnBvc2Vfb2ZfdHJhbnNmZXJCGgoYX3JlY2lwaWVudF9hZGRyZXNzX2VtYWlsGsoBCghJbnN0YXBheRIoChVyZWNpcGllbnRfaW5zdGl0dXRpb24YCiABKAlCCbpIBnIEEAEYRhInChRyZWNpcGllbnRfaWRlbnRpZmllchgUIAEoCUIJukgGcgQQARhGEicKFnJlY2lwaWVudF9hY2NvdW50X25hbWUYHiABKAlCB7pIBHICGDISKgoTcHVycG9zZV9vZl90cmFuc2ZlchgoIAEoCUIIukgFcgMYjAFIAIgBAUIWChRfcHVycG9zZV9vZl90cmFuc2ZlckIQCgdkZXRhaWxzEgW6SAIIASrAAwoRUGF5bWVudE1ldGhvZFR5cGUSIwofUEFZTUVOVF9NRVRIT0RfVFlQRV9VTlNQRUNJRklFRBAAEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfU0VQQRAKEh0KGVBBWU1FTlRfTUVUSE9EX1RZUEVfU1dJRlQQFBIcChhQQVlNRU5UX01FVEhPRF9UWVBFX0NBUkQQHhIiCh5QQVlNRU5UX01FVEhPRF9UWVBFX1NUQUJMRUNPSU4QKBIbChdQQVlNRU5UX01FVEhPRF9UWVBFX0FDSBAyEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfV0lSRRA8EhsKF1BBWU1FTlRfTUVUSE9EX1RZUEVfRlBTEEYSHgoaUEFZTUVOVF9NRVRIT0RfVFlQRV9NX1BFU0EQUBIeChpQQVlNRU5UX01FVEhPRF9UWVBFX0dfQ0FTSBBaEiwKKFBBWU1FTlRfTUVUSE9EX1RZUEVfSU5ESUFOX0JBTktfVFJBTlNGRVIQZBIfChtQQVlNRU5UX01FVEhPRF9UWVBFX1BFU09ORVQQbhIgChxQQVlNRU5UX01FVEhPRF9UWVBFX0lOU1RBUEFZEHhChwEKE2NvbS50emVyby52MS5jb21tb25CElBheW1lbnRNZXRob2RQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_tzero_v1_common_common, file_buf_validate_validate]);
+  fileDesc("CiR0emVyby92MS9jb21tb24vcGF5bWVudF9tZXRob2QucHJvdG8SD3R6ZXJvLnYxLmNvbW1vbiLVJQoOUGF5bWVudERldGFpbHMSNAoEc2VwYRgKIAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5TZXBhSAASNgoFc3dpZnQYHiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuU3dpZnRIABJACgpzdGFibGVjb2luGCggASgLMioudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlN0YWJsZWNvaW5IABIyCgNhY2gYMiABKAsyIy50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuQWNoSAASNAoEd2lyZRg8IAEoCzIkLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5XaXJlSAASMgoDZnBzGEYgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLkZwc0gAEjYKBW1wZXNhGFAgASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLk1QZXNhSAASNgoFZ2Nhc2gYWiABKAsyJS50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuR0Nhc2hIABJSChRpbmRpYW5fYmFua190cmFuc2ZlchhkIAEoCzIyLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5JbmRpYW5CYW5rVHJhbnNmZXJIABI6CgdwZXNvbmV0GG4gASgLMicudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlBlc29uZXRIABI8CghpbnN0YXBheRh4IAEoCzIoLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5JbnN0YXBheUgAElcKFnBha2lzdGFuX2JhbmtfdHJhbnNmZXIYggEgASgLMjQudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlBha2lzdGFuQmFua1RyYW5zZmVySAASVwoWcGFraXN0YW5fbW9iaWxlX3dhbGxldBiMASABKAsyNC50emVyby52MS5jb21tb24uUGF5bWVudERldGFpbHMuUGFraXN0YW5Nb2JpbGVXYWxs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AiAAIm8KDkFjaEFjY291bnRUeXBlEiAKHEFDSF9BQ0NPVU5UX1RZUEVfVU5TUEVDSUZJRUQQABIdChlBQ0hfQUNDT1VOVF9UWVBFX0NIRUNLSU5HEAoSHAoYQUNIX0FDQ09VTlRfVFlQRV9TQVZJTkdTEBQanQIKBFdpcmUSHAoJYmFua19uYW1lGAogASgJQgm6SAZyBBABGEYSIAoMYmFua19hZGRyZXNzGBQgASgJQgq6SAdyBRABGIwBEkIKCnN3aWZ0X2NvZGUYHiABKAlCLrpIK3IpEAgYCzIjXltBLVpdezZ9W0EtWjAtOV17Mn0oW0EtWjAtOV17M30pPyQSIQoOYWNjb3VudF9udW1iZXIYKCABKAlCCbpIBnIEEAEYIhIjChBiZW5lZmljaWFyeV9uYW1lGDIgASgJQgm6SAZyBBABGEYSJwoTYmVuZWZpY2lhcnlfYWRkcmVzcxg8IAEoCUIKukgHcgUQARiMARIgCg53aXJlX3JlZmVyZW5jZRhGIAEoCUIIukgFcgMYjAEaoQIKB1Blc29uZXQSMgofcmVjaXBpZW50X2ZpbmFuY2lhbF9pbnN0aXR1dGlvbhgKIAEoCUIJukgGcgQQARhGEicKFHJlY2lwaWVudF9pZGVudGlmaWVyGBQgASgJQgm6SAZyBBABGEYSJwoWcmVjaXBpZW50X2FjY291bnRfbmFtZRgeIAEoCUIHukgEcgIYEhIqChNwdXJwb3NlX29mX3RyYW5zZmVyGCggASgJQgi6SAVyAxiMAUgAiAEBEjAKF3JlY2lwaWVudF9hZGRyZXNzX2VtYWlsGDIgASgJQgq6SAdyBRABGIAESAGIAQFCFgoUX3B1cnBvc2Vfb2ZfdHJhbnNmZXJCGgoYX3JlY2lwaWVudF9hZGRyZXNzX2VtYWlsGsoBCghJbnN0YXBheRIoChVyZWNpcGllbnRfaW5zdGl0dXRpb24YCiABKAlCCbpIBnIEEAEYRhInChRyZWNpcGllbnRfaWRlbnRpZmllchgUIAEoCUIJukgGcgQQARhGEicKFnJlY2lwaWVudF9hY2NvdW50X25hbWUYHiABKAlCB7pIBHICGDISKgoTcHVycG9zZV9vZl90cmFuc2ZlchgoIAEoCUIIukgFcgMYjAFIAIgBAUIWChRfcHVycG9zZV9vZl90cmFuc2ZlchrlAQoUUGFraXN0YW5CYW5rVHJhbnNmZXISNgoEaWJhbhgKIAEoCUIoukglciMQGBgYMh1eUEtbMC05XXsyfVtBLVpdezR9WzAtOV17MTZ9JBIkChBiZW5lZmljaWFyeV9uYW1lGBQgASgJQgq6SAdyBRABGIwBEjUKEGJlbmVmaWNpYXJ5X2NuaWMYGSABKAlCFrpIE3IREA0YDTILXlswLTldezEzfSRIAIgBARIjChFwYXltZW50X3JlZmVyZW5jZRgeIAEoCUIIukgFcgMYjAFCEwoRX2JlbmVmaWNpYXJ5X2NuaWMa1AQKFFBha2lzdGFuTW9iaWxlV2FsbGV0Em4KD3dhbGxldF9wcm92aWRlchgKIAEoDjJLLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlscy5QYWtpc3Rhbk1vYmlsZVdhbGxldC5QYWtpc3RhbldhbGxldFByb3ZpZGVyQgi6SAWCAQIgABI8Cg1tb2JpbGVfbnVtYmVyGBQgASgJQiW6SCJyIBALGAwyGl4oMDNbMC05XXs5fXw5MjNbMC05XXs5fSkkEiQKBGNuaWMYHiABKAlCFrpIE3IREA0YDTILXlswLTldezEzfSQSJAoQYmVuZWZpY2lhcnlfbmFtZRgoIAEoCUIKukgHcgUQARiMARIoChFwYXltZW50X3JlZmVyZW5jZRgyIAEoCUIIukgFcgMYjAFIAIgBASKBAgoWUGFraXN0YW5XYWxsZXRQcm92aWRlchIoCiRQQUtJU1RBTl9XQUxMRVRfUFJPVklERVJfVU5TUEVDSUZJRUQQABIlCiFQQUtJU1RBTl9XQUxMRVRfUFJPVklERVJfSkFaWkNBU0gQChImCiJQQUtJU1RBTl9XQUxMRVRfUFJPVklERVJfRUFTWVBBSVNBEBQSJAogUEFLSVNUQU5fV0FMTEVUX1BST1ZJREVSX1NBREFQQVkQHhIkCiBQQUtJU1RBTl9XQUxMRVRfUFJPVklERVJfTkFZQVBBWRAoEiIKHlBBS0lTVEFOX1dBTExFVF9QUk9WSURFUl9PVEhFUhBkQhQKEl9wYXltZW50X3JlZmVyZW5jZRqqAwoDUGl4EkcKCGtleV90eXBlGAogASgOMisudHplcm8udjEuY29tbW9uLlBheW1lbnREZXRhaWxzLlBpeC5LZXlUeXBlQgi6SAWCAQIgABIcCglrZXlfdmFsdWUYFCABKAlCCbpIBnIEEAEYTRIkChBiZW5lZmljaWFyeV9uYW1lGB4gASgJQgq6SAdyBRABGIwBEjoKEmJlbmVmaWNpYXJ5X3RheF9pZBgoIAEoCUIZukgWchQQCxgOMg5eWzAtOV17MTEsMTR9JEgAiAEBEigKEXBheW1lbnRfcmVmZXJlbmNlGDIgASgJQgi6SAVyAxiMAUgBiAEBIoIBCgdLZXlUeXBlEhgKFEtFWV9UWVBFX1VOU1BFQ0lGSUVEEAASEAoMS0VZX1RZUEVfQ1BGEAoSEQoNS0VZX1RZUEVfQ05QShAUEhIKDktFWV9UWVBFX0VNQUlMEB4SEgoOS0VZX1RZUEVfUEhPTkUQKBIQCgxLRVlfVFlQRV9FVlAQMkIVChNfYmVuZWZpY2lhcnlfdGF4X2lkQhQKEl9wYXltZW50X3JlZmVyZW5jZUIQCgdkZXRhaWxzEgW6SAIIASrABAoRUGF5bWVudE1ldGhvZFR5cGUSIwofUEFZTUVOVF9NRVRIT0RfVFlQRV9VTlNQRUNJRklFRBAAEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfU0VQQRAKEh0KGVBBWU1FTlRfTUVUSE9EX1RZUEVfU1dJRlQQFBIcChhQQVlNRU5UX01FVEhPRF9UWVBFX0NBUkQQHhIiCh5QQVlNRU5UX01FVEhPRF9UWVBFX1NUQUJMRUNPSU4QKBIbChdQQVlNRU5UX01FVEhPRF9UWVBFX0FDSBAyEhwKGFBBWU1FTlRfTUVUSE9EX1RZUEVfV0lSRRA8EhsKF1BBWU1FTlRfTUVUSE9EX1RZUEVfRlBTEEYSHgoaUEFZTUVOVF9NRVRIT0RfVFlQRV9NX1BFU0EQUBIeChpQQVlNRU5UX01FVEhPRF9UWVBFX0dfQ0FTSBBaEiwKKFBBWU1FTlRfTUVUSE9EX1RZUEVfSU5ESUFOX0JBTktfVFJBTlNGRVIQZBIfChtQQVlNRU5UX01FVEhPRF9UWVBFX1BFU09ORVQQbhIgChxQQVlNRU5UX01FVEhPRF9UWVBFX0lOU1RBUEFZEHgSLwoqUEFZTUVOVF9NRVRIT0RfVFlQRV9QQUtJU1RBTl9CQU5LX1RSQU5TRkVSEIIBEi8KKlBBWU1FTlRfTUVUSE9EX1RZUEVfUEFLSVNUQU5fTU9CSUxFX1dBTExFVBCMARIcChdQQVlNRU5UX01FVEhPRF9UWVBFX1BJWBCWAUKHAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkISUGF5bWVudE1ldGhvZFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_tzero_v1_common_common, file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentDetails
@@ -120,6 +120,33 @@ export type PaymentDetails = Message<"tzero.v1.common.PaymentDetails"> & {
      */
     value: PaymentDetails_Instapay;
     case: "instapay";
+  } | {
+    /**
+     * Pakistan Bank Transfer - Domestic bank transfers using Pakistani IBAN
+     * Pakistan
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.PakistanBankTransfer pakistan_bank_transfer = 130;
+     */
+    value: PaymentDetails_PakistanBankTransfer;
+    case: "pakistanBankTransfer";
+  } | {
+    /**
+     * Pakistan Mobile Wallet - JazzCash, Easypaisa, SadaPay, NayaPay and other wallets
+     * Pakistan
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.PakistanMobileWallet pakistan_mobile_wallet = 140;
+     */
+    value: PaymentDetails_PakistanMobileWallet;
+    case: "pakistanMobileWallet";
+  } | {
+    /**
+     * PIX - Brazilian instant payment system
+     * Brazil
+     *
+     * @generated from field: tzero.v1.common.PaymentDetails.Pix pix = 150;
+     */
+    value: PaymentDetails_Pix;
+    case: "pix";
   } | { case: undefined; value?: undefined };
 };
 
@@ -618,6 +645,248 @@ export const PaymentDetails_InstapaySchema: GenMessage<PaymentDetails_Instapay> 
   messageDesc(file_tzero_v1_common_payment_method, 0, 10);
 
 /**
+ * Pakistan Bank Transfer - Domestic transfers using Pakistani IBAN
+ * Pakistan uses 24-character IBAN: PK + 2 check digits + 4-char bank code + 16-char account number
+ *
+ * @generated from message tzero.v1.common.PaymentDetails.PakistanBankTransfer
+ */
+export type PaymentDetails_PakistanBankTransfer = Message<"tzero.v1.common.PaymentDetails.PakistanBankTransfer"> & {
+  /**
+   * Pakistani IBAN (24 characters: PK + 2 check digits + 4-char bank identifier + 16-char account)
+   * Example: PK36SCBL0000001123456702
+   *
+   * @generated from field: string iban = 10;
+   */
+  iban: string;
+
+  /**
+   * Beneficiary's full name
+   *
+   * @generated from field: string beneficiary_name = 20;
+   */
+  beneficiaryName: string;
+
+  /**
+   * (Optional) Beneficiary CNIC (13 digits, no dashes) — sometimes required by receiving banks
+   *
+   * @generated from field: optional string beneficiary_cnic = 25;
+   */
+  beneficiaryCnic?: string;
+
+  /**
+   * Payment reference/description
+   *
+   * @generated from field: string payment_reference = 30;
+   */
+  paymentReference: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.PakistanBankTransfer.
+ * Use `create(PaymentDetails_PakistanBankTransferSchema)` to create a new message.
+ */
+export const PaymentDetails_PakistanBankTransferSchema: GenMessage<PaymentDetails_PakistanBankTransfer> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 11);
+
+/**
+ * Pakistan Mobile Wallet - JazzCash, Easypaisa, SadaPay, NayaPay and other wallets
+ * Transfers are made using the mobile number linked to the wallet account; CNIC is required for verification
+ *
+ * @generated from message tzero.v1.common.PaymentDetails.PakistanMobileWallet
+ */
+export type PaymentDetails_PakistanMobileWallet = Message<"tzero.v1.common.PaymentDetails.PakistanMobileWallet"> & {
+  /**
+   * Wallet provider
+   *
+   * @generated from field: tzero.v1.common.PaymentDetails.PakistanMobileWallet.PakistanWalletProvider wallet_provider = 10;
+   */
+  walletProvider: PaymentDetails_PakistanMobileWallet_PakistanWalletProvider;
+
+  /**
+   * Mobile number linked to the wallet (Pak local 03XXXXXXXXX or international 923XXXXXXXXX)
+   *
+   * @generated from field: string mobile_number = 20;
+   */
+  mobileNumber: string;
+
+  /**
+   * CNIC (Computerized National Identity Card) - 13 digits without dashes
+   *
+   * @generated from field: string cnic = 30;
+   */
+  cnic: string;
+
+  /**
+   * Beneficiary's full name as registered with the wallet
+   *
+   * @generated from field: string beneficiary_name = 40;
+   */
+  beneficiaryName: string;
+
+  /**
+   * Payment reference/description (optional)
+   *
+   * @generated from field: optional string payment_reference = 50;
+   */
+  paymentReference?: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.PakistanMobileWallet.
+ * Use `create(PaymentDetails_PakistanMobileWalletSchema)` to create a new message.
+ */
+export const PaymentDetails_PakistanMobileWalletSchema: GenMessage<PaymentDetails_PakistanMobileWallet> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 12);
+
+/**
+ * @generated from enum tzero.v1.common.PaymentDetails.PakistanMobileWallet.PakistanWalletProvider
+ */
+export enum PaymentDetails_PakistanMobileWallet_PakistanWalletProvider {
+  /**
+   * @generated from enum value: PAKISTAN_WALLET_PROVIDER_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * @generated from enum value: PAKISTAN_WALLET_PROVIDER_JAZZCASH = 10;
+   */
+  JAZZCASH = 10,
+
+  /**
+   * @generated from enum value: PAKISTAN_WALLET_PROVIDER_EASYPAISA = 20;
+   */
+  EASYPAISA = 20,
+
+  /**
+   * @generated from enum value: PAKISTAN_WALLET_PROVIDER_SADAPAY = 30;
+   */
+  SADAPAY = 30,
+
+  /**
+   * @generated from enum value: PAKISTAN_WALLET_PROVIDER_NAYAPAY = 40;
+   */
+  NAYAPAY = 40,
+
+  /**
+   * @generated from enum value: PAKISTAN_WALLET_PROVIDER_OTHER = 100;
+   */
+  OTHER = 100,
+}
+
+/**
+ * Describes the enum tzero.v1.common.PaymentDetails.PakistanMobileWallet.PakistanWalletProvider.
+ */
+export const PaymentDetails_PakistanMobileWallet_PakistanWalletProviderSchema: GenEnum<PaymentDetails_PakistanMobileWallet_PakistanWalletProvider> = /*@__PURE__*/
+  enumDesc(file_tzero_v1_common_payment_method, 0, 12, 0);
+
+/**
+ * PIX - Brazilian instant payment system
+ * PIX allows transfers using a Pix key (CPF, CNPJ, email, phone, or random EVP)
+ * or traditional bank account details (bank code, branch, account number)
+ *
+ * @generated from message tzero.v1.common.PaymentDetails.Pix
+ */
+export type PaymentDetails_Pix = Message<"tzero.v1.common.PaymentDetails.Pix"> & {
+  /**
+   * Pix key type - determines the format of pix_key_value
+   *
+   * @generated from field: tzero.v1.common.PaymentDetails.Pix.KeyType key_type = 10;
+   */
+  keyType: PaymentDetails_Pix_KeyType;
+
+  /**
+   * Pix key value - format depends on pix_key_type:
+   * - CPF: 11 digits (e.g., "12345678901")
+   * - CNPJ: 14 digits (e.g., "12345678000195")
+   * - EMAIL: valid email address
+   * - PHONE: international format with country code (e.g., "+5511999999999")
+   * - EVP: 32-character UUID (e.g., "123e4567-e89b-12d3-a456-426614174000")
+   *
+   * @generated from field: string key_value = 20;
+   */
+  keyValue: string;
+
+  /**
+   * Beneficiary's full name
+   *
+   * @generated from field: string beneficiary_name = 30;
+   */
+  beneficiaryName: string;
+
+  /**
+   * (Optional) Beneficiary's CPF (11 digits) or CNPJ (14 digits) for verification
+   *
+   * @generated from field: optional string beneficiary_tax_id = 40;
+   */
+  beneficiaryTaxId?: string;
+
+  /**
+   * (Optional) Payment description/reference
+   *
+   * @generated from field: optional string payment_reference = 50;
+   */
+  paymentReference?: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentDetails.Pix.
+ * Use `create(PaymentDetails_PixSchema)` to create a new message.
+ */
+export const PaymentDetails_PixSchema: GenMessage<PaymentDetails_Pix> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_method, 0, 13);
+
+/**
+ * @generated from enum tzero.v1.common.PaymentDetails.Pix.KeyType
+ */
+export enum PaymentDetails_Pix_KeyType {
+  /**
+   * @generated from enum value: KEY_TYPE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * CPF - Cadastro de Pessoas Físicas (Individual Taxpayer Registry) - 11 digits
+   *
+   * @generated from enum value: KEY_TYPE_CPF = 10;
+   */
+  CPF = 10,
+
+  /**
+   * CNPJ - Cadastro Nacional da Pessoa Jurídica (Business Tax ID) - 14 digits
+   *
+   * @generated from enum value: KEY_TYPE_CNPJ = 20;
+   */
+  CNPJ = 20,
+
+  /**
+   * Email address
+   *
+   * @generated from enum value: KEY_TYPE_EMAIL = 30;
+   */
+  EMAIL = 30,
+
+  /**
+   * Phone number in international format
+   *
+   * @generated from enum value: KEY_TYPE_PHONE = 40;
+   */
+  PHONE = 40,
+
+  /**
+   * EVP - Random key (UUID format)
+   *
+   * @generated from enum value: KEY_TYPE_EVP = 50;
+   */
+  EVP = 50,
+}
+
+/**
+ * Describes the enum tzero.v1.common.PaymentDetails.Pix.KeyType.
+ */
+export const PaymentDetails_Pix_KeyTypeSchema: GenEnum<PaymentDetails_Pix_KeyType> = /*@__PURE__*/
+  enumDesc(file_tzero_v1_common_payment_method, 0, 13, 0);
+
+/**
  * @generated from enum tzero.v1.common.PaymentMethodType
  */
 export enum PaymentMethodType {
@@ -689,6 +958,27 @@ export enum PaymentMethodType {
    * @generated from enum value: PAYMENT_METHOD_TYPE_INSTAPAY = 120;
    */
   INSTAPAY = 120,
+
+  /**
+   * Pakistan domestic bank transfer via IBAN
+   *
+   * @generated from enum value: PAYMENT_METHOD_TYPE_PAKISTAN_BANK_TRANSFER = 130;
+   */
+  PAKISTAN_BANK_TRANSFER = 130,
+
+  /**
+   * Pakistan mobile wallet (JazzCash, Easypaisa, etc.) - sometimes also called ID Wallet
+   *
+   * @generated from enum value: PAYMENT_METHOD_TYPE_PAKISTAN_MOBILE_WALLET = 140;
+   */
+  PAKISTAN_MOBILE_WALLET = 140,
+
+  /**
+   * PIX - Brazilian instant payment system
+   *
+   * @generated from enum value: PAYMENT_METHOD_TYPE_PIX = 150;
+   */
+  PIX = 150,
 }
 
 /**
