@@ -46,6 +46,7 @@ jobs:
         with:
           tag_name: v${{ steps.version.outputs.version }}
           tagging_message: 'Release ${{ steps.version.outputs.version }}'
+          commit_message: 'Release ${{ steps.version.outputs.version }}'
 
       - name: Create a Release
         uses: elgohr/Github-Release-Action@v5
