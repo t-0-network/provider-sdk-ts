@@ -1,4 +1,4 @@
-name: Release to NPM
+name: Create Release
 
 on:
   workflow_dispatch:
@@ -10,4 +10,41 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Release to NPM"
+      - uses: actions/checkout@v5
+        with:
+          show-progress: false
+          ref: ${{ github.head_ref }}
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Build
+        run: |
+          npm i
+          npm run build
+
+      - name: Bump version
+        run: npm version patch --git-tag-version false
+
+      - name: Get version
+        id: version
+        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          tagging_message: 'Release ${{ steps.version.outputs.version }}'
+
+      - name: Create a Release
+        uses: elgohr/Github-Release-Action@v5
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          title: Release ${{ steps.version.outputs.version }}
+          tag: v${{ steps.version.outputs.version }}
+
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
