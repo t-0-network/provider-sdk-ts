@@ -1,6 +1,6 @@
 {
   "name": "@t-0/provider-sdk",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "description": "Provider SDK for the T-0 Network",
   "repository": {
     "type": "git",
