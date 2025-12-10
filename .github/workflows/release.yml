@@ -1,0 +1,13 @@
+name: Release to NPM
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Release to NPM"
