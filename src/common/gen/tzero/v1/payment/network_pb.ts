@@ -21,7 +21,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/payment/network.proto.
  */
 export const file_tzero_v1_payment_network: GenFile = /*@__PURE__*/
-  fileDesc("Ch50emVyby92MS9wYXltZW50L25ldHdvcmsucHJvdG8SEHR6ZXJvLnYxLnBheW1lbnQiigUKElVwZGF0ZVF1b3RlUmVxdWVzdBI7CgdwYXlfb3V0GAogAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUSOgoGcGF5X2luGBQgAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUa+gMKBVF1b3RlEiYKCGN1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI3CgpxdW90ZV90eXBlGBQgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCBrpIA8gBARJCCg5wYXltZW50X21ldGhvZBgZIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZUIGukgDyAEBEkgKBWJhbmRzGB4gAygLMi8udHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUuQmFuZEIIukgFkgECCAESOAoKZXhwaXJhdGlvbhg8IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCLpIBbIBAkABEjUKCXRpbWVzdGFtcBhGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBrpIA8gBARqQAQoEQmFuZBIiCg9jbGllbnRfcXVvdGVfaWQYCiABKAlCCbpIBnIEEAEYQBI0CgptYXhfYW1vdW50GCggASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARIuCgRyYXRlGDIgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBASIVChNVcGRhdGVRdW90ZVJlc3BvbnNlIukCCg9HZXRRdW90ZVJlcXVlc3QSLQoPcGF5X2luX2N1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI3CgZhbW91bnQYFCABKAsyHy50emVyby52MS5wYXltZW50LlBheW1lbnRBbW91bnRCBrpIA8gBARJBCg1wYXlfaW5fbWV0aG9kGB4gASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlQga6SAPIAQESLgoQcGF5X291dF9jdXJyZW5jeRgoIAEoCUIUukgRcg8yCl5bQS1aXXszfSSYAQMSQgoOcGF5X291dF9tZXRob2QYMiABKA4yIi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZFR5cGVCBrpIA8gBARI3CgpxdW90ZV90eXBlGDwgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCBrpIA8gBASLZAwoQR2V0UXVvdGVSZXNwb25zZRI9CgdzdWNjZXNzGBQgASgLMioudHplcm8udjEucGF5bWVudC5HZXRRdW90ZVJlc3BvbnNlLlN1Y2Nlc3NIABI9CgdmYWlsdXJlGB4gASgLMioudHplcm8udjEucGF5bWVudC5HZXRRdW90ZVJlc3BvbnNlLkZhaWx1cmVIABqoAQoHU3VjY2VzcxIuCgRyYXRlGAogASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARI4CgpleHBpcmF0aW9uGBQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIukgFsgECQAESMwoIcXVvdGVfaWQYHiABKAsyGS50emVyby52MS5wYXltZW50LlF1b3RlSWRCBrpIA8gBARqKAQoHRmFpbHVyZRJBCgZyZWFzb24YCiABKA4yMS50emVyby52MS5wYXltZW50LkdldFF1b3RlUmVzcG9uc2UuRmFpbHVyZS5SZWFzb24iPAoGUmVhc29uEhYKElJFQVNPTl9VTlNQRUNJRklFRBAAEhoKFlJFQVNPTl9RVU9URV9OT1RfRk9VTkQQCkIPCgZyZXN1bHQSBbpIAggBIogGChRDcmVhdGVQYXltZW50UmVxdWVzdBIkChFwYXltZW50X2NsaWVudF9pZBgKIAEoCUIJukgGcgQQARhAEjcKBmFtb3VudBgeIAEoCzIfLnR6ZXJvLnYxLnBheW1lbnQuUGF5bWVudEFtb3VudEIGukgDyAEBEkQKBnBheV9pbhgoIAEoCzIsLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlcXVlc3QuUGF5SW5CBrpIA8gBARJGCgdwYXlfb3V0GC0gASgLMi0udHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5QYXlPdXRCBrpIA8gBARJUChB0cmF2ZWxfcnVsZV9kYXRhGGQgASgLMjUudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5UcmF2ZWxSdWxlRGF0YUgAiAEBGnMKBVBheUluEiYKCGN1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxJCCg5wYXltZW50X21ldGhvZBgUIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZUIGukgDyAEBGrEBCgZQYXlPdXQSJgoIY3VycmVuY3kYCiABKAlCFLpIEXIPMgpeW0EtWl17M30kmAEDEkAKD3BheW1lbnRfZGV0YWlscxgUIAEoCzIfLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlsc0IGukgDyAEBEjAKCHF1b3RlX2lkGGQgASgLMhkudHplcm8udjEucGF5bWVudC5RdW90ZUlkSACIAQFCCwoJX3F1b3RlX2lkGm8KDlRyYXZlbFJ1bGVEYXRhEi0KCm9yaWdpbmF0b3IYCiADKAsyDy5pdm1zMTAxLlBlcnNvbkIIukgFkgECCAESLgoLYmVuZWZpY2lhcnkYFCADKAsyDy5pdm1zMTAxLlBlcnNvbkIIukgFkgECCAFCEwoRX3RyYXZlbF9ydWxlX2RhdGEiQgoHUXVvdGVJZBIZCghxdW90ZV9pZBgeIAEoA0IHukgEIgIgABIcCgtwcm92aWRlcl9pZBgoIAEoBUIHukgEGgIgACKvBAoVQ3JlYXRlUGF5bWVudFJlc3BvbnNlEiIKEXBheW1lbnRfY2xpZW50X2lkGAogASgJQge6SARyAhABEkIKB3N1Y2Nlc3MYFCABKAsyLy50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXNwb25zZS5TdWNjZXNzSAASQgoHZmFpbHVyZRgeIAEoCzIvLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlc3BvbnNlLkZhaWx1cmVIABqcAQoHU3VjY2VzcxIbCgpwYXltZW50X2lkGAogASgEQge6SAQyAiAAEjcKDXBheV9pbl9hbW91bnQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEIGukgDyAEBEjsKEXNldHRsZW1lbnRfYW1vdW50GB4gASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARq5AQoHRmFpbHVyZRJGCgZyZWFzb24YCiABKA4yNi50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXNwb25zZS5GYWlsdXJlLlJlYXNvbiJmCgZSZWFzb24SFgoSUkVBU09OX1VOU1BFQ0lGSUVEEAASGgoWUkVBU09OX1FVT1RFX05PVF9GT1VORBAKEigKJFJFQVNPTl9DUkVESVRfT1JfUFJFREVQT1NJVF9SRVFVSVJFRBAUQg8KBnJlc3VsdBIFukgCCAEigQEKFENvbmZpcm1QYXlvdXRSZXF1ZXN0EhsKCnBheW1lbnRfaWQYCiABKARCB7pIBDICIAASGgoJcGF5b3V0X2lkGBQgASgEQge6SAQyAiAAEjAKB3JlY2VpcHQYHiABKAsyHy50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQiFwoVQ29uZmlybVBheW91dFJlc3BvbnNlIocBCg1QYXltZW50QW1vdW50EjEKDXBheV9pbl9hbW91bnQYCiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEgAEjIKDnBheV9vdXRfYW1vdW50GBQgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxIAEIPCgZhbW91bnQSBbpIAggBKkAKCVF1b3RlVHlwZRIaChZRVU9URV9UWVBFX1VOU1BFQ0lGSUVEEAASFwoTUVVPVEVfVFlQRV9SRUFMVElNRRABMpcDCg5OZXR3b3JrU2VydmljZRJfCgtVcGRhdGVRdW90ZRIkLnR6ZXJvLnYxLnBheW1lbnQuVXBkYXRlUXVvdGVSZXF1ZXN0GiUudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlc3BvbnNlIgOQAgISVgoIR2V0UXVvdGUSIS50emVyby52MS5wYXltZW50LkdldFF1b3RlUmVxdWVzdBoiLnR6ZXJvLnYxLnBheW1lbnQuR2V0UXVvdGVSZXNwb25zZSIDkAIBEmUKDUNyZWF0ZVBheW1lbnQSJi50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXF1ZXN0GicudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVzcG9uc2UiA5ACAhJlCg1Db25maXJtUGF5b3V0EiYudHplcm8udjEucGF5bWVudC5Db25maXJtUGF5b3V0UmVxdWVzdBonLnR6ZXJvLnYxLnBheW1lbnQuQ29uZmlybVBheW91dFJlc3BvbnNlIgOQAgJChgEKFGNvbS50emVyby52MS5wYXltZW50QgxOZXR3b3JrUHJvdG9QAaICA1RWUKoCEFR6ZXJvLlYxLlBheW1lbnTKAhBUemVyb1xWMVxQYXltZW504gIcVHplcm9cVjFcUGF5bWVudFxHUEJNZXRhZGF0YeoCElR6ZXJvOjpWMTo6UGF5bWVudGIGcHJvdG8z", [file_tzero_v1_common_common, file_tzero_v1_common_payment_method, file_tzero_v1_common_payment_receipt, file_ivms101_v1_ivms_ivms101, file_google_protobuf_timestamp, file_buf_validate_validate]);
+  fileDesc("Ch50emVyby92MS9wYXltZW50L25ldHdvcmsucHJvdG8SEHR6ZXJvLnYxLnBheW1lbnQiigUKElVwZGF0ZVF1b3RlUmVxdWVzdBI7CgdwYXlfb3V0GAogAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUSOgoGcGF5X2luGBQgAygLMioudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUa+gMKBVF1b3RlEiYKCGN1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI3CgpxdW90ZV90eXBlGBQgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCBrpIA8gBARJCCg5wYXltZW50X21ldGhvZBgZIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZUIGukgDyAEBEkgKBWJhbmRzGB4gAygLMi8udHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QuUXVvdGUuQmFuZEIIukgFkgECCAESOAoKZXhwaXJhdGlvbhg8IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCLpIBbIBAkABEjUKCXRpbWVzdGFtcBhGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBrpIA8gBARqQAQoEQmFuZBIiCg9jbGllbnRfcXVvdGVfaWQYCiABKAlCCbpIBnIEEAEYQBI0CgptYXhfYW1vdW50GCggASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARIuCgRyYXRlGDIgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBASIVChNVcGRhdGVRdW90ZVJlc3BvbnNlIukCCg9HZXRRdW90ZVJlcXVlc3QSLQoPcGF5X2luX2N1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxI3CgZhbW91bnQYFCABKAsyHy50emVyby52MS5wYXltZW50LlBheW1lbnRBbW91bnRCBrpIA8gBARJBCg1wYXlfaW5fbWV0aG9kGB4gASgOMiIudHplcm8udjEuY29tbW9uLlBheW1lbnRNZXRob2RUeXBlQga6SAPIAQESLgoQcGF5X291dF9jdXJyZW5jeRgoIAEoCUIUukgRcg8yCl5bQS1aXXszfSSYAQMSQgoOcGF5X291dF9tZXRob2QYMiABKA4yIi50emVyby52MS5jb21tb24uUGF5bWVudE1ldGhvZFR5cGVCBrpIA8gBARI3CgpxdW90ZV90eXBlGDwgASgOMhsudHplcm8udjEucGF5bWVudC5RdW90ZVR5cGVCBrpIA8gBASLZAwoQR2V0UXVvdGVSZXNwb25zZRI9CgdzdWNjZXNzGBQgASgLMioudHplcm8udjEucGF5bWVudC5HZXRRdW90ZVJlc3BvbnNlLlN1Y2Nlc3NIABI9CgdmYWlsdXJlGB4gASgLMioudHplcm8udjEucGF5bWVudC5HZXRRdW90ZVJlc3BvbnNlLkZhaWx1cmVIABqoAQoHU3VjY2VzcxIuCgRyYXRlGAogASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARI4CgpleHBpcmF0aW9uGBQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIukgFsgECQAESMwoIcXVvdGVfaWQYHiABKAsyGS50emVyby52MS5wYXltZW50LlF1b3RlSWRCBrpIA8gBARqKAQoHRmFpbHVyZRJBCgZyZWFzb24YCiABKA4yMS50emVyby52MS5wYXltZW50LkdldFF1b3RlUmVzcG9uc2UuRmFpbHVyZS5SZWFzb24iPAoGUmVhc29uEhYKElJFQVNPTl9VTlNQRUNJRklFRBAAEhoKFlJFQVNPTl9RVU9URV9OT1RfRk9VTkQQCkIPCgZyZXN1bHQSBbpIAggBIogGChRDcmVhdGVQYXltZW50UmVxdWVzdBIkChFwYXltZW50X2NsaWVudF9pZBgKIAEoCUIJukgGcgQQARhAEjcKBmFtb3VudBgeIAEoCzIfLnR6ZXJvLnYxLnBheW1lbnQuUGF5bWVudEFtb3VudEIGukgDyAEBEkQKBnBheV9pbhgoIAEoCzIsLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlcXVlc3QuUGF5SW5CBrpIA8gBARJGCgdwYXlfb3V0GC0gASgLMi0udHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5QYXlPdXRCBrpIA8gBARJUChB0cmF2ZWxfcnVsZV9kYXRhGGQgASgLMjUudHplcm8udjEucGF5bWVudC5DcmVhdGVQYXltZW50UmVxdWVzdC5UcmF2ZWxSdWxlRGF0YUgAiAEBGnMKBVBheUluEiYKCGN1cnJlbmN5GAogASgJQhS6SBFyDzIKXltBLVpdezN9JJgBAxJCCg5wYXltZW50X21ldGhvZBgUIAEoDjIiLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50TWV0aG9kVHlwZUIGukgDyAEBGrEBCgZQYXlPdXQSJgoIY3VycmVuY3kYCiABKAlCFLpIEXIPMgpeW0EtWl17M30kmAEDEkAKD3BheW1lbnRfZGV0YWlscxgUIAEoCzIfLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50RGV0YWlsc0IGukgDyAEBEjAKCHF1b3RlX2lkGGQgASgLMhkudHplcm8udjEucGF5bWVudC5RdW90ZUlkSACIAQFCCwoJX3F1b3RlX2lkGm8KDlRyYXZlbFJ1bGVEYXRhEi0KCm9yaWdpbmF0b3IYCiADKAsyDy5pdm1zMTAxLlBlcnNvbkIIukgFkgECCAESLgoLYmVuZWZpY2lhcnkYFCADKAsyDy5pdm1zMTAxLlBlcnNvbkIIukgFkgECCAFCEwoRX3RyYXZlbF9ydWxlX2RhdGEiQgoHUXVvdGVJZBIZCghxdW90ZV9pZBgeIAEoA0IHukgEIgIgABIcCgtwcm92aWRlcl9pZBgoIAEoBUIHukgEGgIgACKvBAoVQ3JlYXRlUGF5bWVudFJlc3BvbnNlEiIKEXBheW1lbnRfY2xpZW50X2lkGAogASgJQge6SARyAhABEkIKB3N1Y2Nlc3MYFCABKAsyLy50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXNwb25zZS5TdWNjZXNzSAASQgoHZmFpbHVyZRgeIAEoCzIvLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlc3BvbnNlLkZhaWx1cmVIABqcAQoHU3VjY2VzcxIbCgpwYXltZW50X2lkGAogASgEQge6SAQyAiAAEjcKDXBheV9pbl9hbW91bnQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEIGukgDyAEBEjsKEXNldHRsZW1lbnRfYW1vdW50GB4gASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARq5AQoHRmFpbHVyZRJGCgZyZWFzb24YCiABKA4yNi50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXNwb25zZS5GYWlsdXJlLlJlYXNvbiJmCgZSZWFzb24SFgoSUkVBU09OX1VOU1BFQ0lGSUVEEAASGgoWUkVBU09OX1FVT1RFX05PVF9GT1VORBAKEigKJFJFQVNPTl9DUkVESVRfT1JfUFJFREVQT1NJVF9SRVFVSVJFRBAUQg8KBnJlc3VsdBIFukgCCAEikgEKFENvbmZpcm1QYXlvdXRSZXF1ZXN0EhsKCnBheW1lbnRfaWQYCiABKARCB7pIBDICIAASGgoJcGF5b3V0X2lkGBQgASgEQge6SAQyAiAAEjUKB3JlY2VpcHQYHiABKAsyHy50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHRIAIgBAUIKCghfcmVjZWlwdCIXChVDb25maXJtUGF5b3V0UmVzcG9uc2UimwIKHUNvbXBsZXRlTWFudWFsQW1sQ2hlY2tSZXF1ZXN0EhsKCnBheW1lbnRfaWQYCiABKARCB7pIBDICIAASTAoIYXBwcm92ZWQYHiABKAsyOC50emVyby52MS5wYXltZW50LkNvbXBsZXRlTWFudWFsQW1sQ2hlY2tSZXF1ZXN0LkFwcHJvdmVkSAASTAoIcmVqZWN0ZWQYKCABKAsyOC50emVyby52MS5wYXltZW50LkNvbXBsZXRlTWFudWFsQW1sQ2hlY2tSZXF1ZXN0LlJlamVjdGVkSAAaCgoIQXBwcm92ZWQaJAoIUmVqZWN0ZWQSGAoGcmVhc29uGAogASgJQgi6SAVyAxiACEIPCgZyZXN1bHQSBbpIAggBIoIDCh5Db21wbGV0ZU1hbnVhbEFtbENoZWNrUmVzcG9uc2USTQoIYXBwcm92ZWQYHiABKAsyOS50emVyby52MS5wYXltZW50LkNvbXBsZXRlTWFudWFsQW1sQ2hlY2tSZXNwb25zZS5BcHByb3ZlZEgAEk0KCHJlamVjdGVkGCggASgLMjkudHplcm8udjEucGF5bWVudC5Db21wbGV0ZU1hbnVhbEFtbENoZWNrUmVzcG9uc2UuUmVqZWN0ZWRIABqkAQoIQXBwcm92ZWQSOAoOcGF5X291dF9hbW91bnQYCiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEIGukgDyAEBEjsKEXNldHRsZW1lbnRfYW1vdW50GBQgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWxCBrpIA8gBARIhChBwYXlfb3V0X3F1b3RlX2lkGB4gASgDQge6SAQiAiAAGgoKCFJlamVjdGVkQg8KBnJlc3VsdBIFukgCCAEihwEKDVBheW1lbnRBbW91bnQSMQoNcGF5X2luX2Ftb3VudBgKIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsSAASMgoOcGF5X291dF9hbW91bnQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEgAQg8KBmFtb3VudBIFukgCCAEqQAoJUXVvdGVUeXBlEhoKFlFVT1RFX1RZUEVfVU5TUEVDSUZJRUQQABIXChNRVU9URV9UWVBFX1JFQUxUSU1FEAEymgQKDk5ldHdvcmtTZXJ2aWNlEl8KC1VwZGF0ZVF1b3RlEiQudHplcm8udjEucGF5bWVudC5VcGRhdGVRdW90ZVJlcXVlc3QaJS50emVyby52MS5wYXltZW50LlVwZGF0ZVF1b3RlUmVzcG9uc2UiA5ACAhJWCghHZXRRdW90ZRIhLnR6ZXJvLnYxLnBheW1lbnQuR2V0UXVvdGVSZXF1ZXN0GiIudHplcm8udjEucGF5bWVudC5HZXRRdW90ZVJlc3BvbnNlIgOQAgESZQoNQ3JlYXRlUGF5bWVudBImLnR6ZXJvLnYxLnBheW1lbnQuQ3JlYXRlUGF5bWVudFJlcXVlc3QaJy50emVyby52MS5wYXltZW50LkNyZWF0ZVBheW1lbnRSZXNwb25zZSIDkAICEmUKDUNvbmZpcm1QYXlvdXQSJi50emVyby52MS5wYXltZW50LkNvbmZpcm1QYXlvdXRSZXF1ZXN0GicudHplcm8udjEucGF5bWVudC5Db25maXJtUGF5b3V0UmVzcG9uc2UiA5ACAhKAAQoWQ29tcGxldGVNYW51YWxBbWxDaGVjaxIvLnR6ZXJvLnYxLnBheW1lbnQuQ29tcGxldGVNYW51YWxBbWxDaGVja1JlcXVlc3QaMC50emVyby52MS5wYXltZW50LkNvbXBsZXRlTWFudWFsQW1sQ2hlY2tSZXNwb25zZSIDkAICQoYBChRjb20udHplcm8udjEucGF5bWVudEIMTmV0d29ya1Byb3RvUAGiAgNUVlCqAhBUemVyby5WMS5QYXltZW50ygIQVHplcm9cVjFcUGF5bWVudOICHFR6ZXJvXFYxXFBheW1lbnRcR1BCTWV0YWRhdGHqAhJUemVybzo6VjE6OlBheW1lbnRiBnByb3RvMw", [file_tzero_v1_common_common, file_tzero_v1_common_payment_method, file_tzero_v1_common_payment_receipt, file_ivms101_v1_ivms_ivms101, file_google_protobuf_timestamp, file_buf_validate_validate]);
 
 /**
  *
@@ -623,7 +623,7 @@ export type ConfirmPayoutRequest = Message<"tzero.v1.payment.ConfirmPayoutReques
    * *
    * Payment receipt might contain metadata about payment recognizable by pay-in provider.
    *
-   * @generated from field: tzero.v1.common.PaymentReceipt receipt = 30;
+   * @generated from field: optional tzero.v1.common.PaymentReceipt receipt = 30;
    */
   receipt?: PaymentReceipt;
 };
@@ -647,6 +647,152 @@ export type ConfirmPayoutResponse = Message<"tzero.v1.payment.ConfirmPayoutRespo
  */
 export const ConfirmPayoutResponseSchema: GenMessage<ConfirmPayoutResponse> = /*@__PURE__*/
   messageDesc(file_tzero_v1_payment_network, 8);
+
+/**
+ * @generated from message tzero.v1.payment.CompleteManualAmlCheckRequest
+ */
+export type CompleteManualAmlCheckRequest = Message<"tzero.v1.payment.CompleteManualAmlCheckRequest"> & {
+  /**
+   * @generated from field: uint64 payment_id = 10;
+   */
+  paymentId: bigint;
+
+  /**
+   * @generated from oneof tzero.v1.payment.CompleteManualAmlCheckRequest.result
+   */
+  result: {
+    /**
+     * @generated from field: tzero.v1.payment.CompleteManualAmlCheckRequest.Approved approved = 30;
+     */
+    value: CompleteManualAmlCheckRequest_Approved;
+    case: "approved";
+  } | {
+    /**
+     * @generated from field: tzero.v1.payment.CompleteManualAmlCheckRequest.Rejected rejected = 40;
+     */
+    value: CompleteManualAmlCheckRequest_Rejected;
+    case: "rejected";
+  } | { case: undefined; value?: undefined };
+};
+
+/**
+ * Describes the message tzero.v1.payment.CompleteManualAmlCheckRequest.
+ * Use `create(CompleteManualAmlCheckRequestSchema)` to create a new message.
+ */
+export const CompleteManualAmlCheckRequestSchema: GenMessage<CompleteManualAmlCheckRequest> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 9);
+
+/**
+ * @generated from message tzero.v1.payment.CompleteManualAmlCheckRequest.Approved
+ */
+export type CompleteManualAmlCheckRequest_Approved = Message<"tzero.v1.payment.CompleteManualAmlCheckRequest.Approved"> & {
+};
+
+/**
+ * Describes the message tzero.v1.payment.CompleteManualAmlCheckRequest.Approved.
+ * Use `create(CompleteManualAmlCheckRequest_ApprovedSchema)` to create a new message.
+ */
+export const CompleteManualAmlCheckRequest_ApprovedSchema: GenMessage<CompleteManualAmlCheckRequest_Approved> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 9, 0);
+
+/**
+ * @generated from message tzero.v1.payment.CompleteManualAmlCheckRequest.Rejected
+ */
+export type CompleteManualAmlCheckRequest_Rejected = Message<"tzero.v1.payment.CompleteManualAmlCheckRequest.Rejected"> & {
+  /**
+   * @generated from field: string reason = 10;
+   */
+  reason: string;
+};
+
+/**
+ * Describes the message tzero.v1.payment.CompleteManualAmlCheckRequest.Rejected.
+ * Use `create(CompleteManualAmlCheckRequest_RejectedSchema)` to create a new message.
+ */
+export const CompleteManualAmlCheckRequest_RejectedSchema: GenMessage<CompleteManualAmlCheckRequest_Rejected> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 9, 1);
+
+/**
+ * @generated from message tzero.v1.payment.CompleteManualAmlCheckResponse
+ */
+export type CompleteManualAmlCheckResponse = Message<"tzero.v1.payment.CompleteManualAmlCheckResponse"> & {
+  /**
+   * @generated from oneof tzero.v1.payment.CompleteManualAmlCheckResponse.result
+   */
+  result: {
+    /**
+     * @generated from field: tzero.v1.payment.CompleteManualAmlCheckResponse.Approved approved = 30;
+     */
+    value: CompleteManualAmlCheckResponse_Approved;
+    case: "approved";
+  } | {
+    /**
+     * @generated from field: tzero.v1.payment.CompleteManualAmlCheckResponse.Rejected rejected = 40;
+     */
+    value: CompleteManualAmlCheckResponse_Rejected;
+    case: "rejected";
+  } | { case: undefined; value?: undefined };
+};
+
+/**
+ * Describes the message tzero.v1.payment.CompleteManualAmlCheckResponse.
+ * Use `create(CompleteManualAmlCheckResponseSchema)` to create a new message.
+ */
+export const CompleteManualAmlCheckResponseSchema: GenMessage<CompleteManualAmlCheckResponse> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 10);
+
+/**
+ * @generated from message tzero.v1.payment.CompleteManualAmlCheckResponse.Approved
+ */
+export type CompleteManualAmlCheckResponse_Approved = Message<"tzero.v1.payment.CompleteManualAmlCheckResponse.Approved"> & {
+  /**
+   * *
+   * amount in currency of the payout
+   * This is the updated amount that should be paid out to the recipient.
+   *
+   * @generated from field: tzero.v1.common.Decimal pay_out_amount = 10;
+   */
+  payOutAmount?: Decimal;
+
+  /**
+   *
+   *
+   *
+   * @generated from field: tzero.v1.common.Decimal settlement_amount = 20;
+   */
+  settlementAmount?: Decimal;
+
+  /**
+   *
+   * unique identifier of the pay-out quote
+   *
+   * @generated from field: int64 pay_out_quote_id = 30;
+   */
+  payOutQuoteId: bigint;
+};
+
+/**
+ * Describes the message tzero.v1.payment.CompleteManualAmlCheckResponse.Approved.
+ * Use `create(CompleteManualAmlCheckResponse_ApprovedSchema)` to create a new message.
+ */
+export const CompleteManualAmlCheckResponse_ApprovedSchema: GenMessage<CompleteManualAmlCheckResponse_Approved> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 10, 0);
+
+/**
+ * Rejected means that the updated quotes were rejected by pay-in provider, and the payout provider should not proceed
+ * with the payout.
+ *
+ * @generated from message tzero.v1.payment.CompleteManualAmlCheckResponse.Rejected
+ */
+export type CompleteManualAmlCheckResponse_Rejected = Message<"tzero.v1.payment.CompleteManualAmlCheckResponse.Rejected"> & {
+};
+
+/**
+ * Describes the message tzero.v1.payment.CompleteManualAmlCheckResponse.Rejected.
+ * Use `create(CompleteManualAmlCheckResponse_RejectedSchema)` to create a new message.
+ */
+export const CompleteManualAmlCheckResponse_RejectedSchema: GenMessage<CompleteManualAmlCheckResponse_Rejected> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_payment_network, 10, 1);
 
 /**
  * Payment amount could be specified eiter as pay-in amount and then converted to corresponding amount of pay-out amount
@@ -682,7 +828,7 @@ export type PaymentAmount = Message<"tzero.v1.payment.PaymentAmount"> & {
  * Use `create(PaymentAmountSchema)` to create a new message.
  */
 export const PaymentAmountSchema: GenMessage<PaymentAmount> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_payment_network, 9);
+  messageDesc(file_tzero_v1_payment_network, 11);
 
 /**
  * @generated from enum tzero.v1.payment.QuoteType
@@ -771,6 +917,19 @@ export const NetworkService: GenService<{
     methodKind: "unary";
     input: typeof ConfirmPayoutRequestSchema;
     output: typeof ConfirmPayoutResponseSchema;
+  },
+  /**
+   * *
+   * Pay-out provider reports the result of manual AML check.
+   * This endpoint is called after the manual AML check is completed. The network will find the new best quotes for the
+   * payment and will return the updated settlement/payout amount along with the updated quotes in the response.
+   *
+   * @generated from rpc tzero.v1.payment.NetworkService.CompleteManualAmlCheck
+   */
+  completeManualAmlCheck: {
+    methodKind: "unary";
+    input: typeof CompleteManualAmlCheckRequestSchema;
+    output: typeof CompleteManualAmlCheckResponseSchema;
   },
 }> = /*@__PURE__*/
   serviceDesc(file_tzero_v1_payment_network, 0);
