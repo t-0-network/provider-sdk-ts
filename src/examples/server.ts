@@ -2,7 +2,12 @@
   Example on how to implement network notifications with SDK
 */
 
-import {createService, ProviderService} from "../index.js";
+import {
+  ApprovePaymentQuoteRequest,
+  ApprovePaymentQuoteRequestSchema, ApprovePaymentQuoteResponse,
+  createService,
+  ProviderService
+} from "../index.js";
 import {
   PayoutRequest,
   PayoutResponse,
@@ -29,7 +34,7 @@ import dotenv from "dotenv";
 /*
   Providers must implement this. Please refer to docs or proto definition comments
  */
-const CreateProviderService = () => {
+const CreateProviderService = ()=> {
   return {
     async payOut(req: PayoutRequest, context: HandlerContext) {
 
@@ -48,6 +53,11 @@ const CreateProviderService = () => {
     async appendLedgerEntries(req: AppendLedgerEntriesRequest, context: HandlerContext) {
       return {
       } as AppendLedgerEntriesResponse
+    },
+
+    async approvePaymentQuotes(req: ApprovePaymentQuoteRequest, context: HandlerContext) {
+      return {
+      } as ApprovePaymentQuoteResponse
     },
   }
 };
