@@ -27,7 +27,10 @@ const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (
     throw new ConnectError(`${NetworkHeaders.PublicKey} value is not network public key`, Code.Unauthenticated);
   }
 
-  const signature = decodeHex(getHeader(req, NetworkHeaders.Signature))
+  let signature = decodeHex(getHeader(req, NetworkHeaders.Signature))
+  if (signature.length === 65) {
+    signature = signature.subarray(0, 64);
+  }
 
   const hasher = req.contextValues.get(kHash)!;
 
@@ -41,7 +44,7 @@ const createSignatureVerification: (networkPublicKey: Buffer) => Interceptor = (
   try {
     signatureValid = secp.verify(signature, hash, publicKey);
   } catch (e) {
-    throw new ConnectError(`${NetworkHeaders.Signature} has invalid signature or public key format` , Code.Unauthenticated);
+    throw new ConnectError(`${NetworkHeaders.Signature} has invalid signature or public key format: ${e}` , Code.Unauthenticated);
   }
 
   if (!signatureValid) {
