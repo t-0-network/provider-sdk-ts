@@ -62,24 +62,22 @@ const CreateProviderService = ()=> {
   }
 };
 
-/*
-  Providers must implement this. Please refer to docs or proto definition comments
- */
-const CreatePaymentIntentProviderService = () => {
-  return {
-    async createPaymentIntent(req: CreatePaymentIntentRequest, context: HandlerContext) {
-      console.log(`${req.$typeName}`);
-      // Implement your logic to create a payment intent
-      return {} as CreatePaymentIntentResponse;
-    },
 
-    async confirmPayout(req: ConfirmPayoutRequest, context: HandlerContext) {
-      console.log(`${req.$typeName}`);
-      // Implement your logic to confirm a payout
-      return {} as ConfirmPayoutResponse;
-    }
-  }
-};
+// const CreatePaymentIntentProviderService = () => {
+//   return {
+//     async createPaymentIntent(req: CreatePaymentIntentRequest, context: HandlerContext) {
+//       console.log(`${req.$typeName}`);
+//       // Implement your logic to create a payment intent
+//       return {} as CreatePaymentIntentResponse;
+//     },
+//
+//     async confirmPayout(req: ConfirmPayoutRequest, context: HandlerContext) {
+//       console.log(`${req.$typeName}`);
+//       // Implement your logic to confirm a payout
+//       return {} as ConfirmPayoutResponse;
+//     }
+//   }
+// };
 
 async function main() {
   dotenv.config();
@@ -90,7 +88,7 @@ async function main() {
       nodeAdapter(
         createService(networkPublicKeyHex, (r) => {
           r.service(ProviderService, CreateProviderService());
-          r.service(PaymentIntentProviderService, CreatePaymentIntentProviderService());
+          // r.service(PaymentIntentProviderService, CreatePaymentIntentProviderService());
         })))
   ).listen(8080);
   console.log("server is listening at", server.address());
