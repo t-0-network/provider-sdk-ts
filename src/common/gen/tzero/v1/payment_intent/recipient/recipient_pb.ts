@@ -124,6 +124,8 @@ export const CreatePaymentIntentResponse_PaymentMethodSchema: GenMessage<CreateP
   messageDesc(file_tzero_v1_payment_intent_recipient_recipient, 1, 0);
 
 /**
+ * TODO: enrich with more fields
+ *
  * @generated from message tzero.v1.payment_intent.recipient.GetQuoteRequest
  */
 export type GetQuoteRequest = Message<"tzero.v1.payment_intent.recipient.GetQuoteRequest"> & {
