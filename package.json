@@ -10,8 +10,7 @@
   "author": "New Settlement Technologies Inc.",
   "type": "module",
   "files": [
-    "lib/**/*",
-    "!lib/examples/*"
+    "lib/**/*"
   ],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
