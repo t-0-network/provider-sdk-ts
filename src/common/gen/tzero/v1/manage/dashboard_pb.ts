@@ -15,12 +15,16 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/manage/dashboard.proto.
  */
 export const file_tzero_v1_manage_dashboard: GenFile = /*@__PURE__*/
-  fileDesc("Ch90emVyby92MS9tYW5hZ2UvZGFzaGJvYXJkLnByb3RvEg90emVyby52MS5tYW5hZ2UiEgoQR2V0Vm9sdW1lUmVxdWVzdCKuAgoRR2V0Vm9sdW1lUmVzcG9uc2USOgoHdm9sdW1lcxgKIAMoCzIpLnR6ZXJvLnYxLm1hbmFnZS5HZXRWb2x1bWVSZXNwb25zZS5Wb2x1bWUSJwoFdG90YWwYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBqzAQoGVm9sdW1lEisKCHByb3ZpZGVyGAogASgLMhkudHplcm8udjEubWFuYWdlLlByb3ZpZGVyEigKBnBheV9pbhgUIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEikKB3BheV9vdXQYHiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBInCgV0b3RhbBgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsIhIKEEdldExpbWl0c1JlcXVlc3QinAIKEUdldExpbWl0c1Jlc3BvbnNlEjgKBmxpbWl0cxgKIAMoCzIoLnR6ZXJvLnYxLm1hbmFnZS5HZXRMaW1pdHNSZXNwb25zZS5MaW1pdBrMAQoFTGltaXQSKwoIcHJvdmlkZXIYCiABKAsyGS50emVyby52MS5tYW5hZ2UuUHJvdmlkZXISLQoLY3JlZGl0X2xlZnQYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIuCgxjcmVkaXRfdXNhZ2UYHiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBI3ChVwcmVzZXR0bGVtZW50X2JhbGFuY2UYKCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbCJHChJHZXRQYXltZW50c1JlcXVlc3QSKAoEcGFnZRgKIAEoCzIVLnR6ZXJvLnYxLm1hbmFnZS5QYWdlSACIAQFCBwoFX3BhZ2Ui1QUKE0dldFBheW1lbnRzUmVzcG9uc2USPgoIcGF5bWVudHMYCiADKAsyLC50emVyby52MS5tYW5hZ2UuR2V0UGF5bWVudHNSZXNwb25zZS5QYXltZW50Gv0ECgdQYXltZW50EgoKAmlkGAogASgEEj8KBHR5cGUYFCABKA4yMS50emVyby52MS5tYW5hZ2UuR2V0UGF5bWVudHNSZXNwb25zZS5QYXltZW50LlR5cGUSLgoLY291bnRlcnBhcnQYHiABKAsyGS50emVyby52MS5tYW5hZ2UuUHJvdmlkZXISQwoGc3RhdHVzGCggASgOMjMudHplcm8udjEubWFuYWdlLkdldFBheW1lbnRzUmVzcG9uc2UuUGF5bWVudC5TdGF0dXMSLgoKY3JlYXRlZF9hdBgyIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNAoLYWNjZXB0ZWRfYXQYPCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSACIAQESNQoMY29tcGxldGVkX2F0GEYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgBiAEBEiwKCnVzZF92b2x1bWUYUCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbCJDCgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABISCg5UWVBFX0lOSVRJQVRFRBAKEhEKDVRZUEVfUEFJRF9PVVQQFCJ/CgZTdGF0dXMSFgoSU1RBVFVTX1VOU1BFQ0lGSUVEEAASEwoPU1RBVFVTX0FDQ0VQVEVEEAoSEgoOU1RBVFVTX1NVQ0NFU1MQFBIRCg1TVEFUVVNfRkFJTEVEEB4SIQodU1RBVFVTX1BFTkRJTkdfUFJFX1NFVFRMRU1FTlQQKEIOCgxfYWNjZXB0ZWRfYXRCDwoNX2NvbXBsZXRlZF9hdCJKChVHZXRTZXR0bGVtZW50c1JlcXVlc3QSKAoEcGFnZRgKIAEoCzIVLnR6ZXJvLnYxLm1hbmFnZS5QYWdlSACIAQFCBwoFX3BhZ2UisAIKFkdldFNldHRsZW1lbnRzUmVzcG9uc2UalQIKClNldHRsZW1lbnQSCgoCaWQYCiABKAQSRQoEdHlwZRgUIAEoDjI3LnR6ZXJvLnYxLm1hbmFnZS5HZXRTZXR0bGVtZW50c1Jlc3BvbnNlLlNldHRsZW1lbnQuVHlwZRIWCg5jb3VudGVycGFydF9pZBgeIAEoDRIsCgp1c2Rfdm9sdW1lGCggASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSLgoKY3JlYXRlZF9hdBgyIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiPgoEVHlwZRIUChBUWVBFX1VOU1BFQ0lGSUVEEAASDQoJVFlQRV9TRU5UEAoSEQoNVFlQRV9SRUNFSVZFRBAUIiQKCFByb3ZpZGVyEgoKAmlkGAogASgNEgwKBG5hbWUYFCABKAkiRwoEUGFnZRIRCgRwYWdlGAogASgNSACIAQESGgoEc2l6ZRgUIAEoDUIHukgEGgIQMkgBiAEBQgcKBV9wYWdlQgcKBV9zaXplMvcCChBEYXNoYm9hcmRTZXJ2aWNlElIKCUdldFZvbHVtZRIhLnR6ZXJvLnYxLm1hbmFnZS5HZXRWb2x1bWVSZXF1ZXN0GiIudHplcm8udjEubWFuYWdlLkdldFZvbHVtZVJlc3BvbnNlElIKCUdldExpbWl0cxIhLnR6ZXJvLnYxLm1hbmFnZS5HZXRMaW1pdHNSZXF1ZXN0GiIudHplcm8udjEubWFuYWdlLkdldExpbWl0c1Jlc3BvbnNlElgKC0dldFBheW1lbnRzEiMudHplcm8udjEubWFuYWdlLkdldFBheW1lbnRzUmVxdWVzdBokLnR6ZXJvLnYxLm1hbmFnZS5HZXRQYXltZW50c1Jlc3BvbnNlEmEKDkdldFNldHRsZW1lbnRzEiYudHplcm8udjEubWFuYWdlLkdldFNldHRsZW1lbnRzUmVxdWVzdBonLnR6ZXJvLnYxLm1hbmFnZS5HZXRTZXR0bGVtZW50c1Jlc3BvbnNlQoMBChNjb20udHplcm8udjEubWFuYWdlQg5EYXNoYm9hcmRQcm90b1ABogIDVFZNqgIPVHplcm8uVjEuTWFuYWdlygIPVHplcm9cVjFcTWFuYWdl4gIbVHplcm9cVjFcTWFuYWdlXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpNYW5hZ2ViBnByb3RvMw", [file_buf_validate_validate, file_google_protobuf_timestamp, file_tzero_v1_common_common]);
+  fileDesc("Ch90emVyby92MS9tYW5hZ2UvZGFzaGJvYXJkLnByb3RvEg90emVyby52MS5tYW5hZ2UiRQoQR2V0Vm9sdW1lUmVxdWVzdBIoCgRwYWdlGAogASgLMhUudHplcm8udjEubWFuYWdlLlBhZ2VIAIgBAUIHCgVfcGFnZSLcAgoRR2V0Vm9sdW1lUmVzcG9uc2USOgoHdm9sdW1lcxgKIAMoCzIpLnR6ZXJvLnYxLm1hbmFnZS5HZXRWb2x1bWVSZXNwb25zZS5Wb2x1bWUSJwoFdG90YWwYFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIsCglwYWdlX2luZm8YHiABKAsyGS50emVyby52MS5tYW5hZ2UuUGFnZUluZm8aswEKBlZvbHVtZRIrCghwcm92aWRlchgKIAEoCzIZLnR6ZXJvLnYxLm1hbmFnZS5Qcm92aWRlchIoCgZwYXlfaW4YFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIpCgdwYXlfb3V0GB4gASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSJwoFdG90YWwYKCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbCJNChhHZXRDb3VudGVycGFydGllc1JlcXVlc3QSKAoEcGFnZRgKIAEoCzIVLnR6ZXJvLnYxLm1hbmFnZS5QYWdlSACIAQFCBwoFX3BhZ2Ui0wMKGUdldENvdW50ZXJwYXJ0aWVzUmVzcG9uc2USTwoOY291bnRlcnBhcnRpZXMYCiADKAsyNy50emVyby52MS5tYW5hZ2UuR2V0Q291bnRlcnBhcnRpZXNSZXNwb25zZS5Db3VudGVycGFydHkSLAoJcGFnZV9pbmZvGBQgASgLMhkudHplcm8udjEubWFuYWdlLlBhZ2VJbmZvGrYCCgxDb3VudGVycGFydHkSKwoIcHJvdmlkZXIYCiABKAsyGS50emVyby52MS5tYW5hZ2UuUHJvdmlkZXISMAoOY3JlZGl0X2xpbmVfaW4YFCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBItCgtuZXRfcGF5YWJsZRgeIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEhgKEHByZXNldHRsZW1lbnRfaW4YKCABKAgSMQoPY3JlZGl0X2xpbmVfb3V0GDIgASgLMhgudHplcm8udjEuY29tbW9uLkRlY2ltYWwSMAoObmV0X3JlY2VpdmFibGUYPCABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbBIZChFwcmVzZXR0bGVtZW50X291dBhGIAEoCCJHChJHZXRQYXltZW50c1JlcXVlc3QSKAoEcGFnZRgKIAEoCzIVLnR6ZXJvLnYxLm1hbmFnZS5QYWdlSACIAQFCBwoFX3BhZ2UipAYKE0dldFBheW1lbnRzUmVzcG9uc2USPgoIcGF5bWVudHMYCiADKAsyLC50emVyby52MS5tYW5hZ2UuR2V0UGF5bWVudHNSZXNwb25zZS5QYXltZW50EiwKCXBhZ2VfaW5mbxgUIAEoCzIZLnR6ZXJvLnYxLm1hbmFnZS5QYWdlSW5mbxqeBQoHUGF5bWVudBIKCgJpZBgKIAEoBBI0Cg1wcm92aWRlcl9yb2xlGBQgASgOMh0udHplcm8udjEubWFuYWdlLlByb3ZpZGVyUm9sZRIuCgtjb3VudGVycGFydBgeIAEoCzIZLnR6ZXJvLnYxLm1hbmFnZS5Qcm92aWRlchJDCgZzdGF0dXMYKCABKA4yMy50emVyby52MS5tYW5hZ2UuR2V0UGF5bWVudHNSZXNwb25zZS5QYXltZW50LlN0YXR1cxIuCgpjcmVhdGVkX2F0GDIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI0CgthY2NlcHRlZF9hdBg8IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAIgBARI1Cgxjb21wbGV0ZWRfYXQYRiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSAGIAQESLAoKdXNkX3ZvbHVtZRhQIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEjQKDXBheW91dF9hbW91bnQYWiABKAsyGC50emVyby52MS5jb21tb24uRGVjaW1hbEgCiAEBEhAKCGN1cnJlbmN5GGQgASgJIpUBCgZTdGF0dXMSFgoSU1RBVFVTX1VOU1BFQ0lGSUVEEAASIQodU1RBVFVTX1BFTkRJTkdfUFJFX1NFVFRMRU1FTlQQChITCg9TVEFUVVNfQUNDRVBURUQQFBIUChBTVEFUVVNfQU1MX0NIRUNLEB4SEgoOU1RBVFVTX1NVQ0NFU1MQKBIRCg1TVEFUVVNfRkFJTEVEEDJCDgoMX2FjY2VwdGVkX2F0Qg8KDV9jb21wbGV0ZWRfYXRCEAoOX3BheW91dF9hbW91bnQiSgoVR2V0U2V0dGxlbWVudHNSZXF1ZXN0EigKBHBhZ2UYCiABKAsyFS50emVyby52MS5tYW5hZ2UuUGFnZUgAiAEBQgcKBV9wYWdlIu4CChZHZXRTZXR0bGVtZW50c1Jlc3BvbnNlEkcKC3NldHRsZW1lbnRzGAogAygLMjIudHplcm8udjEubWFuYWdlLkdldFNldHRsZW1lbnRzUmVzcG9uc2UuU2V0dGxlbWVudBIsCglwYWdlX2luZm8YFCABKAsyGS50emVyby52MS5tYW5hZ2UuUGFnZUluZm8a3AEKClNldHRsZW1lbnQSCgoCaWQYCiABKAQSNAoNcHJvdmlkZXJfcm9sZRgUIAEoDjIdLnR6ZXJvLnYxLm1hbmFnZS5Qcm92aWRlclJvbGUSLgoLY291bnRlcnBhcnQYHiABKAsyGS50emVyby52MS5tYW5hZ2UuUHJvdmlkZXISLAoKdXNkX3ZvbHVtZRgoIAEoCzIYLnR6ZXJvLnYxLmNvbW1vbi5EZWNpbWFsEi4KCmNyZWF0ZWRfYXQYMiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIiQKCFByb3ZpZGVyEgoKAmlkGAogASgNEgwKBG5hbWUYFCABKAkiUgoEUGFnZRIaCgRwYWdlGAogASgNQge6SAQqAigBSACIAQESHAoEc2l6ZRgUIAEoDUIJukgGKgQYMigBSAGIAQFCBwoFX3BhZ2VCBwoFX3NpemUiRQoIUGFnZUluZm8SFAoMY3VycmVudF9wYWdlGAogASgNEhEKCXBhZ2Vfc2l6ZRgUIAEoDRIQCghoYXNfbmV4dBgeIAEoCCpqCgxQcm92aWRlclJvbGUSHQoZUFJPVklERVJfUk9MRV9VTlNQRUNJRklFRBAAEhwKGFBST1ZJREVSX1JPTEVfT1JJR0lOQVRPUhAKEh0KGVBST1ZJREVSX1JPTEVfQkVORUZJQ0lBUlkQFDKPAwoQRGFzaGJvYXJkU2VydmljZRJSCglHZXRWb2x1bWUSIS50emVyby52MS5tYW5hZ2UuR2V0Vm9sdW1lUmVxdWVzdBoiLnR6ZXJvLnYxLm1hbmFnZS5HZXRWb2x1bWVSZXNwb25zZRJqChFHZXRDb3VudGVycGFydGllcxIpLnR6ZXJvLnYxLm1hbmFnZS5HZXRDb3VudGVycGFydGllc1JlcXVlc3QaKi50emVyby52MS5tYW5hZ2UuR2V0Q291bnRlcnBhcnRpZXNSZXNwb25zZRJYCgtHZXRQYXltZW50cxIjLnR6ZXJvLnYxLm1hbmFnZS5HZXRQYXltZW50c1JlcXVlc3QaJC50emVyby52MS5tYW5hZ2UuR2V0UGF5bWVudHNSZXNwb25zZRJhCg5HZXRTZXR0bGVtZW50cxImLnR6ZXJvLnYxLm1hbmFnZS5HZXRTZXR0bGVtZW50c1JlcXVlc3QaJy50emVyby52MS5tYW5hZ2UuR2V0U2V0dGxlbWVudHNSZXNwb25zZUKDAQoTY29tLnR6ZXJvLnYxLm1hbmFnZUIORGFzaGJvYXJkUHJvdG9QAaICA1RWTaoCD1R6ZXJvLlYxLk1hbmFnZcoCD1R6ZXJvXFYxXE1hbmFnZeICG1R6ZXJvXFYxXE1hbmFnZVxHUEJNZXRhZGF0YeoCEVR6ZXJvOjpWMTo6TWFuYWdlYgZwcm90bzM", [file_buf_validate_validate, file_google_protobuf_timestamp, file_tzero_v1_common_common]);
 
 /**
  * @generated from message tzero.v1.manage.GetVolumeRequest
  */
 export type GetVolumeRequest = Message<"tzero.v1.manage.GetVolumeRequest"> & {
+  /**
+   * @generated from field: optional tzero.v1.manage.Page page = 10;
+   */
+  page?: Page;
 };
 
 /**
@@ -43,6 +47,11 @@ export type GetVolumeResponse = Message<"tzero.v1.manage.GetVolumeResponse"> & {
    * @generated from field: tzero.v1.common.Decimal total = 20;
    */
   total?: Decimal;
+
+  /**
+   * @generated from field: tzero.v1.manage.PageInfo page_info = 30;
+   */
+  pageInfo?: PageInfo;
 };
 
 /**
@@ -85,65 +94,99 @@ export const GetVolumeResponse_VolumeSchema: GenMessage<GetVolumeResponse_Volume
   messageDesc(file_tzero_v1_manage_dashboard, 1, 0);
 
 /**
- * @generated from message tzero.v1.manage.GetLimitsRequest
+ * @generated from message tzero.v1.manage.GetCounterpartiesRequest
  */
-export type GetLimitsRequest = Message<"tzero.v1.manage.GetLimitsRequest"> & {
+export type GetCounterpartiesRequest = Message<"tzero.v1.manage.GetCounterpartiesRequest"> & {
+  /**
+   * @generated from field: optional tzero.v1.manage.Page page = 10;
+   */
+  page?: Page;
 };
 
 /**
- * Describes the message tzero.v1.manage.GetLimitsRequest.
- * Use `create(GetLimitsRequestSchema)` to create a new message.
+ * Describes the message tzero.v1.manage.GetCounterpartiesRequest.
+ * Use `create(GetCounterpartiesRequestSchema)` to create a new message.
  */
-export const GetLimitsRequestSchema: GenMessage<GetLimitsRequest> = /*@__PURE__*/
+export const GetCounterpartiesRequestSchema: GenMessage<GetCounterpartiesRequest> = /*@__PURE__*/
   messageDesc(file_tzero_v1_manage_dashboard, 2);
 
 /**
- * @generated from message tzero.v1.manage.GetLimitsResponse
+ * @generated from message tzero.v1.manage.GetCounterpartiesResponse
  */
-export type GetLimitsResponse = Message<"tzero.v1.manage.GetLimitsResponse"> & {
+export type GetCounterpartiesResponse = Message<"tzero.v1.manage.GetCounterpartiesResponse"> & {
   /**
-   * @generated from field: repeated tzero.v1.manage.GetLimitsResponse.Limit limits = 10;
+   * @generated from field: repeated tzero.v1.manage.GetCounterpartiesResponse.Counterparty counterparties = 10;
    */
-  limits: GetLimitsResponse_Limit[];
+  counterparties: GetCounterpartiesResponse_Counterparty[];
+
+  /**
+   * @generated from field: tzero.v1.manage.PageInfo page_info = 20;
+   */
+  pageInfo?: PageInfo;
 };
 
 /**
- * Describes the message tzero.v1.manage.GetLimitsResponse.
- * Use `create(GetLimitsResponseSchema)` to create a new message.
+ * Describes the message tzero.v1.manage.GetCounterpartiesResponse.
+ * Use `create(GetCounterpartiesResponseSchema)` to create a new message.
  */
-export const GetLimitsResponseSchema: GenMessage<GetLimitsResponse> = /*@__PURE__*/
+export const GetCounterpartiesResponseSchema: GenMessage<GetCounterpartiesResponse> = /*@__PURE__*/
   messageDesc(file_tzero_v1_manage_dashboard, 3);
 
 /**
- * @generated from message tzero.v1.manage.GetLimitsResponse.Limit
+ * @generated from message tzero.v1.manage.GetCounterpartiesResponse.Counterparty
  */
-export type GetLimitsResponse_Limit = Message<"tzero.v1.manage.GetLimitsResponse.Limit"> & {
+export type GetCounterpartiesResponse_Counterparty = Message<"tzero.v1.manage.GetCounterpartiesResponse.Counterparty"> & {
   /**
    * @generated from field: tzero.v1.manage.Provider provider = 10;
    */
   provider?: Provider;
 
   /**
-   * @generated from field: tzero.v1.common.Decimal credit_left = 20;
+   * When they are our creditor
+   * their credit limit
+   *
+   * @generated from field: tzero.v1.common.Decimal credit_line_in = 20;
    */
-  creditLeft?: Decimal;
+  creditLineIn?: Decimal;
 
   /**
-   * @generated from field: tzero.v1.common.Decimal credit_usage = 30;
+   * our debt
+   *
+   * @generated from field: tzero.v1.common.Decimal net_payable = 30;
    */
-  creditUsage?: Decimal;
+  netPayable?: Decimal;
 
   /**
-   * @generated from field: tzero.v1.common.Decimal presettlement_balance = 40;
+   * @generated from field: bool presettlement_in = 40;
    */
-  presettlementBalance?: Decimal;
+  presettlementIn: boolean;
+
+  /**
+   * When we are their creditor
+   * our credit limit
+   *
+   * @generated from field: tzero.v1.common.Decimal credit_line_out = 50;
+   */
+  creditLineOut?: Decimal;
+
+  /**
+   * their debt
+   *
+   * @generated from field: tzero.v1.common.Decimal net_receivable = 60;
+   */
+  netReceivable?: Decimal;
+
+  /**
+   * @generated from field: bool presettlement_out = 70;
+   */
+  presettlementOut: boolean;
 };
 
 /**
- * Describes the message tzero.v1.manage.GetLimitsResponse.Limit.
- * Use `create(GetLimitsResponse_LimitSchema)` to create a new message.
+ * Describes the message tzero.v1.manage.GetCounterpartiesResponse.Counterparty.
+ * Use `create(GetCounterpartiesResponse_CounterpartySchema)` to create a new message.
  */
-export const GetLimitsResponse_LimitSchema: GenMessage<GetLimitsResponse_Limit> = /*@__PURE__*/
+export const GetCounterpartiesResponse_CounterpartySchema: GenMessage<GetCounterpartiesResponse_Counterparty> = /*@__PURE__*/
   messageDesc(file_tzero_v1_manage_dashboard, 3, 0);
 
 /**
@@ -171,6 +214,11 @@ export type GetPaymentsResponse = Message<"tzero.v1.manage.GetPaymentsResponse">
    * @generated from field: repeated tzero.v1.manage.GetPaymentsResponse.Payment payments = 10;
    */
   payments: GetPaymentsResponse_Payment[];
+
+  /**
+   * @generated from field: tzero.v1.manage.PageInfo page_info = 20;
+   */
+  pageInfo?: PageInfo;
 };
 
 /**
@@ -190,9 +238,9 @@ export type GetPaymentsResponse_Payment = Message<"tzero.v1.manage.GetPaymentsRe
   id: bigint;
 
   /**
-   * @generated from field: tzero.v1.manage.GetPaymentsResponse.Payment.Type type = 20;
+   * @generated from field: tzero.v1.manage.ProviderRole provider_role = 20;
    */
-  type: GetPaymentsResponse_Payment_Type;
+  providerRole: ProviderRole;
 
   /**
    * @generated from field: tzero.v1.manage.Provider counterpart = 30;
@@ -220,11 +268,19 @@ export type GetPaymentsResponse_Payment = Message<"tzero.v1.manage.GetPaymentsRe
   completedAt?: Timestamp;
 
   /**
-   * TODO:
-   *
    * @generated from field: tzero.v1.common.Decimal usd_volume = 80;
    */
   usdVolume?: Decimal;
+
+  /**
+   * @generated from field: optional tzero.v1.common.Decimal payout_amount = 90;
+   */
+  payoutAmount?: Decimal;
+
+  /**
+   * @generated from field: string currency = 100;
+   */
+  currency: string;
 };
 
 /**
@@ -233,32 +289,6 @@ export type GetPaymentsResponse_Payment = Message<"tzero.v1.manage.GetPaymentsRe
  */
 export const GetPaymentsResponse_PaymentSchema: GenMessage<GetPaymentsResponse_Payment> = /*@__PURE__*/
   messageDesc(file_tzero_v1_manage_dashboard, 5, 0);
-
-/**
- * @generated from enum tzero.v1.manage.GetPaymentsResponse.Payment.Type
- */
-export enum GetPaymentsResponse_Payment_Type {
-  /**
-   * @generated from enum value: TYPE_UNSPECIFIED = 0;
-   */
-  UNSPECIFIED = 0,
-
-  /**
-   * @generated from enum value: TYPE_INITIATED = 10;
-   */
-  INITIATED = 10,
-
-  /**
-   * @generated from enum value: TYPE_PAID_OUT = 20;
-   */
-  PAID_OUT = 20,
-}
-
-/**
- * Describes the enum tzero.v1.manage.GetPaymentsResponse.Payment.Type.
- */
-export const GetPaymentsResponse_Payment_TypeSchema: GenEnum<GetPaymentsResponse_Payment_Type> = /*@__PURE__*/
-  enumDesc(file_tzero_v1_manage_dashboard, 5, 0, 0);
 
 /**
  * @generated from enum tzero.v1.manage.GetPaymentsResponse.Payment.Status
@@ -270,31 +300,36 @@ export enum GetPaymentsResponse_Payment_Status {
   UNSPECIFIED = 0,
 
   /**
-   * @generated from enum value: STATUS_ACCEPTED = 10;
+   * @generated from enum value: STATUS_PENDING_PRE_SETTLEMENT = 10;
    */
-  ACCEPTED = 10,
+  PENDING_PRE_SETTLEMENT = 10,
 
   /**
-   * @generated from enum value: STATUS_SUCCESS = 20;
+   * @generated from enum value: STATUS_ACCEPTED = 20;
    */
-  SUCCESS = 20,
+  ACCEPTED = 20,
 
   /**
-   * @generated from enum value: STATUS_FAILED = 30;
+   * @generated from enum value: STATUS_AML_CHECK = 30;
    */
-  FAILED = 30,
+  AML_CHECK = 30,
 
   /**
-   * @generated from enum value: STATUS_PENDING_PRE_SETTLEMENT = 40;
+   * @generated from enum value: STATUS_SUCCESS = 40;
    */
-  PENDING_PRE_SETTLEMENT = 40,
+  SUCCESS = 40,
+
+  /**
+   * @generated from enum value: STATUS_FAILED = 50;
+   */
+  FAILED = 50,
 }
 
 /**
  * Describes the enum tzero.v1.manage.GetPaymentsResponse.Payment.Status.
  */
 export const GetPaymentsResponse_Payment_StatusSchema: GenEnum<GetPaymentsResponse_Payment_Status> = /*@__PURE__*/
-  enumDesc(file_tzero_v1_manage_dashboard, 5, 0, 1);
+  enumDesc(file_tzero_v1_manage_dashboard, 5, 0, 0);
 
 /**
  * @generated from message tzero.v1.manage.GetSettlementsRequest
@@ -317,6 +352,15 @@ export const GetSettlementsRequestSchema: GenMessage<GetSettlementsRequest> = /*
  * @generated from message tzero.v1.manage.GetSettlementsResponse
  */
 export type GetSettlementsResponse = Message<"tzero.v1.manage.GetSettlementsResponse"> & {
+  /**
+   * @generated from field: repeated tzero.v1.manage.GetSettlementsResponse.Settlement settlements = 10;
+   */
+  settlements: GetSettlementsResponse_Settlement[];
+
+  /**
+   * @generated from field: tzero.v1.manage.PageInfo page_info = 20;
+   */
+  pageInfo?: PageInfo;
 };
 
 /**
@@ -336,14 +380,14 @@ export type GetSettlementsResponse_Settlement = Message<"tzero.v1.manage.GetSett
   id: bigint;
 
   /**
-   * @generated from field: tzero.v1.manage.GetSettlementsResponse.Settlement.Type type = 20;
+   * @generated from field: tzero.v1.manage.ProviderRole provider_role = 20;
    */
-  type: GetSettlementsResponse_Settlement_Type;
+  providerRole: ProviderRole;
 
   /**
-   * @generated from field: uint32 counterpart_id = 30;
+   * @generated from field: tzero.v1.manage.Provider counterpart = 30;
    */
-  counterpartId: number;
+  counterpart?: Provider;
 
   /**
    * @generated from field: tzero.v1.common.Decimal usd_volume = 40;
@@ -362,32 +406,6 @@ export type GetSettlementsResponse_Settlement = Message<"tzero.v1.manage.GetSett
  */
 export const GetSettlementsResponse_SettlementSchema: GenMessage<GetSettlementsResponse_Settlement> = /*@__PURE__*/
   messageDesc(file_tzero_v1_manage_dashboard, 7, 0);
-
-/**
- * @generated from enum tzero.v1.manage.GetSettlementsResponse.Settlement.Type
- */
-export enum GetSettlementsResponse_Settlement_Type {
-  /**
-   * @generated from enum value: TYPE_UNSPECIFIED = 0;
-   */
-  UNSPECIFIED = 0,
-
-  /**
-   * @generated from enum value: TYPE_SENT = 10;
-   */
-  SENT = 10,
-
-  /**
-   * @generated from enum value: TYPE_RECEIVED = 20;
-   */
-  RECEIVED = 20,
-}
-
-/**
- * Describes the enum tzero.v1.manage.GetSettlementsResponse.Settlement.Type.
- */
-export const GetSettlementsResponse_Settlement_TypeSchema: GenEnum<GetSettlementsResponse_Settlement_Type> = /*@__PURE__*/
-  enumDesc(file_tzero_v1_manage_dashboard, 7, 0, 0);
 
 /**
  * @generated from message tzero.v1.manage.Provider
@@ -436,6 +454,63 @@ export const PageSchema: GenMessage<Page> = /*@__PURE__*/
   messageDesc(file_tzero_v1_manage_dashboard, 9);
 
 /**
+ * @generated from message tzero.v1.manage.PageInfo
+ */
+export type PageInfo = Message<"tzero.v1.manage.PageInfo"> & {
+  /**
+   * @generated from field: uint32 current_page = 10;
+   */
+  currentPage: number;
+
+  /**
+   * @generated from field: uint32 page_size = 20;
+   */
+  pageSize: number;
+
+  /**
+   * @generated from field: bool has_next = 30;
+   */
+  hasNext: boolean;
+};
+
+/**
+ * Describes the message tzero.v1.manage.PageInfo.
+ * Use `create(PageInfoSchema)` to create a new message.
+ */
+export const PageInfoSchema: GenMessage<PageInfo> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_manage_dashboard, 10);
+
+/**
+ * @generated from enum tzero.v1.manage.ProviderRole
+ */
+export enum ProviderRole {
+  /**
+   * @generated from enum value: PROVIDER_ROLE_UNSPECIFIED = 0;
+   */
+  UNSPECIFIED = 0,
+
+  /**
+   * The party that initiates and sends the payment/settlement
+   *
+   * @generated from enum value: PROVIDER_ROLE_ORIGINATOR = 10;
+   */
+  ORIGINATOR = 10,
+
+  /**
+   * The party that receives the payment/settlement
+   *
+   * @generated from enum value: PROVIDER_ROLE_BENEFICIARY = 20;
+   */
+  BENEFICIARY = 20,
+}
+
+/**
+ * Describes the enum tzero.v1.manage.ProviderRole.
+ */
+export const ProviderRoleSchema: GenEnum<ProviderRole> = /*@__PURE__*/
+  enumDesc(file_tzero_v1_manage_dashboard, 0);
+
+/**
  * @generated from service tzero.v1.manage.DashboardService
  */
 export const DashboardService: GenService<{
@@ -448,12 +523,12 @@ export const DashboardService: GenService<{
     output: typeof GetVolumeResponseSchema;
   },
   /**
-   * @generated from rpc tzero.v1.manage.DashboardService.GetLimits
+   * @generated from rpc tzero.v1.manage.DashboardService.GetCounterparties
    */
-  getLimits: {
+  getCounterparties: {
     methodKind: "unary";
-    input: typeof GetLimitsRequestSchema;
-    output: typeof GetLimitsResponseSchema;
+    input: typeof GetCounterpartiesRequestSchema;
+    output: typeof GetCounterpartiesResponseSchema;
   },
   /**
    * @generated from rpc tzero.v1.manage.DashboardService.GetPayments
