@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "rootDirs": ["src", "examples"],
+    "rootDirs": ["src"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,

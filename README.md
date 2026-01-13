@@ -14,11 +14,3 @@ Usage instruction can be found in [NodeJS SDK docs](https://t-0-network.github.i
     NETWORK_PUBLIC_KEY=0x....
     
     ```
-3. Try using network client 
-    ```bash
-    npx tsx  src/examples/update-quote.ts
-    ```
-4. Start dummy service implementation
-    ```bash
-    npx tsx  src/examples/server.ts
-    ```
