@@ -25,6 +25,8 @@ enum PaymentMethodType {
   PAYMENT_METHOD_TYPE_PAKISTAN_MOBILE_WALLET = 140;
   // PIX - Brazilian instant payment system
   PAYMENT_METHOD_TYPE_PIX = 150;
+  // Airtel Money - Kenya payment method
+  PAYMENT_METHOD_TYPE_AIRTEL_MONEY = 160;
 }
 
 message PaymentDetails {
@@ -84,6 +86,9 @@ message PaymentDetails {
     // PIX - Brazilian instant payment system
     // Brazil
     Pix pix = 150;
+
+    // Airtel Money - Kenya payment method
+    AirtelMoney airtel_money = 160;
   };
 
   message Sepa {
@@ -137,6 +142,36 @@ message PaymentDetails {
       min_len: 1,
       max_len: 12,
       pattern: "^[a-zA-Z0-9]+$"
+    }];
+
+    // Beneficiary name
+    string beneficiary_name = 30 [(buf.validate.field).string = {
+      min_len: 1,
+      max_len: 100
+    }];
+  }
+
+  message AirtelMoney {
+    // Phone number in international format without + sign
+    // Required: Yes
+    string beneficiary_phone = 10 [(buf.validate.field).string = {
+      min_len: 10,
+      max_len: 15,
+      pattern: "^[0-9]{10,15}$"
+    }];
+
+    // Account reference (max 12 chars, alphanumeric)
+    // Required: Yes
+    string account_reference = 20 [(buf.validate.field).string = {
+      min_len: 1,
+      max_len: 12,
+      pattern: "^[a-zA-Z0-9]+$"
+    }];
+
+    // Beneficiary name
+    string beneficiary_name = 30 [(buf.validate.field).string = {
+      min_len: 1,
+      max_len: 100
     }];
   }
 
