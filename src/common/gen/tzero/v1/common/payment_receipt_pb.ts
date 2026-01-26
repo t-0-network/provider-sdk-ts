@@ -11,7 +11,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_receipt.proto.
  */
 export const file_tzero_v1_common_payment_receipt: GenFile = /*@__PURE__*/
-  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24i/QQKDlBheW1lbnRSZWNlaXB0EjQKBHNlcGEYCiABKAsyJC50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQuU2VwYUgAEjYKBXN3aWZ0GB4gASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlN3aWZ0SAASQAoKc3RhYmxlY29pbhgoIAEoCzIqLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50UmVjZWlwdC5TdGFibGVjb2luSAASMgoDcGl4GDIgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlBpeEgAEjIKA2Zwcxg8IAEoCzIjLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50UmVjZWlwdC5GcHNIABplCgRTZXBhEjgKIGJhbmtpbmdfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGAogASgJQgm6SAZyBBABGCNIAIgBAUIjCiFfYmFua2luZ190cmFuc2FjdGlvbl9yZWZlcmVuY2VfaWQaBwoFU3dpZnQaMAoDUGl4Eh4KBmUyZV9pZBgKIAEoCUIJukgGcgQQARgjSACIAQFCCQoHX2UyZV9pZBpJCgpTdGFibGVjb2luEjsKEHRyYW5zYWN0aW9uX2hhc2gYCiABKAlCIbpIHnIcEEAYQjIWXigweCk/W2EtZkEtRjAtOV17NjR9JBpUCgNGcHMSMAoYdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGAogASgJQgm6SAZyBBABGCNIAIgBAUIbChlfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkQhAKB2RldGFpbHMSBbpIAggBQogBChNjb20udHplcm8udjEuY29tbW9uQhNQYXltZW50UmVjZWlwdFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_buf_validate_validate]);
+  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24i8AMKDlBheW1lbnRSZWNlaXB0EjQKBHNlcGEYCiABKAsyJC50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQuU2VwYUgAEjYKBXN3aWZ0GB4gASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlN3aWZ0SAASMgoDcGl4GDIgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlBpeEgAEjIKA2Zwcxg8IAEoCzIjLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50UmVjZWlwdC5GcHNIABplCgRTZXBhEjgKIGJhbmtpbmdfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGAogASgJQgm6SAZyBBABGCNIAIgBAUIjCiFfYmFua2luZ190cmFuc2FjdGlvbl9yZWZlcmVuY2VfaWQaBwoFU3dpZnQaMAoDUGl4Eh4KBmUyZV9pZBgKIAEoCUIJukgGcgQQARgjSACIAQFCCQoHX2UyZV9pZBpUCgNGcHMSMAoYdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGAogASgJQgm6SAZyBBABGCNIAIgBAUIbChlfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkQhAKB2RldGFpbHMSBbpIAggBQogBChNjb20udHplcm8udjEuY29tbW9uQhNQYXltZW50UmVjZWlwdFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt
@@ -32,12 +32,6 @@ export type PaymentReceipt = Message<"tzero.v1.common.PaymentReceipt"> & {
      */
     value: PaymentReceipt_Swift;
     case: "swift";
-  } | {
-    /**
-     * @generated from field: tzero.v1.common.PaymentReceipt.Stablecoin stablecoin = 40;
-     */
-    value: PaymentReceipt_Stablecoin;
-    case: "stablecoin";
   } | {
     /**
      * @generated from field: tzero.v1.common.PaymentReceipt.Pix pix = 50;
@@ -108,25 +102,6 @@ export const PaymentReceipt_PixSchema: GenMessage<PaymentReceipt_Pix> = /*@__PUR
   messageDesc(file_tzero_v1_common_payment_receipt, 0, 2);
 
 /**
- * @generated from message tzero.v1.common.PaymentReceipt.Stablecoin
- */
-export type PaymentReceipt_Stablecoin = Message<"tzero.v1.common.PaymentReceipt.Stablecoin"> & {
-  /**
-   * on-chain hex encoded transaction hash
-   *
-   * @generated from field: string transaction_hash = 10;
-   */
-  transactionHash: string;
-};
-
-/**
- * Describes the message tzero.v1.common.PaymentReceipt.Stablecoin.
- * Use `create(PaymentReceipt_StablecoinSchema)` to create a new message.
- */
-export const PaymentReceipt_StablecoinSchema: GenMessage<PaymentReceipt_Stablecoin> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 0, 3);
-
-/**
  * @generated from message tzero.v1.common.PaymentReceipt.Fps
  */
 export type PaymentReceipt_Fps = Message<"tzero.v1.common.PaymentReceipt.Fps"> & {
@@ -141,5 +116,5 @@ export type PaymentReceipt_Fps = Message<"tzero.v1.common.PaymentReceipt.Fps"> &
  * Use `create(PaymentReceipt_FpsSchema)` to create a new message.
  */
 export const PaymentReceipt_FpsSchema: GenMessage<PaymentReceipt_Fps> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 0, 4);
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 3);
 
