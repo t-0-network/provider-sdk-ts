@@ -769,7 +769,7 @@ export type UpdateLimitRequest_Limit = Message<"tzero.v1.payment.UpdateLimitRequ
    * *
    * This is the credit usage that the provider has used so far. It is the sum of all payouts made by the provider
    * minus the settlement net (settlement balance). It could be negative if the provider has received more
-   * in settlements than made payouts (pre-settlement).
+   * in settlements than made payouts.
    *
    * @generated from field: tzero.v1.common.Decimal credit_usage = 40;
    */
