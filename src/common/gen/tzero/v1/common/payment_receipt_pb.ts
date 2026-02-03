@@ -11,7 +11,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tzero/v1/common/payment_receipt.proto.
  */
 export const file_tzero_v1_common_payment_receipt: GenFile = /*@__PURE__*/
-  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24i8AMKDlBheW1lbnRSZWNlaXB0EjQKBHNlcGEYCiABKAsyJC50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQuU2VwYUgAEjYKBXN3aWZ0GB4gASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlN3aWZ0SAASMgoDcGl4GDIgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlBpeEgAEjIKA2Zwcxg8IAEoCzIjLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50UmVjZWlwdC5GcHNIABplCgRTZXBhEjgKIGJhbmtpbmdfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGAogASgJQgm6SAZyBBABGCNIAIgBAUIjCiFfYmFua2luZ190cmFuc2FjdGlvbl9yZWZlcmVuY2VfaWQaBwoFU3dpZnQaMAoDUGl4Eh4KBmUyZV9pZBgKIAEoCUIJukgGcgQQARgjSACIAQFCCQoHX2UyZV9pZBpUCgNGcHMSMAoYdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGAogASgJQgm6SAZyBBABGCNIAIgBAUIbChlfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkQhAKB2RldGFpbHMSBbpIAggBQogBChNjb20udHplcm8udjEuY29tbW9uQhNQYXltZW50UmVjZWlwdFByb3RvUAGiAgNUVkOqAg9UemVyby5WMS5Db21tb27KAg9UemVyb1xWMVxDb21tb27iAhtUemVyb1xWMVxDb21tb25cR1BCTWV0YWRhdGHqAhFUemVybzo6VjE6OkNvbW1vbmIGcHJvdG8z", [file_buf_validate_validate]);
+  fileDesc("CiV0emVyby92MS9jb21tb24vcGF5bWVudF9yZWNlaXB0LnByb3RvEg90emVyby52MS5jb21tb24iyAQKDlBheW1lbnRSZWNlaXB0EjQKBHNlcGEYCiABKAsyJC50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQuU2VwYUgAEjYKBXN3aWZ0GB4gASgLMiUudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlN3aWZ0SAASMgoDcGl4GDIgASgLMiMudHplcm8udjEuY29tbW9uLlBheW1lbnRSZWNlaXB0LlBpeEgAEjIKA2Zwcxg8IAEoCzIjLnR6ZXJvLnYxLmNvbW1vbi5QYXltZW50UmVjZWlwdC5GcHNIABIyCgNuaXAYRiABKAsyIy50emVyby52MS5jb21tb24uUGF5bWVudFJlY2VpcHQuTmlwSAAaIgoDTmlwEhsKCnNlc3Npb25faWQYCiABKAlCB7pIBHICGEAaZQoEU2VwYRI4CiBiYW5raW5nX3RyYW5zYWN0aW9uX3JlZmVyZW5jZV9pZBgKIAEoCUIJukgGcgQQARgjSACIAQFCIwohX2JhbmtpbmdfdHJhbnNhY3Rpb25fcmVmZXJlbmNlX2lkGgcKBVN3aWZ0GjAKA1BpeBIeCgZlMmVfaWQYCiABKAlCCbpIBnIEEAEYI0gAiAEBQgkKB19lMmVfaWQaVAoDRnBzEjAKGHRyYW5zYWN0aW9uX3JlZmVyZW5jZV9pZBgKIAEoCUIJukgGcgQQARgjSACIAQFCGwoZX3RyYW5zYWN0aW9uX3JlZmVyZW5jZV9pZEIQCgdkZXRhaWxzEgW6SAIIAUKIAQoTY29tLnR6ZXJvLnYxLmNvbW1vbkITUGF5bWVudFJlY2VpcHRQcm90b1ABogIDVFZDqgIPVHplcm8uVjEuQ29tbW9uygIPVHplcm9cVjFcQ29tbW9u4gIbVHplcm9cVjFcQ29tbW9uXEdQQk1ldGFkYXRh6gIRVHplcm86OlYxOjpDb21tb25iBnByb3RvMw", [file_buf_validate_validate]);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt
@@ -44,6 +44,12 @@ export type PaymentReceipt = Message<"tzero.v1.common.PaymentReceipt"> & {
      */
     value: PaymentReceipt_Fps;
     case: "fps";
+  } | {
+    /**
+     * @generated from field: tzero.v1.common.PaymentReceipt.Nip nip = 70;
+     */
+    value: PaymentReceipt_Nip;
+    case: "nip";
   } | { case: undefined; value?: undefined };
 };
 
@@ -53,6 +59,23 @@ export type PaymentReceipt = Message<"tzero.v1.common.PaymentReceipt"> & {
  */
 export const PaymentReceiptSchema: GenMessage<PaymentReceipt> = /*@__PURE__*/
   messageDesc(file_tzero_v1_common_payment_receipt, 0);
+
+/**
+ * @generated from message tzero.v1.common.PaymentReceipt.Nip
+ */
+export type PaymentReceipt_Nip = Message<"tzero.v1.common.PaymentReceipt.Nip"> & {
+  /**
+   * @generated from field: string session_id = 10;
+   */
+  sessionId: string;
+};
+
+/**
+ * Describes the message tzero.v1.common.PaymentReceipt.Nip.
+ * Use `create(PaymentReceipt_NipSchema)` to create a new message.
+ */
+export const PaymentReceipt_NipSchema: GenMessage<PaymentReceipt_Nip> = /*@__PURE__*/
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 0);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt.Sepa
@@ -69,7 +92,7 @@ export type PaymentReceipt_Sepa = Message<"tzero.v1.common.PaymentReceipt.Sepa">
  * Use `create(PaymentReceipt_SepaSchema)` to create a new message.
  */
 export const PaymentReceipt_SepaSchema: GenMessage<PaymentReceipt_Sepa> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 0, 0);
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 1);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt.Swift
@@ -82,7 +105,7 @@ export type PaymentReceipt_Swift = Message<"tzero.v1.common.PaymentReceipt.Swift
  * Use `create(PaymentReceipt_SwiftSchema)` to create a new message.
  */
 export const PaymentReceipt_SwiftSchema: GenMessage<PaymentReceipt_Swift> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 0, 1);
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 2);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt.Pix
@@ -99,7 +122,7 @@ export type PaymentReceipt_Pix = Message<"tzero.v1.common.PaymentReceipt.Pix"> &
  * Use `create(PaymentReceipt_PixSchema)` to create a new message.
  */
 export const PaymentReceipt_PixSchema: GenMessage<PaymentReceipt_Pix> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 0, 2);
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 3);
 
 /**
  * @generated from message tzero.v1.common.PaymentReceipt.Fps
@@ -116,5 +139,5 @@ export type PaymentReceipt_Fps = Message<"tzero.v1.common.PaymentReceipt.Fps"> &
  * Use `create(PaymentReceipt_FpsSchema)` to create a new message.
  */
 export const PaymentReceipt_FpsSchema: GenMessage<PaymentReceipt_Fps> = /*@__PURE__*/
-  messageDesc(file_tzero_v1_common_payment_receipt, 0, 3);
+  messageDesc(file_tzero_v1_common_payment_receipt, 0, 4);
 
