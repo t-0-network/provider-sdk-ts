@@ -19,11 +19,15 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Build
         run: |
           npm i
           npm run build
+
+      - name: Remove token from .npmrc for OIDC auth
+        run: npm config delete //registry.npmjs.org/:_authToken --location user
 
       - run: npm publish --access public
 
