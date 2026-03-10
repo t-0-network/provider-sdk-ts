@@ -26,10 +26,11 @@ jobs:
           npm i
           npm run build
 
-      - name: Remove token from .npmrc for OIDC auth
-        run: npm config delete //registry.npmjs.org/:_authToken --location user
-
-      - run: npm publish --access public
+      - name: Publish with OIDC
+        run: |
+          echo "registry=https://registry.npmjs.org/" > "$NPM_CONFIG_USERCONFIG"
+          unset NODE_AUTH_TOKEN
+          npm publish --access public
 
       - name: Get version
         id: version
