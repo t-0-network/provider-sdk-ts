@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "registry=https://registry.npmjs.org/" > "$NPM_CONFIG_USERCONFIG"
           unset NODE_AUTH_TOKEN
-          npm publish --access public
+          npm publish --provenance --access public
 
       - name: Get version
         id: version
